@@ -1,0 +1,140 @@
+{
+  "conduit_summary": {
+    "accepted": 8,
+    "arm_state": "ARMED_TEST_FIXTURE",
+    "config_sha256": "aed3628b416291d1c083295c1b256bca3109f87ed136d14ec480894db1205041",
+    "connector": {
+      "connector": "replay-file-feed",
+      "origin": "replay_fixture"
+    },
+    "data_class": "FIXTURE",
+    "external_action": false,
+    "kind": "conduit_run",
+    "out_of_scope": 0,
+    "quarantined": 0,
+    "receipts": [
+      {
+        "data_class": "FIXTURE",
+        "digest": "cd27f1db99be2e22eaef949146061068a3a4875dbd23e0a735e803f19bf701aa",
+        "state": "ACCEPTED"
+      },
+      {
+        "data_class": "FIXTURE",
+        "digest": "82ffb70ed632f6d2bbd23b6f6fc230f76a7ed61538136182d983143138fee4eb",
+        "state": "ACCEPTED"
+      },
+      {
+        "data_class": "FIXTURE",
+        "digest": "e9e892450179a2e68929ec2215be7aefe3ca86da3244ec3165f1e99a964a68d3",
+        "state": "ACCEPTED"
+      },
+      {
+        "data_class": "FIXTURE",
+        "digest": "65b4aa19acca881f56821bbff430136af811a067bf611cc474fffd5b297353fa",
+        "state": "ACCEPTED"
+      },
+      {
+        "data_class": "FIXTURE",
+        "digest": "8e0034a2aa5710b38ed92bf5ff7add8b555242d669e295858f0a3c9e48c8ff89",
+        "state": "ACCEPTED"
+      },
+      {
+        "data_class": "FIXTURE",
+        "digest": "a32aa13d223f82ec392448c0027848a0453c598c1b702cf6d2762bc00b2452e3",
+        "state": "ACCEPTED"
+      },
+      {
+        "data_class": "FIXTURE",
+        "digest": "4ca51fec8f1e77affb63cba5f30a8fc0c71af5170c9a6ff6dd92ca07ec2c7375",
+        "state": "ACCEPTED"
+      },
+      {
+        "data_class": "FIXTURE",
+        "digest": "c37f3b0255f2111804e4d86e7836e92f955935ec35c2bfaa9963a98deafd4650",
+        "state": "ACCEPTED"
+      }
+    ],
+    "spec": "eagle-eye-live-shadow/1.0",
+    "summary_sha256": "a344c8a9b92c8174d78a765dac47d0eb6c7c36589632553a836f26418b14f593"
+  },
+  "elapsed_s": 0.02,
+  "external_action": false,
+  "live_reachable_in_this_run": false,
+  "passed": 14,
+  "receipt_id": "live-5fe1a6c4f8f1",
+  "spec": "eagle-eye-live-shadow-rehearsal/1.0",
+  "stages": [
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "disarmed_without_config"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "conduit_refuses_when_disarmed"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "null_connector_fail_closed"
+    },
+    {
+      "detail": "[]",
+      "ok": true,
+      "stage": "fixture_config_arms_test_fixture"
+    },
+    {
+      "detail": "{\"accepted\": 8, \"quarantined\": 0, \"out_of_scope\": 0, \"data_class\": \"FIXTURE\"}",
+      "ok": true,
+      "stage": "rehearsal_ingests_through_unchanged_boundary"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "live_unreachable_at_fixture_arm"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "partial_live_claim_refused"
+    },
+    {
+      "detail": "[]",
+      "ok": true,
+      "stage": "valid_production_config_arms_live"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "unpinned_signer_disarmed"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "single_approver_disarmed"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "production_on_fixture_tenant_disarmed"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "expired_config_disarmed"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "tampered_config_disarmed"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "shadow_only_interlock_under_live"
+    }
+  ],
+  "tenant": "tenant-fixture-live-rehearsal",
+  "total": 14
+}

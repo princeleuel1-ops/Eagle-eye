@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "case": "pass_evolution",
+      "exit": 0,
+      "expect_pass": true,
+      "expected_check": "",
+      "ok": true
+    },
+    {
+      "case": "pass_evolution_pinned",
+      "exit": 0,
+      "expect_pass": true,
+      "expected_check": "",
+      "ok": true
+    },
+    {
+      "case": "pass_transfer",
+      "exit": 0,
+      "expect_pass": true,
+      "expected_check": "",
+      "ok": true
+    },
+    {
+      "case": "pass_recursive",
+      "exit": 0,
+      "expect_pass": true,
+      "expected_check": "",
+      "ok": true
+    },
+    {
+      "case": "sig_forged",
+      "exit": 1,
+      "expect_pass": false,
+      "expected_check": "ROW_4_SIGNATURE",
+      "ok": true
+    },
+    {
+      "case": "body_spliced",
+      "exit": 1,
+      "expect_pass": false,
+      "expected_check": "ROW_3_INTEGRITY",
+      "ok": true
+    },
+    {
+      "case": "row_reordered",
+      "exit": 1,
+      "expect_pass": false,
+      "expected_check": "ROW_2_INTEGRITY",
+      "ok": true
+    },
+    {
+      "case": "tail_truncated",
+      "exit": 1,
+      "expect_pass": false,
+      "expected_check": "ANCHOR",
+      "ok": true
+    },
+    {
+      "case": "resign_attack",
+      "exit": 1,
+      "expect_pass": false,
+      "expected_check": "LINEAGE_IDS_AND_DECISIONS_RECOMPUTED",
+      "ok": true
+    },
+    {
+      "case": "pinned_resign",
+      "exit": 1,
+      "expect_pass": false,
+      "expected_check": "EXPECTED_SIGNER_PRESENT",
+      "ok": true
+    },
+    {
+      "case": "reveal_tampered",
+      "exit": 1,
+      "expect_pass": false,
+      "expected_check": "COMMIT_REVEAL",
+      "ok": true
+    },
+    {
+      "case": "wealth_inflated",
+      "exit": 1,
+      "expect_pass": false,
+      "expected_check": "STREAM_WEALTH_RECOMPUTED",
+      "ok": true
+    },
+    {
+      "case": "claim_flipped",
+      "exit": 1,
+      "expect_pass": false,
+      "expected_check": "HEADLINE_CLAIM_CONSISTENT",
+      "ok": true
+    },
+    {
+      "case": "heads_roundtrip",
+      "expect_pass": true,
+      "ok": true
+    },
+    {
+      "case": "heads_tampered",
+      "expect_pass": false,
+      "expected_check": "HEADS_LOG_HASH_CHAIN",
+      "ok": true
+    }
+  ],
+  "elapsed_s": 1.5,
+  "external_action": false,
+  "isolation": "python3 -I (no env, no site, no repository imports)",
+  "passed": 15,
+  "spec": "eagle-eye-strangers-court/1.0",
+  "stranger_interpreter": "/usr/bin/python3",
+  "total": 15,
+  "verifier_sha256": "ad71ee889b47892556ca12fd677c0b757000804a4f02b5b32401c08febe85553"
+}

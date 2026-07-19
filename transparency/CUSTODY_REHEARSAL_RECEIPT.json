@@ -1,0 +1,66 @@
+{
+  "elapsed_s": 0.01,
+  "external_action": false,
+  "passed": 11,
+  "production_custody_reachable_in_this_run": false,
+  "receipt_id": "cust-6d931ec7946a",
+  "spec": "eagle-eye-custody-rehearsal/1.0",
+  "stages": [
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "disabled_without_descriptor"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "aws_shape_disabled_without_credentials"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "configured_is_not_trusted"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "local_roundtrip_reaches_verified"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "failed_roundtrip_is_verification_failed"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "stale_proof_downgrades_to_unverified"
+    },
+    {
+      "detail": "refusals=5",
+      "ok": true,
+      "stage": "production_signing_refused_all_five"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "tampered_proof_hash_mismatch"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "oidc_disabled_without_config"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "oidc_configured_is_not_trusted"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "oidc_roundtrip_reaches_verified"
+    }
+  ],
+  "total": 11
+}

@@ -1,0 +1,258 @@
+{
+  "alpha_micro": 50000,
+  "chains_verified": true,
+  "crossings": [],
+  "elapsed_s": 194.7,
+  "external_action": false,
+  "feedback_spec": "eagle-eye-feedback-harness/1.0",
+  "honesty": {
+    "claim_class_on_crossing": "THEOREM-CONDITIONAL (independent synthetic case sampling; sealed-suite sign null); NOT an external or live-data claim",
+    "crossing_required_for_pass": false,
+    "per_run_promotion_gates": "UNCHANGED and binding"
+  },
+  "ledger_state": {
+    "admitted_runs": [
+      {
+        "bundle_sha256": "87cac482b57dff9ca68dd14812d7cef3b95475646cea4fa8d367e994eee5d572",
+        "contributions": 0,
+        "seed_commitment": "b1e5448ed7c679645ecfc0b3228a77208612401585a20a539a03fe17e8058508"
+      },
+      {
+        "bundle_sha256": "b07eec9ea2c86a4d73493586f9e46c82e87c974eb21cf0021642b71e32259200",
+        "contributions": 2,
+        "seed_commitment": "bd140169bd842107e629bdff9b5377381647dbf5af2083f9f0c95b80e1826ebe"
+      },
+      {
+        "bundle_sha256": "daf1e421ad4a749ff606a9e6fb82e757fbd332dc66836c6b0a116d61173a06a7",
+        "contributions": 1,
+        "seed_commitment": "3a4463be8cab962f848c4ae45f2f2a04d0c6e488eaabd498cfcc1f2c077863f1"
+      }
+    ],
+    "alpha_micro": 50000,
+    "log_threshold_micro": 2995732,
+    "spec": "eagle-eye-eprocess/1.0",
+    "streams": {
+      "strm-ab9b8a35dcce4063": {
+        "challenger_config": {
+          "base.candidate": "set_mt",
+          "governor.shift_suspect_milli": 900,
+          "governor.widen_shift_milli": 1500,
+          "governor.widen_weak_milli": 1350,
+          "selector.k_max": 10,
+          "selector.min_score_milli": 4000,
+          "seq.decay_milli": 800
+        },
+        "champion_config": {
+          "base.candidate": "set_mt",
+          "governor.shift_suspect_milli": 800,
+          "governor.widen_shift_milli": 1500,
+          "governor.widen_weak_milli": 1350,
+          "selector.k_max": 10,
+          "selector.min_score_milli": 4000,
+          "seq.decay_milli": 800
+        },
+        "cumulative_log_e_micro": 1485001,
+        "diff": {
+          "governor.shift_suspect_milli": 900
+        },
+        "history": [
+          {
+            "cumulative_log_e_micro": 1386799,
+            "duplicate_looks_excluded": 2,
+            "lineage_row_hash": "dcab7d62234aca86895de8c2f020f025284e3a51489959357d52db115faa4bdb",
+            "log_e_micro": 1386799,
+            "losses": 2,
+            "seed_commitment": "bd140169bd842107e629bdff9b5377381647dbf5af2083f9f0c95b80e1826ebe",
+            "ties": 122,
+            "wins": 8
+          },
+          {
+            "cumulative_log_e_micro": 1485001,
+            "duplicate_looks_excluded": 2,
+            "lineage_row_hash": "9d1acccbfabc8932bd6a812a7023d46edf99e09540af7ca1f78fe0bec460e6d6",
+            "log_e_micro": 98202,
+            "losses": 4,
+            "seed_commitment": "3a4463be8cab962f848c4ae45f2f2a04d0c6e488eaabd498cfcc1f2c077863f1",
+            "ties": 120,
+            "wins": 8
+          }
+        ],
+        "runs_contributing": 2,
+        "stream_id": "strm-ab9b8a35dcce4063"
+      },
+      "strm-f7a3bf495b7cc609": {
+        "challenger_config": {
+          "base.candidate": "set_mt",
+          "governor.shift_suspect_milli": 800,
+          "governor.widen_shift_milli": 1500,
+          "governor.widen_weak_milli": 1350,
+          "selector.k_max": 12,
+          "selector.min_score_milli": 4000,
+          "seq.decay_milli": 800
+        },
+        "champion_config": {
+          "base.candidate": "set_mt",
+          "governor.shift_suspect_milli": 800,
+          "governor.widen_shift_milli": 1500,
+          "governor.widen_weak_milli": 1350,
+          "selector.k_max": 10,
+          "selector.min_score_milli": 4000,
+          "seq.decay_milli": 800
+        },
+        "cumulative_log_e_micro": -560019,
+        "diff": {
+          "selector.k_max": 12
+        },
+        "history": [
+          {
+            "cumulative_log_e_micro": -560019,
+            "duplicate_looks_excluded": 1,
+            "lineage_row_hash": "e9f0a0048521cfa56bdb27fb9d79015610232848c279c0435c987092a94392c0",
+            "log_e_micro": -560019,
+            "losses": 32,
+            "seed_commitment": "bd140169bd842107e629bdff9b5377381647dbf5af2083f9f0c95b80e1826ebe",
+            "ties": 57,
+            "wins": 43
+          }
+        ],
+        "runs_contributing": 1,
+        "stream_id": "strm-f7a3bf495b7cc609"
+      }
+    }
+  },
+  "ledger_state_sha256": "069730df70cfea241e2cd73941fe4d066b5c32534cca70924c314f4053ca9f6a",
+  "log_threshold_micro": 2995732,
+  "receipt_id": "recur-d32bf0be3fc5",
+  "rounds": [
+    {
+      "admission_row_hash": "9171ce95933fa14a625acd74e728c88d358cca57edfc21a5a7b1ac743fcb6294",
+      "bundle_sha256": "87cac482b57dff9ca68dd14812d7cef3b95475646cea4fa8d367e994eee5d572",
+      "contributions": [],
+      "feedback_state_sha256_after": "890c6bd5fc23eb5216f71076d87fd88a18c6a5d498a7ad4ab87166a057d16f16",
+      "feedback_state_sha256_before": "d7603fb0b1fcbb1323206afcf4248eb7c3fb514146ea2b425c68c8ff1cef51f4",
+      "kind": "recursive_round",
+      "ledger_state_sha256": "d725214a8ddbbea8276cd5fd02574c28eec289180ce74dd9901605bd1ce8491f",
+      "live_seed": 7101,
+      "looks_contributing": 0,
+      "looks_seen": 0,
+      "replay_passed": true,
+      "replay_report": {
+        "decisions_mismatched": 0,
+        "returncode": 0,
+        "stdout_sha256": "09e80481bb4fc4e5b74459a91054bd82d8fa3a2de840b5297e1f27c277a079b7",
+        "tail": [
+          "DECISIONS_RECOMPUTED=0 MISMATCHED=0",
+          "REPLAY_RESULT=VACUOUS_INTEGRITY_ONLY (zero sealed looks spent; this is NOT full-decision replay)",
+          "REPLAY_PASS"
+        ]
+      },
+      "round": 1,
+      "run_exit_code": 0,
+      "spec": "eagle-eye-recursive-evolution/1.0",
+      "status": "ADMITTED"
+    },
+    {
+      "admission_row_hash": "d4a60609e5ebd83171224c20c3f1e22db83db3288a6b51e97a413ded71be4446",
+      "bundle_sha256": "b07eec9ea2c86a4d73493586f9e46c82e87c974eb21cf0021642b71e32259200",
+      "contributions": [
+        {
+          "cumulative_log_e_micro": 1386799,
+          "log_e_micro": 1386799,
+          "losses": 2,
+          "stream_id": "strm-ab9b8a35dcce4063",
+          "ties": 122,
+          "wins": 8
+        },
+        {
+          "cumulative_log_e_micro": -560019,
+          "log_e_micro": -560019,
+          "losses": 32,
+          "stream_id": "strm-f7a3bf495b7cc609",
+          "ties": 57,
+          "wins": 43
+        }
+      ],
+      "feedback_state_sha256_after": "868048aae9f58f84a4ae0aba70f94ab691487d804e8d4a4ce02dbaabe800ea1a",
+      "feedback_state_sha256_before": "890c6bd5fc23eb5216f71076d87fd88a18c6a5d498a7ad4ab87166a057d16f16",
+      "kind": "recursive_round",
+      "ledger_state_sha256": "7c2c7e72380d230209e03e2522e3bfe67ae89e8f2130f30eb37c5cbbec141e71",
+      "live_seed": 7102,
+      "looks_contributing": 2,
+      "looks_seen": 5,
+      "replay_passed": true,
+      "replay_report": {
+        "decisions_mismatched": 0,
+        "returncode": 0,
+        "stdout_sha256": "3d269a4c9da74905eb46e849bca8c7a7fa3cf7d005fe028e0466515e0b6385d2",
+        "tail": [
+          "DECISIONS_RECOMPUTED=5 MISMATCHED=0",
+          "REPLAY_RESULT=PASS_FULL_DECISION",
+          "REPLAY_PASS"
+        ]
+      },
+      "round": 2,
+      "run_exit_code": 0,
+      "spec": "eagle-eye-recursive-evolution/1.0",
+      "status": "ADMITTED"
+    },
+    {
+      "admission_row_hash": "f14d8024dfaf28e839c19594f359a2cbaedefda8452a25f34e509e9b23968ff8",
+      "bundle_sha256": "daf1e421ad4a749ff606a9e6fb82e757fbd332dc66836c6b0a116d61173a06a7",
+      "contributions": [
+        {
+          "cumulative_log_e_micro": 1485001,
+          "log_e_micro": 98202,
+          "losses": 4,
+          "stream_id": "strm-ab9b8a35dcce4063",
+          "ties": 120,
+          "wins": 8
+        }
+      ],
+      "feedback_state_sha256_after": "ee7292671e8c054a2eb201e983128f5d8d68e9bec74b85057b3b9faf7f5903aa",
+      "feedback_state_sha256_before": "868048aae9f58f84a4ae0aba70f94ab691487d804e8d4a4ce02dbaabe800ea1a",
+      "kind": "recursive_round",
+      "ledger_state_sha256": "069730df70cfea241e2cd73941fe4d066b5c32534cca70924c314f4053ca9f6a",
+      "live_seed": 7103,
+      "looks_contributing": 1,
+      "looks_seen": 3,
+      "replay_passed": true,
+      "replay_report": {
+        "decisions_mismatched": 0,
+        "returncode": 0,
+        "stdout_sha256": "0961821411a2d1598409af0982df3e66312b2a60d438987d3a7c8609b7c0527b",
+        "tail": [
+          "DECISIONS_RECOMPUTED=3 MISMATCHED=0",
+          "REPLAY_RESULT=PASS_FULL_DECISION",
+          "REPLAY_PASS"
+        ]
+      },
+      "round": 3,
+      "run_exit_code": 0,
+      "spec": "eagle-eye-recursive-evolution/1.0",
+      "status": "ADMITTED"
+    }
+  ],
+  "rounds_attempted": 3,
+  "rounds_completed": 3,
+  "spec": "eagle-eye-recursive-evolution/1.0",
+  "standing_top": [
+    {
+      "crossed": false,
+      "cumulative_log_e_micro": 1485001,
+      "diff": {
+        "governor.shift_suspect_milli": 900
+      },
+      "runs_contributing": 2,
+      "stream_id": "strm-ab9b8a35dcce4063"
+    },
+    {
+      "crossed": false,
+      "cumulative_log_e_micro": -560019,
+      "diff": {
+        "selector.k_max": 12
+      },
+      "runs_contributing": 1,
+      "stream_id": "strm-f7a3bf495b7cc609"
+    }
+  ]
+}

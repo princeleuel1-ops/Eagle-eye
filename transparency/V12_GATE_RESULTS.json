@@ -1,0 +1,311 @@
+{
+  "all_exit_codes_zero": true,
+  "completeness_guard": "PASS requires every required gate present with exit 0; skipped mechanisms can never PASS",
+  "elapsed_s": 1280.1,
+  "gates_missing": [],
+  "gates_ran": [
+    "battery-fixture",
+    "benchmark-court",
+    "browser",
+    "custody-rehearsal",
+    "dependency-lock",
+    "dom-contract",
+    "execution-rehearsal",
+    "failure-court",
+    "fixture",
+    "full-decision-replay",
+    "governance",
+    "independent-generator",
+    "live-shadow-rehearsal",
+    "mutation-battery",
+    "package-verify",
+    "parameter-shift",
+    "pilot-browser",
+    "pilot-performance",
+    "pilot-smoke",
+    "pip-check",
+    "power-analysis",
+    "prediction-court",
+    "preflight",
+    "recursive-evolution",
+    "sealed-evolution",
+    "semantic-check",
+    "strangers-verifier",
+    "tests",
+    "verify-node",
+    "verify-python",
+    "w-transfer",
+    "w-transfer-baseline",
+    "w-transfer-replay"
+  ],
+  "gates_required": [
+    "battery-fixture",
+    "benchmark-court",
+    "browser",
+    "custody-rehearsal",
+    "dependency-lock",
+    "dom-contract",
+    "execution-rehearsal",
+    "failure-court",
+    "fixture",
+    "full-decision-replay",
+    "governance",
+    "independent-generator",
+    "live-shadow-rehearsal",
+    "mutation-battery",
+    "package-verify",
+    "parameter-shift",
+    "pilot-browser",
+    "pilot-performance",
+    "pilot-smoke",
+    "pip-check",
+    "power-analysis",
+    "prediction-court",
+    "preflight",
+    "recursive-evolution",
+    "sealed-evolution",
+    "semantic-check",
+    "strangers-verifier",
+    "tests",
+    "verify-node",
+    "verify-python",
+    "w-transfer",
+    "w-transfer-baseline",
+    "w-transfer-replay"
+  ],
+  "pass": true,
+  "rows": [
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/preflight.py --strict",
+      "elapsed_s": 0.0,
+      "exit_code": 0,
+      "gate": "preflight",
+      "tail": "PREFLIGHT python=3.11.15 in_venv=True project_venv=True\nPREFLIGHT=OK"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python -c import sys; sys.path.insert(0,'src'); from pathlib import Path; from eagle_eye.provenance import verify_dependency_lock; r = verify_dependency_lock(Path('.')); print(r['lock_sha256']); sys.exit(0 if r['all_match'] else 1)",
+      "elapsed_s": 0.1,
+      "exit_code": 0,
+      "gate": "dependency-lock",
+      "tail": "1d0a122fcd52652693aff3bd3d3098ea7d0e6167f6dac13d52027da6c2085223"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python -m pip check",
+      "elapsed_s": 0.2,
+      "exit_code": 0,
+      "gate": "pip-check",
+      "tail": "No broken requirements found."
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python -m pytest -q",
+      "elapsed_s": 663.7,
+      "exit_code": 0,
+      "gate": "tests",
+      "tail": "........................................................................ [ 51%]\n........................................................................ [ 68%]\n........................................................................ [ 85%]\n...............................................................          [100%]"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_prediction_court.py",
+      "elapsed_s": 10.4,
+      "exit_code": 0,
+      "gate": "prediction-court",
+      "tail": "DECISION seq_prefix_overfit=reject reasons=permutation_within_tolerance,out_of_support_refused\nBENEFICIAL_CANDIDATE_PROMOTED=true\nATTRACTIVE_REGRESSION_REJECTED=true\nPREDICTION_COURT_RECEIPT_ID=pcourt-4d7582de3391"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_fixture.py",
+      "elapsed_s": 0.2,
+      "exit_code": 0,
+      "gate": "fixture",
+      "tail": "RECOMMENDED_INTERVENTION=activate_alternate\nSIGNER_KEY_ID=ed25519:4428413bbcc3dfe2c913a35886b44f50614c643eea34b0cfe02b7a0c80034452\nSIGNER=ephemeral_demo_ed25519_not_production_kms\nEVIDENCE_ROOM=/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/artifacts/runs/latest/evidence-room.zip"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/verify_evidence_room.py artifacts/runs/latest/evidence-room.zip artifacts/runs/latest/trust-registry.json tenant-demo",
+      "elapsed_s": 0.1,
+      "exit_code": 0,
+      "gate": "verify-python",
+      "tail": "POLICY_VERIFIED=true\nPOLICY_BUNDLE_VERIFIED=true\nPOSTERIOR_VERIFIED=true\nEVIDENCE_ROOM_VERIFIED=true"
+    },
+    {
+      "command": "node verifier/verify.mjs artifacts/runs/latest/evidence-room.zip --trust-registry artifacts/runs/latest/trust-registry.json --expected-tenant ...",
+      "elapsed_s": 0.0,
+      "exit_code": 0,
+      "gate": "verify-node",
+      "tail": "{\"verified\":true,\"hashes_verified\":true,\"manifest_coherent\":true,\"signature_verified\":true,\"signer_trusted\":true,\"tenant_verified\":true,\"audit_verified\":true,\"identity_verified\":true,\"policy_verified\":true,\"policy_bundle_verified\":true,\"posterior_verified\":true,\"posterior_error\":null,\"tenant_id\":\"tenant-demo\",\"signer_key_id\":\"ed25519:4428413bbcc3dfe2c913a35886b44f50614c643eea34b0cfe02b7a0c80034452\",\"run_id\":\"run-fd0b0cfab41b\"}\nNODE_EVIDENCE_ROOM_VERIFIED=true"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_governance_fixture.py",
+      "elapsed_s": 0.0,
+      "exit_code": 0,
+      "gate": "governance",
+      "tail": "SHADOW_ONLY=true\nACTION_STATUS=approved_shadow\nAPPROVAL_RECEIPT_ID=approval-4fd80df76cd1\nGOVERNANCE_AUDIT_HEAD=b07b6cecd5707e87153b71ec5cc4c5b0dc3f2daaa6ae76a6389bfdee14baa8f8"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_benchmark_court.py",
+      "elapsed_s": 0.0,
+      "exit_code": 0,
+      "gate": "benchmark-court",
+      "tail": "HOLDOUT_SHA256=24848747060073ab1128c742f0bbb66a7257ef397cc6fc10a8b53bd9ce0ef07c\nBENEFICIAL_MUTATION_PROMOTED=true\nHARMFUL_MUTATION_REJECTED=true\nCOURT_RECEIPT_ID=court-05be9d298e39"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_sealed_evolution.py 550",
+      "elapsed_s": 17.5,
+      "exit_code": 0,
+      "gate": "sealed-evolution",
+      "tail": "NO_CHALLENGER_EARNED_PROMOTION\nRECURSIVE_REJECTION_PROVEN=true\nRECURSIVE_PROMOTION_PROVEN=false\nSEALED_EVOLUTION_PASS=true"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/replay_sealed_evolution.py artifacts/evolution/latest/REPLAY_BUNDLE.json",
+      "elapsed_s": 14.9,
+      "exit_code": 0,
+      "gate": "full-decision-replay",
+      "tail": "EVALUATOR_LINEAGE_MAPPING_1TO1=PASS\nDECISIONS_RECOMPUTED=0 MISMATCHED=0\nREPLAY_RESULT=VACUOUS_INTEGRITY_ONLY (zero sealed looks spent; this is NOT full-decision replay)\nREPLAY_PASS"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_w_transfer_baseline.py",
+      "elapsed_s": 25.5,
+      "exit_code": 0,
+      "gate": "w-transfer-baseline",
+      "tail": "RECURSIVE_PROMOTION_PROVEN=true\nSEALED_EVOLUTION_PASS=true\nW_TRANSFER_BASELINE_FIXTURE=true\nW_TRANSFER_BASELINE_BUNDLE=/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/artifacts/transfer/baseline/REPLAY_BUNDLE.json"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_w_transfer.py --champion-bundle artifacts/transfer/baseline/REPLAY_BUNDLE.json",
+      "elapsed_s": 25.0,
+      "exit_code": 0,
+      "gate": "w-transfer",
+      "tail": "STREAMS=6\nHISTORY_ROWS=12\nNO_ALIEN_TRANSFER_EVIDENCE_EARNED\nW_TRANSFER_PASS=true"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/replay_w_transfer.py artifacts/transfer/latest/W_TRANSFER_BUNDLE.json artifacts/transfer/latest/W_TRANSFER_RECEIPT.json",
+      "elapsed_s": 25.1,
+      "exit_code": 0,
+      "gate": "w-transfer-replay",
+      "tail": "UNITS_REGENERATED=12/12\nSTREAMS=6\nRECEIPT_ID=wtr-3d138749285d\nW_TRANSFER_REPLAY=PASS_COMPLETE"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_recursive_evolution.py --rounds 3",
+      "elapsed_s": 194.8,
+      "exit_code": 0,
+      "gate": "recursive-evolution",
+      "tail": "CHAINS_VERIFIED=true\nFEEDBACK_STATE_FINAL_SHA256=ee7292671e8c054a2eb201e983128f5d8d68e9bec74b85057b3b9faf7f5903aa\nRECEIPT_ID=recur-d32bf0be3fc5\nRECURSIVE_EVOLUTION_PASS=true"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_strangers_court.py",
+      "elapsed_s": 1.6,
+      "exit_code": 0,
+      "gate": "strangers-verifier",
+      "tail": "OK   court:heads_tampered\nCOURT_CASES=15/15\nVERIFIER_SHA256=ad71ee889b47892556ca12fd677c0b757000804a4f02b5b32401c08febe85553\nSTRANGERS_COURT_PASS=true"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_live_shadow_rehearsal.py",
+      "elapsed_s": 0.1,
+      "exit_code": 0,
+      "gate": "live-shadow-rehearsal",
+      "tail": "{\"digest\": \"8e0034a2aa5710b38ed92bf5ff7add8b555242d669e295858f0a3c9e48c8ff89\", \"late\": false, \"level\": \"INFO\", \"logger\": \"pilot.ingest\", \"message\": \"ingest accepted\", \"source_id\": \"live-syn-1\", \"tenant_id\": \"tenant-fixture-live-rehearsal\", \"ts\": 1784431913.941}\n{\"digest\": \"a32aa13d223f82ec392448c0027848a0453c598c1b702cf6d2762bc00b2452e3\", \"late\": false, \"level\": \"INFO\", \"logger\": \"pilot.ingest\", \"message\": \"ingest accepted\", \"source_id\": \"live-syn-1\", \"tenant_id\": \"tenant-fixture-live-rehearsal\", \"ts\": 1784431913.942}\n{\"digest\": \"4ca51fec8f1e77affb63cba5f30a8fc0c71af5170c9a6ff6dd92ca07ec2c7375\", \"late\": false, \"level\": \"INFO\", \"logger\": \"pilot.ingest\", \"message\": \"ingest accepted\", \"source_id\": \"live-syn-1\", \"tenant_id\": \"tenant-fixture-live-rehearsal\", \"ts\": 1784431913.943}\n{\"digest\": \"c37f3b0255f2111804e4d86e7836e92f955935ec35c2bfaa9963a98deafd4650\", \"late\": false, \"level\": \"INFO\", \"logger\": \"pilot.ingest\", \"message\": \"ingest accepted\", \"source_id\": \"live-syn-1\", \"tenant_id\": \"tenant-fixture-live-rehearsal\", \"ts\": 1784431913.944}"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_custody_rehearsal.py",
+      "elapsed_s": 0.1,
+      "exit_code": 0,
+      "gate": "custody-rehearsal",
+      "tail": "REHEARSAL_STAGES=11/11\nPRODUCTION_CUSTODY_REACHABLE=false\nRECEIPT_ID=cust-6d931ec7946a\nCUSTODY_REHEARSAL_PASS=true"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_execution_rehearsal.py",
+      "elapsed_s": 0.1,
+      "exit_code": 0,
+      "gate": "execution-rehearsal",
+      "tail": "REHEARSAL_STAGES=11/11\nPRODUCTION_EXECUTION_REACHABLE=false\nRECEIPT_ID=exec-64046cc6a289\nEXECUTION_REHEARSAL_PASS=true"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python -c import sys; sys.path.insert(0,'src'); import importlib.util; from pathlib import Path; spec = importlib.util.spec_from_file_location('rse','scripts/run_sealed_evolution.py'); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); sys.exit(m.main(live_seed=550, evaluator_secret='fx2', out_dir=Path('artifacts/evolution/battery-fixture'), suite_scale=1))",
+      "elapsed_s": 18.5,
+      "exit_code": 0,
+      "gate": "battery-fixture",
+      "tail": "NO_CHALLENGER_EARNED_PROMOTION\nRECURSIVE_REJECTION_PROVEN=true\nRECURSIVE_PROMOTION_PROVEN=false\nSEALED_EVOLUTION_PASS=true"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/replay_mutation_battery.py artifacts/evolution/battery-fixture/REPLAY_BUNDLE.json artifacts/evolution/battery-fixture/MUTATION_BATTERY_RESULTS.json",
+      "elapsed_s": 162.4,
+      "exit_code": 0,
+      "gate": "mutation-battery",
+      "tail": "MUTANT aggregate_metrics: exit=1 caught_by=CHAIN_EVALUATOR_PY OK\nMUTANT final_audit_values: exit=1 caught_by=CHAIN_EVALUATOR_PY OK\nMUTATIONS_DETECTED=19/19\nMUTATION_BATTERY_PASS"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/power_analysis.py",
+      "elapsed_s": 6.7,
+      "exit_code": 0,
+      "gate": "power-analysis",
+      "tail": "SCALE_1: n=44 blocks=1 type1_iid=0.0050 type1_block=None power@-0.02=0.898 power@-0.05=1.000 (mode=iid_bootstrap)\nSCALE_3: n=132 blocks=3 type1_iid=0.0033 type1_block=0.0 power@-0.02=0.963 power@-0.05=1.000 (mode=block_bootstrap)\nPOWER_ANALYSIS_PASS"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_parameter_shift_eval.py",
+      "elapsed_s": 18.4,
+      "exit_code": 0,
+      "gate": "parameter-shift",
+      "tail": "FINDING_NLL_TRANSFER_IMPROVES=True\nFINDING_CRPS_TRANSFER_IMPROVES=False\nNLL_DIFF_CI95=[-0.20156, -0.072596] CRPS_DIFF_CI95=[-0.003598, 0.031257] COVERAGE=0.826\nPARAMETER_SHIFT_PASS"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/run_independent_generator_eval.py",
+      "elapsed_s": 12.0,
+      "exit_code": 0,
+      "gate": "independent-generator",
+      "tail": "PROTOCOL_COVERAGE_IN_BAND=True\nFINDING_NLL_ADVANTAGE_ESTABLISHED=False\nFINDING_CRPS_ADVANTAGE_ESTABLISHED=False\nINDEPENDENT_GENERATOR_PASS"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/semantic_check.py",
+      "elapsed_s": 0.0,
+      "exit_code": 0,
+      "gate": "semantic-check",
+      "tail": "HAS_VOI_DISPLAY=true\nHAS_HONEST_EVOLUTION_CLAIM=true\nHAS_EXTERNAL_ACTION_FALSE=true\nDIGITAL_TWIN_SEMANTIC_PASS"
+    },
+    {
+      "command": "node verifier/dom_contract_test.mjs",
+      "elapsed_s": 0.1,
+      "exit_code": 0,
+      "gate": "dom-contract",
+      "tail": "DEGRADED_NO_JS_ERRORS=PASS\nDEGRADED_RENDERS_FALLBACKS=PASS\nDEGRADED_NOT_UNAVAILABLE=PASS\nDOM_CONTRACT_PASS"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/browser_verification.py",
+      "elapsed_s": 6.1,
+      "exit_code": 0,
+      "gate": "browser",
+      "tail": "NO_MOBILE_HORIZONTAL_OVERFLOW=PASS\nZERO_JS_ERRORS=PASS\nZERO_FAILED_REQUESTS=PASS\nBROWSER_VERIFICATION_PASS"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/pilot_smoke.py",
+      "elapsed_s": 20.6,
+      "exit_code": 0,
+      "gate": "pilot-smoke",
+      "tail": "PASS  metrics: labeled local telemetry with request timings  \n{\"down\": true, \"stopped\": [{\"cockpit\": 4429}, {\"evaluator\": 4428}]}\nPILOT_SMOKE_PASS\n{\"cockpit_pid\": 4429, \"evaluator_pid\": 4428, \"level\": \"INFO\", \"logger\": \"pilot.ops\", \"message\": \"pilot up\", \"port\": 8899, \"ready\": true, \"ts\": 1784432138.801}"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/failure_court.py",
+      "elapsed_s": 28.3,
+      "exit_code": 0,
+      "gate": "failure-court",
+      "tail": "PASS  [pytest] expired approval\nPASS  [pytest] transition skipping\nFAILURE_COURT_PASS (39/39)\n{\"cockpit_pid\": 4457, \"evaluator_pid\": 4456, \"level\": \"INFO\", \"logger\": \"pilot.ops\", \"message\": \"pilot up\", \"port\": 8907, \"ready\": true, \"ts\": 1784432159.411}"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/pilot_browser_verification.py",
+      "elapsed_s": 26.1,
+      "exit_code": 0,
+      "gate": "pilot-browser",
+      "tail": "ZERO_UNEXPECTED_FAILED_REQUESTS=PASS\nONLY_EXPECTED_REFUSALS_ARE_4XX=PASS\nPILOT_BROWSER_VERIFICATION_PASS\n{\"cockpit_pid\": 4527, \"evaluator_pid\": 4526, \"level\": \"INFO\", \"logger\": \"pilot.ops\", \"message\": \"pilot up\", \"port\": 8765, \"ready\": true, \"ts\": 1784432187.753}"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/pilot_performance.py",
+      "elapsed_s": 1.4,
+      "exit_code": 0,
+      "gate": "pilot-performance",
+      "tail": "{\"from_state\": \"APPROVED_SHADOW\", \"level\": \"INFO\", \"logger\": \"pilot.shadow\", \"message\": \"shadow transition\", \"request_id\": \"request-48dbda1129ae\", \"tenant_id\": \"tenant-fixture-a\", \"to_state\": \"SHADOW_DISPATCHED\", \"ts\": 1784432214.627}\n{\"from_state\": \"SHADOW_DISPATCHED\", \"level\": \"INFO\", \"logger\": \"pilot.shadow\", \"message\": \"shadow transition\", \"request_id\": \"request-48dbda1129ae\", \"tenant_id\": \"tenant-fixture-a\", \"to_state\": \"OUTCOME_PENDING\", \"ts\": 1784432214.627}\n{\"from_state\": \"OUTCOME_PENDING\", \"level\": \"INFO\", \"logger\": \"pilot.shadow\", \"message\": \"shadow transition\", \"request_id\": \"request-48dbda1129ae\", \"tenant_id\": \"tenant-fixture-a\", \"to_state\": \"OUTCOME_RECORDED\", \"ts\": 1784432214.628}\n{\"from_state\": \"OUTCOME_RECORDED\", \"level\": \"INFO\", \"logger\": \"pilot.shadow\", \"message\": \"shadow transition\", \"request_id\": \"request-48dbda1129ae\", \"tenant_id\": \"tenant-fixture-a\", \"to_state\": \"REPLAY_VERIFIED\", \"ts\": 1784432214.652}"
+    },
+    {
+      "command": "/agent/workspace/v8_verification/extract/EAGLE_EYE_ZENITH_FABLE_HANDOFF_V8/.venv/bin/python scripts/verify_package.py --tree",
+      "elapsed_s": 0.2,
+      "exit_code": 0,
+      "gate": "package-verify",
+      "tail": "MISSING=0\nMISMATCHED=0\nPNG_ASSETS_MANIFESTED=113\nPACKAGE_VERIFY_PASS"
+    }
+  ],
+  "spec": "v8-canonical-gate/8.0"
+}

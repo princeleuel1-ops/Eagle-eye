@@ -1,0 +1,67 @@
+{
+  "elapsed_s": 0.01,
+  "external_action": false,
+  "network_used": false,
+  "passed": 11,
+  "production_execution_reachable_in_this_run": false,
+  "receipt_id": "exec-64046cc6a289",
+  "spec": "eagle-eye-execution-rehearsal/1.0",
+  "stages": [
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "unarmed_by_default"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "production_arming_needs_verified_custody"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "single_approver_unarmed"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "fixture_arming_armed"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "first_action_executes_with_full_proof_chain"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "license_single_use"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "tampered_license_refused"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "non_allowlisted_class_refused"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "reversal_binds_original"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "unarmed_probe"
+    },
+    {
+      "detail": "",
+      "ok": true,
+      "stage": "unarmed_execution_refused"
+    }
+  ],
+  "total": 11
+}

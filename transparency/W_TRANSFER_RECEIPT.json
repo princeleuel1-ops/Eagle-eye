@@ -1,0 +1,483 @@
+{
+  "alpha_total_micro": 50000,
+  "baseline_release": "no-prefix-conjugate/1.0",
+  "champion_bundle_sha256": "0c191b363ffe512aeb0fcccf308b5b1b908563ae362f26ba68e97c2d6d538181",
+  "champion_config_hash": "18170b5c396b4a0812ef07a91d5122ffd36a0fe6469526db38bf38e9bc0ef731",
+  "external_action": false,
+  "family_summaries": [
+    {
+      "all_scores_finite": true,
+      "baseline_abstentions_standard": 0,
+      "champion_abstentions_standard": 0,
+      "champion_coverage80_micro": 833333,
+      "champion_coverage_in_band": true,
+      "family_id": "original-fresh",
+      "family_release": "w-transfer-original-fresh/1.0",
+      "paired_case_count_total": 24,
+      "protocol_complete": true,
+      "seeds_evaluated": [
+        98101,
+        98102,
+        98103,
+        98104
+      ]
+    },
+    {
+      "all_scores_finite": true,
+      "baseline_abstentions_standard": 0,
+      "champion_abstentions_standard": 0,
+      "champion_coverage80_micro": 916666,
+      "champion_coverage_in_band": true,
+      "family_id": "independent-mixture",
+      "family_release": "w-transfer-independent-mixture/1.0",
+      "paired_case_count_total": 24,
+      "protocol_complete": true,
+      "seeds_evaluated": [
+        98101,
+        98102,
+        98103,
+        98104
+      ]
+    },
+    {
+      "all_scores_finite": true,
+      "baseline_abstentions_standard": 0,
+      "champion_abstentions_standard": 0,
+      "champion_coverage80_micro": 833333,
+      "champion_coverage_in_band": true,
+      "family_id": "anti-prior-metadata-shift",
+      "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+      "paired_case_count_total": 24,
+      "protocol_complete": true,
+      "seeds_evaluated": [
+        98101,
+        98102,
+        98103,
+        98104
+      ]
+    }
+  ],
+  "headline_claim_crossed": false,
+  "headline_claim_status": "NO_ALIEN_TRANSFER_EVIDENCE_EARNED",
+  "headline_stream_ids": [
+    "wstrm-38a1f7a8b50447f4",
+    "wstrm-a102dde610ef6acd"
+  ],
+  "history_head": "8e0b62136a3e3e520b6a8b6b752bf7c690001ff7dcf49fe7e189acb05efffb9f",
+  "history_row_count": 12,
+  "log_threshold_micro": 4787492,
+  "mechanism_checks": {
+    "baseline_abstentions_zero": true,
+    "champion_abstentions_zero": true,
+    "champion_bundle_replay_passed": true,
+    "champion_coverage_in_band_all_families": true,
+    "family_protocol_complete": true,
+    "history_chain_verified": true,
+    "history_rows_match_units": true,
+    "protocol_complete": true,
+    "scores_finite": true,
+    "target_plan_complete": true
+  },
+  "protocol_hash": "bfb026871c79f457ff0686ad1bc5698424016d1ad2c0486b46f98530d6e7ec13",
+  "receipt_id": "wtr-3d138749285d",
+  "spec": "w-transfer-receipt/1.0",
+  "standing": [
+    {
+      "crossed": false,
+      "cumulative_log_e_micro": 1824549,
+      "family_id": "anti-prior-metadata-shift",
+      "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+      "first_crossing_index": null,
+      "history": [
+        {
+          "admission_index": 1,
+          "case_count": 6,
+          "cluster_sum_micro": -292718,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 405465,
+          "family_id": "anti-prior-metadata-shift",
+          "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/anti-prior-metadata-shift-98101",
+          "sign": "win",
+          "world_seed": 98101
+        },
+        {
+          "admission_index": 2,
+          "case_count": 6,
+          "cluster_sum_micro": -24002,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 847298,
+          "family_id": "anti-prior-metadata-shift",
+          "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/anti-prior-metadata-shift-98102",
+          "sign": "win",
+          "world_seed": 98102
+        },
+        {
+          "admission_index": 3,
+          "case_count": 6,
+          "cluster_sum_micro": -399080,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 1321756,
+          "family_id": "anti-prior-metadata-shift",
+          "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/anti-prior-metadata-shift-98103",
+          "sign": "win",
+          "world_seed": 98103
+        },
+        {
+          "admission_index": 4,
+          "case_count": 6,
+          "cluster_sum_micro": -276954,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 1824549,
+          "family_id": "anti-prior-metadata-shift",
+          "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/anti-prior-metadata-shift-98104",
+          "sign": "win",
+          "world_seed": 98104
+        }
+      ],
+      "losses": 0,
+      "metric": "crps",
+      "stream_id": "wstrm-ab9bd0df5b7892a0",
+      "ties": 0,
+      "wins": 4
+    },
+    {
+      "crossed": false,
+      "cumulative_log_e_micro": 1824549,
+      "family_id": "anti-prior-metadata-shift",
+      "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+      "first_crossing_index": null,
+      "history": [
+        {
+          "admission_index": 1,
+          "case_count": 6,
+          "cluster_sum_micro": -1436170,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 405465,
+          "family_id": "anti-prior-metadata-shift",
+          "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/anti-prior-metadata-shift-98101",
+          "sign": "win",
+          "world_seed": 98101
+        },
+        {
+          "admission_index": 2,
+          "case_count": 6,
+          "cluster_sum_micro": -1081305,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 847298,
+          "family_id": "anti-prior-metadata-shift",
+          "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/anti-prior-metadata-shift-98102",
+          "sign": "win",
+          "world_seed": 98102
+        },
+        {
+          "admission_index": 3,
+          "case_count": 6,
+          "cluster_sum_micro": -1146176,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 1321756,
+          "family_id": "anti-prior-metadata-shift",
+          "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/anti-prior-metadata-shift-98103",
+          "sign": "win",
+          "world_seed": 98103
+        },
+        {
+          "admission_index": 4,
+          "case_count": 6,
+          "cluster_sum_micro": -1423116,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 1824549,
+          "family_id": "anti-prior-metadata-shift",
+          "family_release": "w-transfer-anti-prior-metadata-shift/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/anti-prior-metadata-shift-98104",
+          "sign": "win",
+          "world_seed": 98104
+        }
+      ],
+      "losses": 0,
+      "metric": "nll",
+      "stream_id": "wstrm-f4e10a93bcfbb87e",
+      "ties": 0,
+      "wins": 4
+    },
+    {
+      "crossed": false,
+      "cumulative_log_e_micro": -628609,
+      "family_id": "independent-mixture",
+      "family_release": "w-transfer-independent-mixture/1.0",
+      "first_crossing_index": null,
+      "history": [
+        {
+          "admission_index": 1,
+          "case_count": 6,
+          "cluster_sum_micro": -288122,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 405465,
+          "family_id": "independent-mixture",
+          "family_release": "w-transfer-independent-mixture/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/independent-mixture-98101",
+          "sign": "win",
+          "world_seed": 98101
+        },
+        {
+          "admission_index": 2,
+          "case_count": 6,
+          "cluster_sum_micro": 94000,
+          "crossed_after": false,
+          "cumulative_log_e_micro": -405465,
+          "family_id": "independent-mixture",
+          "family_release": "w-transfer-independent-mixture/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/independent-mixture-98102",
+          "sign": "loss",
+          "world_seed": 98102
+        },
+        {
+          "admission_index": 3,
+          "case_count": 6,
+          "cluster_sum_micro": -417328,
+          "crossed_after": false,
+          "cumulative_log_e_micro": -87011,
+          "family_id": "independent-mixture",
+          "family_release": "w-transfer-independent-mixture/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/independent-mixture-98103",
+          "sign": "win",
+          "world_seed": 98103
+        },
+        {
+          "admission_index": 4,
+          "case_count": 6,
+          "cluster_sum_micro": 712011,
+          "crossed_after": false,
+          "cumulative_log_e_micro": -628609,
+          "family_id": "independent-mixture",
+          "family_release": "w-transfer-independent-mixture/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/independent-mixture-98104",
+          "sign": "loss",
+          "world_seed": 98104
+        }
+      ],
+      "losses": 2,
+      "metric": "crps",
+      "stream_id": "wstrm-a102dde610ef6acd",
+      "ties": 0,
+      "wins": 2
+    },
+    {
+      "crossed": false,
+      "cumulative_log_e_micro": 262364,
+      "family_id": "independent-mixture",
+      "family_release": "w-transfer-independent-mixture/1.0",
+      "first_crossing_index": null,
+      "history": [
+        {
+          "admission_index": 1,
+          "case_count": 6,
+          "cluster_sum_micro": -965872,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 405465,
+          "family_id": "independent-mixture",
+          "family_release": "w-transfer-independent-mixture/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/independent-mixture-98101",
+          "sign": "win",
+          "world_seed": 98101
+        },
+        {
+          "admission_index": 2,
+          "case_count": 6,
+          "cluster_sum_micro": -252531,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 847298,
+          "family_id": "independent-mixture",
+          "family_release": "w-transfer-independent-mixture/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/independent-mixture-98102",
+          "sign": "win",
+          "world_seed": 98102
+        },
+        {
+          "admission_index": 3,
+          "case_count": 6,
+          "cluster_sum_micro": -1097305,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 1321756,
+          "family_id": "independent-mixture",
+          "family_release": "w-transfer-independent-mixture/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/independent-mixture-98103",
+          "sign": "win",
+          "world_seed": 98103
+        },
+        {
+          "admission_index": 4,
+          "case_count": 6,
+          "cluster_sum_micro": 1565274,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 262364,
+          "family_id": "independent-mixture",
+          "family_release": "w-transfer-independent-mixture/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/independent-mixture-98104",
+          "sign": "loss",
+          "world_seed": 98104
+        }
+      ],
+      "losses": 1,
+      "metric": "nll",
+      "stream_id": "wstrm-38a1f7a8b50447f4",
+      "ties": 0,
+      "wins": 3
+    },
+    {
+      "crossed": false,
+      "cumulative_log_e_micro": 1824549,
+      "family_id": "original-fresh",
+      "family_release": "w-transfer-original-fresh/1.0",
+      "first_crossing_index": null,
+      "history": [
+        {
+          "admission_index": 1,
+          "case_count": 6,
+          "cluster_sum_micro": -292718,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 405465,
+          "family_id": "original-fresh",
+          "family_release": "w-transfer-original-fresh/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/original-fresh-98101",
+          "sign": "win",
+          "world_seed": 98101
+        },
+        {
+          "admission_index": 2,
+          "case_count": 6,
+          "cluster_sum_micro": -15304,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 847298,
+          "family_id": "original-fresh",
+          "family_release": "w-transfer-original-fresh/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/original-fresh-98102",
+          "sign": "win",
+          "world_seed": 98102
+        },
+        {
+          "admission_index": 3,
+          "case_count": 6,
+          "cluster_sum_micro": -484709,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 1321756,
+          "family_id": "original-fresh",
+          "family_release": "w-transfer-original-fresh/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/original-fresh-98103",
+          "sign": "win",
+          "world_seed": 98103
+        },
+        {
+          "admission_index": 4,
+          "case_count": 6,
+          "cluster_sum_micro": -278737,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 1824549,
+          "family_id": "original-fresh",
+          "family_release": "w-transfer-original-fresh/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/original-fresh-98104",
+          "sign": "win",
+          "world_seed": 98104
+        }
+      ],
+      "losses": 0,
+      "metric": "crps",
+      "stream_id": "wstrm-e8aecfbe547868cf",
+      "ties": 0,
+      "wins": 4
+    },
+    {
+      "crossed": false,
+      "cumulative_log_e_micro": 1824549,
+      "family_id": "original-fresh",
+      "family_release": "w-transfer-original-fresh/1.0",
+      "first_crossing_index": null,
+      "history": [
+        {
+          "admission_index": 1,
+          "case_count": 6,
+          "cluster_sum_micro": -1436170,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 405465,
+          "family_id": "original-fresh",
+          "family_release": "w-transfer-original-fresh/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/original-fresh-98101",
+          "sign": "win",
+          "world_seed": 98101
+        },
+        {
+          "admission_index": 2,
+          "case_count": 6,
+          "cluster_sum_micro": -1073442,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 847298,
+          "family_id": "original-fresh",
+          "family_release": "w-transfer-original-fresh/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/original-fresh-98102",
+          "sign": "win",
+          "world_seed": 98102
+        },
+        {
+          "admission_index": 3,
+          "case_count": 6,
+          "cluster_sum_micro": -1535109,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 1321756,
+          "family_id": "original-fresh",
+          "family_release": "w-transfer-original-fresh/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/original-fresh-98103",
+          "sign": "win",
+          "world_seed": 98103
+        },
+        {
+          "admission_index": 4,
+          "case_count": 6,
+          "cluster_sum_micro": -1432980,
+          "crossed_after": false,
+          "cumulative_log_e_micro": 1824549,
+          "family_id": "original-fresh",
+          "family_release": "w-transfer-original-fresh/1.0",
+          "paired_case_count": 6,
+          "registry_release": "prior-registry/original-fresh-98104",
+          "sign": "win",
+          "world_seed": 98104
+        }
+      ],
+      "losses": 0,
+      "metric": "nll",
+      "stream_id": "wstrm-8204af2226a95fc8",
+      "ties": 0,
+      "wins": 4
+    }
+  ],
+  "stream_count": 6
+}
