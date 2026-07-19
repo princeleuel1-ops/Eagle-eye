@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eagle Eye Zenith · Pilot Operator</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230d1418'/%3E%3Ctext x='8' y='12' text-anchor='middle' font-size='10' fill='%2360d3a4' font-family='monospace'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/pilot.css">
+</head>
+<body class="pilot">
+<header>
+  <div class="brand"><span class="mark">EE</span><div><b>EAGLE EYE</b><small>PILOT OPERATOR</small></div></div>
+  <div class="mode" id="mode-banner">FIXTURE · LOCAL PILOT REFERENCE</div>
+  <div id="ext-exec">EXTERNAL EXECUTION: <strong>checking…</strong></div>
+</header>
+
+<main class="pilot-main">
+  <!-- global degraded / identity banner -->
+  <div id="banner" class="banner" hidden></div>
+
+  <!-- operator identity strip -->
+  <section class="op-identity">
+    <span class="eyebrow">OPERATOR IDENTITY (local dev issuer · NOT PRODUCTION)</span>
+    <div class="identity-row">
+      <label>Requester <select id="as-analyst"></select></label>
+      <label>Approver <select id="as-approver"></select></label>
+      <button id="reset-identities" class="ghost">Re-mint sessions</button>
+      <span id="identity-note" class="muted"></span>
+    </div>
+  </section>
+
+  <!-- the loop, as numbered stages -->
+  <ol class="loop">
+    <li id="stage-ingest" class="stage">
+      <div class="stage-head"><span class="num">1</span><h2>Authorized ingest</h2>
+        <span class="state-chip" data-state>idle</span></div>
+      <div class="stage-body">
+        <p class="muted">Signed synthetic disruption signals from a registered source authority (fixture connector). Unsigned or unknown-source events are quarantined.</p>
+        <div class="controls">
+          <label>Count <input id="ingest-count" type="number" value="6" min="1" max="50"></label>
+          <button id="do-ingest" data-perm="operator">Ingest fixture batch</button>
+          <button id="view-quarantine" class="ghost">View quarantine</button>
+        </div>
+        <div id="ingest-result" class="result"></div>
+      </div>
+    </li>
+
+    <li id="stage-provenance" class="stage">
+      <div class="stage-head"><span class="num">2</span><h2>Normalized provenance</h2>
+        <span class="state-chip" data-state>idle</span></div>
+      <div class="stage-body">
+        <p class="muted">Raw → normalized trace with a recomputed content digest. Select a signal to inspect its provenance and bind it to a decision.</p>
+        <div id="evidence-list" class="evidence-list"><p class="empty">No evidence yet — run ingest.</p></div>
+        <div id="provenance-detail" class="result"></div>
+      </div>
+    </li>
+
+    <li id="stage-decision" class="stage">
+      <div class="stage-head"><span class="num">3</span><h2>Decision &amp; uncertainty</h2>
+        <span class="state-chip" data-state>idle</span></div>
+      <div class="stage-body">
+        <p class="muted">Fixture decision support over the bound evidence. Labeled synthetic — no live inference is claimed.</p>
+        <button id="do-decision" data-perm="analyst" disabled>Assess bound evidence</button>
+        <div id="decision-result" class="result"></div>
+      </div>
+    </li>
+
+    <li id="stage-request" class="stage">
+      <div class="stage-head"><span class="num">4</span><h2>Human request</h2>
+        <span class="state-chip" data-state>idle</span></div>
+      <div class="stage-body">
+        <p class="muted">The requester proposes a <em>bounded</em> action. Evidence is digest-frozen at request time.</p>
+        <button id="do-request" data-perm="analyst" disabled>Request bounded action</button>
+        <div id="request-result" class="result"></div>
+      </div>
+    </li>
+
+    <li id="stage-approval" class="stage">
+      <div class="stage-head"><span class="num">5</span><h2>Independent approval</h2>
+        <span class="state-chip" data-state>idle</span></div>
+      <div class="stage-body">
+        <p class="muted">A <em>different</em> identity approves. Self-approval is refused; approvals expire.</p>
+        <div class="controls">
+          <button id="do-approve" data-perm="approver" disabled>Approve (independent)</button>
+          <button id="do-reject" class="ghost" data-perm="approver" disabled>Reject</button>
+          <button id="try-self-approve" class="ghost" disabled>Try self-approval (must fail)</button>
+        </div>
+        <div id="approval-result" class="result"></div>
+      </div>
+    </li>
+
+    <li id="stage-shadow" class="stage">
+      <div class="stage-head"><span class="num">6</span><h2>Shadow execution</h2>
+        <span class="state-chip" data-state>idle</span></div>
+      <div class="stage-body">
+        <p class="muted">Dispatch is SHADOW only and idempotent. External execution stays fail-closed and is proven so in the dispatch receipt.</p>
+        <button id="do-dispatch" data-perm="analyst" disabled>Dispatch (shadow)</button>
+        <div id="shadow-lifecycle" class="lifecycle-strip"></div>
+        <div id="dispatch-result" class="result"></div>
+      </div>
+    </li>
+
+    <li id="stage-outcome" class="stage">
+      <div class="stage-head"><span class="num">7</span><h2>Outcome capture</h2>
+        <span class="state-chip" data-state>idle</span></div>
+      <div class="stage-body">
+        <p class="muted">Record the realized outcome with resolver identity; a decision-quality record is derived (labeled shadow calibration).</p>
+        <button id="do-outcome" data-perm="analyst" disabled>Record fixture outcome</button>
+        <div id="outcome-result" class="result"></div>
+      </div>
+    </li>
+
+    <li id="stage-replay" class="stage">
+      <div class="stage-head"><span class="num">8</span><h2>Replay</h2>
+        <span class="state-chip" data-state>idle</span></div>
+      <div class="stage-body">
+        <p class="muted">Independent recomputation of the whole trail: evidence binding, audit chain, transition legality, dual control, signatures, external-execution-false. Each is a SEPARATE proof chip.</p>
+        <button id="do-replay" data-perm="analyst" disabled>Replay decision</button>
+        <div id="replay-proof" class="chip-row wrap"></div>
+      </div>
+    </li>
+
+    <li id="stage-export" class="stage">
+      <div class="stage-head"><span class="num">9</span><h2>Exportable audit receipt</h2>
+        <span class="state-chip" data-state>idle</span></div>
+      <div class="stage-body">
+        <p class="muted">A self-contained, content-addressed evidence room: request, approval, dispatch, outcome, replay, bound evidence, the full audit chain, and the separately persisted head commitment.</p>
+        <button id="do-export" data-perm="operator" disabled>Export evidence room</button>
+        <div id="export-result" class="result"></div>
+      </div>
+    </li>
+  </ol>
+
+  <!-- dependency + evaluator health -->
+  <section class="health">
+    <span class="eyebrow">DEPENDENCY &amp; EVALUATOR HEALTH</span>
+    <div id="health-grid" class="chip-row wrap"></div>
+    <div id="evaluator-state" class="result"></div>
+  </section>
+
+  <footer class="pilot-footer">
+    <a href="/index.html">← Zenith command (verified-run view)</a>
+    <span id="walls-note" class="muted"></span>
+  </footer>
+</main>
+<script src="/pilot.js"></script>
+</body>
+</html>
