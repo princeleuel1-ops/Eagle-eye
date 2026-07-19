@@ -1,0 +1,89 @@
+{
+  "candidate": "overfit-fast-route-v9",
+  "latency_ms": 120,
+  "cost_usd": 0.02,
+  "development": [
+    {
+      "id": "d01",
+      "probability": 0.99
+    },
+    {
+      "id": "d02",
+      "probability": 0.01
+    },
+    {
+      "id": "d03",
+      "probability": 0.98
+    },
+    {
+      "id": "d04",
+      "probability": 0.02
+    },
+    {
+      "id": "d05",
+      "probability": 0.97
+    },
+    {
+      "id": "d06",
+      "probability": 0.03
+    },
+    {
+      "id": "d07",
+      "probability": 0.96
+    },
+    {
+      "id": "d08",
+      "probability": 0.04
+    },
+    {
+      "id": "d09",
+      "probability": 0.95
+    },
+    {
+      "id": "d10",
+      "probability": 0.05
+    }
+  ],
+  "holdout": [
+    {
+      "id": "h01",
+      "probability": 0.92
+    },
+    {
+      "id": "h02",
+      "probability": 0.08
+    },
+    {
+      "id": "h03",
+      "probability": 0.91
+    },
+    {
+      "id": "h04",
+      "probability": 0.12
+    },
+    {
+      "id": "h05",
+      "probability": 0.18
+    },
+    {
+      "id": "h06",
+      "probability": 0.83
+    },
+    {
+      "id": "h07",
+      "probability": 0.81
+    },
+    {
+      "id": "h08",
+      "probability": 0.14
+    },
+    {
+      "id": "h09",
+      "probability": 0.77
+    },
+    {
+      "id": "h10",
+      "probability": 0.74
+    }
+  ]
+}

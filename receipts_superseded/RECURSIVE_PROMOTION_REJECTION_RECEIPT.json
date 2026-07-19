@@ -1,0 +1,130 @@
+{
+  "baseline": "no_prefix",
+  "court_receipt_id": "pcourt-4d7582de3391",
+  "decisions": [
+    {
+      "candidate": "climatology",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": false,
+        "permutation_within_tolerance": true,
+        "proper_scoring_improved": false,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [
+        "proper_scoring_improved",
+        "out_of_support_refused"
+      ],
+      "status": "reject"
+    },
+    {
+      "candidate": "naive_pooling",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": false,
+        "permutation_within_tolerance": true,
+        "proper_scoring_improved": false,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [
+        "proper_scoring_improved",
+        "out_of_support_refused"
+      ],
+      "status": "reject"
+    },
+    {
+      "candidate": "seq_prefix",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": false,
+        "permutation_within_tolerance": false,
+        "proper_scoring_improved": true,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [
+        "permutation_within_tolerance",
+        "out_of_support_refused"
+      ],
+      "status": "reject"
+    },
+    {
+      "candidate": "set_mt",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": false,
+        "permutation_within_tolerance": true,
+        "proper_scoring_improved": true,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [
+        "out_of_support_refused"
+      ],
+      "status": "reject"
+    },
+    {
+      "candidate": "governed_set_mt",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": true,
+        "permutation_within_tolerance": true,
+        "proper_scoring_improved": true,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [],
+      "status": "promote"
+    },
+    {
+      "candidate": "seq_prefix_overfit",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": false,
+        "permutation_within_tolerance": false,
+        "proper_scoring_improved": true,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [
+        "permutation_within_tolerance",
+        "out_of_support_refused"
+      ],
+      "status": "reject"
+    }
+  ],
+  "proofs": {
+    "attractive_regression_rejected": true,
+    "beneficial_candidate_promoted": true
+  },
+  "sealed": {
+    "development_sha256": "a86ca118557ac86e169a5f210f749bff97c4c6b0e6098d8512bdaf2392156570",
+    "holdout_sha256": "99c70947543889cb655777deebdadd2cbf74f37d5336c2f5bf08b3fccb7c2419"
+  }
+}

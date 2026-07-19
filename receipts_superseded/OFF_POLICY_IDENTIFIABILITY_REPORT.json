@@ -1,0 +1,121 @@
+{
+  "honesty": "propensities recomputed from authenticated policy records; identifiability requires measured overlap, ESS, confounder schema; sensitivity to unobserved confounding NOT_ESTABLISHED",
+  "per_resolution": [
+    {
+      "checks": {
+        "action_not_deterministic": true,
+        "caller_propensity_forged": false,
+        "confounder_vector_present": true,
+        "effective_sample_size": 1.0,
+        "effective_sample_size_sufficient": false,
+        "policy_record_logged": true,
+        "positivity_overlap": true,
+        "propensity_recomputed_matches_claim": true,
+        "support_violation": false,
+        "weight_concentration": 1.0
+      },
+      "prediction_id": "pred-3aa6794cab97",
+      "sensitivity": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+      "state": "CHECKED",
+      "usable_for": "predictive_monitoring_only"
+    },
+    {
+      "checks": {
+        "action_not_deterministic": true,
+        "caller_propensity_forged": false,
+        "confounder_vector_present": true,
+        "effective_sample_size": 2.0,
+        "effective_sample_size_sufficient": false,
+        "policy_record_logged": true,
+        "positivity_overlap": true,
+        "propensity_recomputed_matches_claim": true,
+        "support_violation": false,
+        "weight_concentration": 0.5
+      },
+      "prediction_id": "pred-c7171f516dc1",
+      "sensitivity": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+      "state": "CHECKED",
+      "usable_for": "predictive_monitoring_only"
+    },
+    {
+      "checks": {
+        "action_not_deterministic": true,
+        "caller_propensity_forged": false,
+        "confounder_vector_present": true,
+        "effective_sample_size": 3.0,
+        "effective_sample_size_sufficient": false,
+        "policy_record_logged": true,
+        "positivity_overlap": true,
+        "propensity_recomputed_matches_claim": true,
+        "support_violation": false,
+        "weight_concentration": 0.333333
+      },
+      "prediction_id": "pred-638dc33a546b",
+      "sensitivity": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+      "state": "CHECKED",
+      "usable_for": "predictive_monitoring_only"
+    },
+    {
+      "checks": {
+        "action_not_deterministic": true,
+        "caller_propensity_forged": false,
+        "confounder_vector_present": true,
+        "effective_sample_size": 4.0,
+        "effective_sample_size_sufficient": false,
+        "policy_record_logged": true,
+        "positivity_overlap": true,
+        "propensity_recomputed_matches_claim": true,
+        "support_violation": false,
+        "weight_concentration": 0.25
+      },
+      "prediction_id": "pred-6c8518f584be",
+      "sensitivity": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+      "state": "CHECKED",
+      "usable_for": "predictive_monitoring_only"
+    },
+    {
+      "checks": {
+        "action_not_deterministic": true,
+        "caller_propensity_forged": false,
+        "confounder_vector_present": true,
+        "effective_sample_size": 5.0,
+        "effective_sample_size_sufficient": true,
+        "policy_record_logged": true,
+        "positivity_overlap": true,
+        "propensity_recomputed_matches_claim": true,
+        "support_violation": false,
+        "weight_concentration": 0.2
+      },
+      "prediction_id": "pred-c79601cde5fe",
+      "sensitivity": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+      "state": "IDENTIFIABLE_UNDER_STATED_ASSUMPTIONS",
+      "usable_for": "causal_effect_estimation_under_stated_assumptions"
+    },
+    {
+      "checks": {
+        "action_not_deterministic": true,
+        "caller_propensity_forged": false,
+        "confounder_vector_present": true,
+        "effective_sample_size": 6.0,
+        "effective_sample_size_sufficient": true,
+        "policy_record_logged": true,
+        "positivity_overlap": true,
+        "propensity_recomputed_matches_claim": true,
+        "support_violation": false,
+        "weight_concentration": 0.166667
+      },
+      "prediction_id": "pred-092352aaf15a",
+      "sensitivity": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+      "state": "IDENTIFIABLE_UNDER_STATED_ASSUMPTIONS",
+      "usable_for": "causal_effect_estimation_under_stated_assumptions"
+    }
+  ],
+  "policy_registry": {
+    "policy:follow-recommendation-70/1": {
+      "authenticated": true,
+      "follow_prob": 0.7,
+      "record_hash": "5052405b62cc6439f7108cbd64eb4372d815cd535e69cc3ee75c7be55d2ba5b2"
+    }
+  },
+  "spec": "off-policy-identifiability/2.0"
+}

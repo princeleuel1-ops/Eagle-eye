@@ -1,0 +1,51 @@
+{
+  "anchor": {
+    "anchor_signature_b64": "W+ZrdF/2seWWJlNngH3ne/gv0ae7PEXau8y3feHE9hryabetkLh8/YJkEp6ln1yb9dIDvtJEs8EFJE471oYqBQ==",
+    "chain_id": "evaluator-access",
+    "head": "de8f9e53d05a0d0f5bd359afb948c68b824906724e1f3eec9ea9242aa51998ea",
+    "length": 2,
+    "run_id": "run-evo-550",
+    "signer_key_id": "ed25519:35c6f1ae8fb19a11e35eb009aa82c1a7a9a1d25c933cd0e6d38ffd62fb739d1b",
+    "tenant_id": "tenant-demo"
+  },
+  "budget": {
+    "alpha_procedure": "Bonferroni allocation alpha_total/max_looks per charged look; champion charged inside each compare",
+    "alpha_remaining_micro": 47500,
+    "alpha_spent_micro": 2500,
+    "alpha_total_micro": 50000,
+    "candidates_evaluated": 18,
+    "candidates_proposed": 18,
+    "candidates_rejected_before_holdout": 17,
+    "effective_hypothesis_family": "single-parameter whitelist mutations of the sitting champion",
+    "final_audit_holdout_looks": 1,
+    "holdout_looks": 1
+  },
+  "rows": [
+    {
+      "candidate_id": "cand-3753b054a994",
+      "chain_id": "evaluator-access",
+      "kind": "promotion_look",
+      "look_index": 1,
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "row_hash": "a5a2db9f2d64d8634e24bc0ca8ec08ca735c9672100dc51ace4c431d10e92ac6",
+      "run_id": "run-evo-550",
+      "sequence": 1,
+      "signature_b64": "nz6o46fkCniYNO8BGRFvaQ5FU5fmgUHSKWorHDnKJ0rJAQc9EmB5lqpsXJHIkwM2UjIj7MTNBR65nU+O6fa9BA==",
+      "signer_key_id": "ed25519:35c6f1ae8fb19a11e35eb009aa82c1a7a9a1d25c933cd0e6d38ffd62fb739d1b",
+      "tenant_id": "tenant-demo"
+    },
+    {
+      "candidate_id": null,
+      "chain_id": "evaluator-access",
+      "kind": "final_audit_look",
+      "look_index": null,
+      "previous_hash": "a5a2db9f2d64d8634e24bc0ca8ec08ca735c9672100dc51ace4c431d10e92ac6",
+      "row_hash": "de8f9e53d05a0d0f5bd359afb948c68b824906724e1f3eec9ea9242aa51998ea",
+      "run_id": "run-evo-550",
+      "sequence": 2,
+      "signature_b64": "O2+m8d7ba1aYopP75DpHYVKh1zBftVE/5cVykf155i4Q/VYd5Bg+QH5rxlhQEU5I5iUSrhmbj1RGQUjtet5rBQ==",
+      "signer_key_id": "ed25519:35c6f1ae8fb19a11e35eb009aa82c1a7a9a1d25c933cd0e6d38ffd62fb739d1b",
+      "tenant_id": "tenant-demo"
+    }
+  ]
+}

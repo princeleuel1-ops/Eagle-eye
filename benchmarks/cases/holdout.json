@@ -1,0 +1,66 @@
+{
+  "benchmark": "EEFB-v0.2-cases",
+  "split": "sealed_holdout",
+  "cases": [
+    {
+      "id": "h01",
+      "expected_risk": true,
+      "safety_critical": true,
+      "description": "Authorized synthetic disruption case h01"
+    },
+    {
+      "id": "h02",
+      "expected_risk": false,
+      "safety_critical": false,
+      "description": "Authorized synthetic disruption case h02"
+    },
+    {
+      "id": "h03",
+      "expected_risk": false,
+      "safety_critical": false,
+      "description": "Authorized synthetic disruption case h03"
+    },
+    {
+      "id": "h04",
+      "expected_risk": true,
+      "safety_critical": false,
+      "description": "Authorized synthetic disruption case h04"
+    },
+    {
+      "id": "h05",
+      "expected_risk": true,
+      "safety_critical": true,
+      "description": "Authorized synthetic disruption case h05"
+    },
+    {
+      "id": "h06",
+      "expected_risk": false,
+      "safety_critical": false,
+      "description": "Authorized synthetic disruption case h06"
+    },
+    {
+      "id": "h07",
+      "expected_risk": true,
+      "safety_critical": false,
+      "description": "Authorized synthetic disruption case h07"
+    },
+    {
+      "id": "h08",
+      "expected_risk": false,
+      "safety_critical": false,
+      "description": "Authorized synthetic disruption case h08"
+    },
+    {
+      "id": "h09",
+      "expected_risk": false,
+      "safety_critical": false,
+      "description": "Authorized synthetic disruption case h09"
+    },
+    {
+      "id": "h10",
+      "expected_risk": true,
+      "safety_critical": false,
+      "description": "Authorized synthetic disruption case h10"
+    }
+  ]
+}

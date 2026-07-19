@@ -1,0 +1,1970 @@
+{
+  "chains": {
+    "evaluator": {
+      "anchor": {
+        "anchor_signature_b64": "W+ZrdF/2seWWJlNngH3ne/gv0ae7PEXau8y3feHE9hryabetkLh8/YJkEp6ln1yb9dIDvtJEs8EFJE471oYqBQ==",
+        "chain_id": "evaluator-access",
+        "head": "de8f9e53d05a0d0f5bd359afb948c68b824906724e1f3eec9ea9242aa51998ea",
+        "length": 2,
+        "run_id": "run-evo-550",
+        "signer_key_id": "ed25519:35c6f1ae8fb19a11e35eb009aa82c1a7a9a1d25c933cd0e6d38ffd62fb739d1b",
+        "tenant_id": "tenant-demo"
+      },
+      "rows": [
+        {
+          "body": {
+            "candidate_id": "cand-3753b054a994",
+            "challenger_aggregates": {
+              "abstentions_probe": 6,
+              "abstentions_standard": 0,
+              "metrics": {
+                "brier_delay_gt14": 211443,
+                "brier_stockout": 255508,
+                "coverage80": 856061,
+                "crps": 332154,
+                "crps_scarcity": 258573,
+                "crps_temporal_ood": 325774,
+                "intervention_regret_days": 512341,
+                "kl_to_oracle": 478558,
+                "nll": 875741,
+                "nll_heavy_tail": 1705645,
+                "nll_scarcity": 646826,
+                "nll_temporal_ood": 889779,
+                "nll_unrelated_priors": 1412398,
+                "permutation_spread_max": 0,
+                "width80_log": 2147915
+              },
+              "probe_count": 6,
+              "scored_count": 132
+            },
+            "champion_aggregates": {
+              "metrics": {
+                "brier_delay_gt14": 212682,
+                "brier_stockout": 255508,
+                "coverage80": 863636,
+                "crps": 334220,
+                "crps_scarcity": 260041,
+                "crps_temporal_ood": 328455,
+                "intervention_regret_days": 512341,
+                "kl_to_oracle": 503276,
+                "nll": 890156,
+                "nll_heavy_tail": 1711508,
+                "nll_scarcity": 661136,
+                "nll_temporal_ood": 912359,
+                "nll_unrelated_priors": 1412398,
+                "permutation_spread_max": 0,
+                "width80_log": 2184033
+              },
+              "scored_count": 132
+            },
+            "evaluator_version": "sealed-evaluator/2.1",
+            "kind": "promotion_look",
+            "look_index": 1,
+            "nonce": "cand-3753b054a994:snap-97d1f9229ef17bca",
+            "snapshot_id": "snap-97d1f9229ef17bca",
+            "statistics": {
+              "alpha_per_look_micro": 2500,
+              "alpha_spent_after_micro": 2500,
+              "alpha_total_micro": 50000,
+              "assumptions": "approx normality of mean via CLT; independence across cases",
+              "ci_lower_micro": -33048,
+              "ci_upper_micro": 4218,
+              "decision_threshold": "one-sided upper confidence bound of mean diff < 0 AND n >= 30",
+              "failure_conditions": "heavy-tailed diffs at small n; cross-case dependence",
+              "hypothesis": "H0: E[NLL_challenger - NLL_champion] >= 0 on the sealed suite",
+              "mean_diff_micro": -14415,
+              "n_paired": 132,
+              "sd_micro": 76265,
+              "significant_improvement": false,
+              "stopping_rule": "fixed per-look level; run stops when budget exhausted",
+              "t_statistic_micro": -2171538,
+              "test": "paired mean difference, one-sided normal (CLT), Bonferroni-allocated"
+            }
+          },
+          "chain_id": "evaluator-access",
+          "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+          "row_hash": "a5a2db9f2d64d8634e24bc0ca8ec08ca735c9672100dc51ace4c431d10e92ac6",
+          "run_id": "run-evo-550",
+          "sequence": 1,
+          "signature_b64": "nz6o46fkCniYNO8BGRFvaQ5FU5fmgUHSKWorHDnKJ0rJAQc9EmB5lqpsXJHIkwM2UjIj7MTNBR65nU+O6fa9BA==",
+          "signer_key_id": "ed25519:35c6f1ae8fb19a11e35eb009aa82c1a7a9a1d25c933cd0e6d38ffd62fb739d1b",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "aggregates": {
+              "abstentions_standard": 0,
+              "metrics": {
+                "brier_delay_gt14": 184813,
+                "brier_stockout": 278225,
+                "coverage80": 893939,
+                "crps": 301082,
+                "crps_scarcity": 245777,
+                "crps_temporal_ood": 251238,
+                "intervention_regret_days": 445284,
+                "kl_to_oracle": 514818,
+                "nll": 808826,
+                "nll_heavy_tail": 1680731,
+                "nll_scarcity": 601258,
+                "nll_temporal_ood": 663620,
+                "nll_unrelated_priors": 1329003,
+                "permutation_spread_max": 0,
+                "width80_log": 2204598
+              },
+              "probes_refused": true,
+              "scored_count": 132
+            },
+            "champion_id": "champ-genesis-governed-set-mt",
+            "evaluator_version": "sealed-evaluator/2.1",
+            "kind": "final_audit_look",
+            "nonce": "final-audit:snap-c9cc00ef916ca0be"
+          },
+          "chain_id": "evaluator-access",
+          "previous_hash": "a5a2db9f2d64d8634e24bc0ca8ec08ca735c9672100dc51ace4c431d10e92ac6",
+          "row_hash": "de8f9e53d05a0d0f5bd359afb948c68b824906724e1f3eec9ea9242aa51998ea",
+          "run_id": "run-evo-550",
+          "sequence": 2,
+          "signature_b64": "O2+m8d7ba1aYopP75DpHYVKh1zBftVE/5cVykf155i4Q/VYd5Bg+QH5rxlhQEU5I5iUSrhmbj1RGQUjtet5rBQ==",
+          "signer_key_id": "ed25519:35c6f1ae8fb19a11e35eb009aa82c1a7a9a1d25c933cd0e6d38ffd62fb739d1b",
+          "tenant_id": "tenant-demo"
+        }
+      ]
+    },
+    "lineage": {
+      "anchor": {
+        "anchor_signature_b64": "oGGM/0YcwAxgRcfiKZRZHoPdY4QTBfYJE4f57j+Yv0DKlbyTjrZ5fBDEb0k2qtb1ZsOgqTTozizcjzAMG/eDCg==",
+        "chain_id": "evolution-lineage",
+        "head": "52852a8cdeb834af5b6bea89555d4878fe21cae718cf331b1cd1c22954331a8f",
+        "length": 18,
+        "run_id": "run-evo-550",
+        "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+        "tenant_id": "tenant-demo"
+      },
+      "rows": [
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 1,
+              "candidate_id": "cand-665dc8e2d096",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 1,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "governor.widen_weak_milli": 1600
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting governor.widen_weak_milli to 1600 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1600,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 690001,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+          "row_hash": "9c9092dfb2672e1463a6412c95b98dba96a3f5e683cc5c82e0be98fc4150afee",
+          "run_id": "run-evo-550",
+          "sequence": 1,
+          "signature_b64": "jpnWwJjors4yROfeStbn9lSUdqC7jCMsmkrl06buJA/5XXj3eGJPsEWMRR2jX4oiyKjjGVwNy1fC2v3h77FFBg==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 2,
+              "candidate_id": "cand-9f9506ec94a6",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 1,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "selector.min_score_milli": 5000
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting selector.min_score_milli to 5000 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 5000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 846096,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "9c9092dfb2672e1463a6412c95b98dba96a3f5e683cc5c82e0be98fc4150afee",
+          "row_hash": "4b1a1e49817cbb5cad880db97f90931f927bda180dc98dae27c669418b151e06",
+          "run_id": "run-evo-550",
+          "sequence": 2,
+          "signature_b64": "MhwKZazYv6FXDGo31+x+QNBI3Trr2M9jjFDqiJZ7jcrf5mBpfhDiWmTEJsHk5O9hGzHyGnHsbq15nvj6d83uCg==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 3,
+              "candidate_id": "cand-c1179529d06b",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 1,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "base.candidate": "seq_prefix"
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting base.candidate to seq_prefix improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "seq_prefix",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 714966,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "4b1a1e49817cbb5cad880db97f90931f927bda180dc98dae27c669418b151e06",
+          "row_hash": "44d6fce195e7cf7a3b50df42423ad2644ab0352e3d2f519a9fd4c662daa715d7",
+          "run_id": "run-evo-550",
+          "sequence": 3,
+          "signature_b64": "LmcYm7DNwQvNfNaaY3+6NJD+/kSFQNzQGJ5oJR1+KUDw6TmUNFW2W/E5/cUuMdjOdUg9u4GkeQSDSY8mgzsADg==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 1,
+              "candidate_id": "cand-4f8ff0a8c80e",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 2,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "governor.shift_suspect_milli": 700
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting governor.shift_suspect_milli to 700 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 700,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 729601,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "44d6fce195e7cf7a3b50df42423ad2644ab0352e3d2f519a9fd4c662daa715d7",
+          "row_hash": "9205767ecf94ad4e168f32f563d152d56aecb8e618b0aff22c5acf9e45ebcd08",
+          "run_id": "run-evo-550",
+          "sequence": 4,
+          "signature_b64": "WkCiFP1+X0COUw75FF/+rLbWFzqW0LZMcXusjXzQiQrjK3w33BuqueGsJvw1Xzo/pEXMundddVF7H7QH0FhnAA==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 2,
+              "candidate_id": "cand-a9bcc119984f",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 2,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "selector.min_score_milli": 4500
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting selector.min_score_milli to 4500 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4500,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 839020,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "9205767ecf94ad4e168f32f563d152d56aecb8e618b0aff22c5acf9e45ebcd08",
+          "row_hash": "cac9ad879f85239448c79d4aace938ced5be619f8954f8d8ee89aa1b9942dcac",
+          "run_id": "run-evo-550",
+          "sequence": 5,
+          "signature_b64": "0yLazbJ0BMMQNbF2wUw2QgoO0xcMQ2Psv/ogS88pD35dHtyLyafL9WnRoz8TEB1c3oEwNV84AdfoKHEBYsEUAA==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 3,
+              "candidate_id": "cand-7be8f093c46f",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 2,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "selector.k_max": 12
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting selector.k_max to 12 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 12,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 690289,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "cac9ad879f85239448c79d4aace938ced5be619f8954f8d8ee89aa1b9942dcac",
+          "row_hash": "57049030fa69d0821681c8a8c67691866d7242d56e0d4ca3775353ea4f4a78a7",
+          "run_id": "run-evo-550",
+          "sequence": 6,
+          "signature_b64": "C0UvwrN8h3GMzvQ3laoj8+HOLGbhXQu2b+rqQwgKSPZQdZnC2HZ8FM13snO9//k3ShRoBoWwmTMC0OoGYoT1CQ==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 1,
+              "candidate_id": "cand-3753b054a994",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 3,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "governor.shift_suspect_milli": 900
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting governor.shift_suspect_milli to 900 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 900,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 675718,
+            "evaluator_look_index": 1,
+            "evaluator_response_hash": "a5a2db9f2d64d8634e24bc0ca8ec08ca735c9672100dc51ace4c431d10e92ac6",
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "sealed_paired_test_not_significant",
+              "ci_upper_micro=4218"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": {
+              "alpha_per_look_micro": 2500,
+              "alpha_spent_after_micro": 2500,
+              "alpha_total_micro": 50000,
+              "assumptions": "approx normality of mean via CLT; independence across cases",
+              "ci_lower_micro": -33048,
+              "ci_upper_micro": 4218,
+              "decision_threshold": "one-sided upper confidence bound of mean diff < 0 AND n >= 30",
+              "failure_conditions": "heavy-tailed diffs at small n; cross-case dependence",
+              "hypothesis": "H0: E[NLL_challenger - NLL_champion] >= 0 on the sealed suite",
+              "mean_diff_micro": -14415,
+              "n_paired": 132,
+              "sd_micro": 76265,
+              "significant_improvement": false,
+              "stopping_rule": "fixed per-look level; run stops when budget exhausted",
+              "t_statistic_micro": -2171538,
+              "test": "paired mean difference, one-sided normal (CLT), Bonferroni-allocated"
+            }
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "57049030fa69d0821681c8a8c67691866d7242d56e0d4ca3775353ea4f4a78a7",
+          "row_hash": "5c5c88aaa251f76038f352d86271691036d1a37cf72762798507b4dd6442fc90",
+          "run_id": "run-evo-550",
+          "sequence": 7,
+          "signature_b64": "1TfPW7sB2Tcs+w2SsG9373jmXjhNx22bAh+sOnfGh/SETwvadWR2/HMWGiOR1kZhFyyg0sjydnKuqrOtOCKKAg==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 2,
+              "candidate_id": "cand-a34ffec0fedd",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 3,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "governor.widen_shift_milli": 1250
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting governor.widen_shift_milli to 1250 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1250,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 693109,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "5c5c88aaa251f76038f352d86271691036d1a37cf72762798507b4dd6442fc90",
+          "row_hash": "a30356529abfc1bb40d71a639c49dcc26672ea135721622650f52f85ae4a3bd3",
+          "run_id": "run-evo-550",
+          "sequence": 8,
+          "signature_b64": "s+tbVVfKLS8wWAwQ3qNJlQMFb45TT13cQurcv0E0Wkl3miiXDifmZG4uAPKllJMD6mRTfSII6SrbVv4ZGs9MBQ==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 3,
+              "candidate_id": "cand-9e1cb53025dd",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 3,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "selector.k_max": 12
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting selector.k_max to 12 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 12,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 690289,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "a30356529abfc1bb40d71a639c49dcc26672ea135721622650f52f85ae4a3bd3",
+          "row_hash": "ca91ae126d7f3f7ed152f7e0e476971522a6d5a31732c4bddc7a0646f2a2afad",
+          "run_id": "run-evo-550",
+          "sequence": 9,
+          "signature_b64": "ctioyThNUliCCuQBYjvPeC/kfaWMMl1gJN4n2x33UvwVYUZWaO16p0dfgqpjJ4KvnLLqYXLXFa3SaidsWJY6Cw==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 1,
+              "candidate_id": "cand-fadda4246bf8",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 4,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "selector.k_max": 12
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting selector.k_max to 12 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 12,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 690289,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "ca91ae126d7f3f7ed152f7e0e476971522a6d5a31732c4bddc7a0646f2a2afad",
+          "row_hash": "df5d105fdd8d45a63ee0ce0e919fdace8ebbf4b6f077622a8a7728157c5ae111",
+          "run_id": "run-evo-550",
+          "sequence": 10,
+          "signature_b64": "37N3skxfdEAraqYhjmJUZ2UY0hbIytLNGt/GngAy7mysWWsihSi9gTJ42A8sAscBbpbhay0G1QNk0m/a9dKuCA==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 2,
+              "candidate_id": "cand-d0dd5f3a4f27",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 4,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "selector.k_max": 8
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting selector.k_max to 8 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 8,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 698618,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "df5d105fdd8d45a63ee0ce0e919fdace8ebbf4b6f077622a8a7728157c5ae111",
+          "row_hash": "dd229f7a4138c6769d7eb613135cc4c670574d9affd5098ad832b09c3b35a644",
+          "run_id": "run-evo-550",
+          "sequence": 11,
+          "signature_b64": "MInlp2BXQn17VgfmeRT6ibRB4i+AisJ6E+xYvK7jxhPsBVfK+l5emQ7q+gyr+/LXHGVU73HrMZwcnUwWamHdDA==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 3,
+              "candidate_id": "cand-5d36b8914b63",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 4,
+              "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+              "diff": {
+                "selector.min_score_milli": 4500
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting selector.min_score_milli to 4500 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4500,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-97d1f9229ef17bca",
+            "dev_nll_micro": 839020,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "dd229f7a4138c6769d7eb613135cc4c670574d9affd5098ad832b09c3b35a644",
+          "row_hash": "d1378be3b01101a8be1c7f531328b4eeb5e66cc0bde34b88bb9b97d16d0cd27f",
+          "run_id": "run-evo-550",
+          "sequence": 12,
+          "signature_b64": "zmWTEyjG/hqwLnMgu5d8syofivl7gs2wlxWT0I7jGMnjPaKO3+UZW9wsxX27wqpHju0MTpD0W70+uVPG97BmDw==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 1,
+              "candidate_id": "cand-fa32c33bd146",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 5,
+              "dataset_snapshot_id": "snap-17d610d8ba474533",
+              "diff": {
+                "selector.min_score_milli": 3500
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting selector.min_score_milli to 3500 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 3500,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-17d610d8ba474533",
+            "dev_nll_micro": 690001,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "b9c87045a49b3d8d7fc92c1678ccc216efde0e876bb743600b5cbbf3b97f2561",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "d1378be3b01101a8be1c7f531328b4eeb5e66cc0bde34b88bb9b97d16d0cd27f",
+          "row_hash": "aa73454e89ce32b07c7025f4618f020cd648b37a1218fd312f4b27a2804d9dbd",
+          "run_id": "run-evo-550",
+          "sequence": 13,
+          "signature_b64": "oa4Q1yFpH2m1JAxtI7IBVLD1EWt7jITo+w69DIQ3N2OXFDVnDtQve9RIrxuzUBQIwtZfRKaI/O6DKnHCdcoHAA==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 2,
+              "candidate_id": "cand-1e624f79c232",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 5,
+              "dataset_snapshot_id": "snap-17d610d8ba474533",
+              "diff": {
+                "governor.widen_shift_milli": 1800
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting governor.widen_shift_milli to 1800 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1800,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-17d610d8ba474533",
+            "dev_nll_micro": 692683,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "b9c87045a49b3d8d7fc92c1678ccc216efde0e876bb743600b5cbbf3b97f2561",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "aa73454e89ce32b07c7025f4618f020cd648b37a1218fd312f4b27a2804d9dbd",
+          "row_hash": "25d459e09ec661018f989af131059903ff001ea81cf580713fae20252df688a5",
+          "run_id": "run-evo-550",
+          "sequence": 14,
+          "signature_b64": "GhiboHAlhQz6pfnMthgdNX0C3yieD+UaQJZRCqSgCQjHiviBEu+NBJ5Or+6tAHPu/NmifjvkTGqDWd1BUT2mCw==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 3,
+              "candidate_id": "cand-31e878cccb4f",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 5,
+              "dataset_snapshot_id": "snap-17d610d8ba474533",
+              "diff": {
+                "governor.widen_weak_milli": 1600
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting governor.widen_weak_milli to 1600 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1600,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-17d610d8ba474533",
+            "dev_nll_micro": 690001,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "b9c87045a49b3d8d7fc92c1678ccc216efde0e876bb743600b5cbbf3b97f2561",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "25d459e09ec661018f989af131059903ff001ea81cf580713fae20252df688a5",
+          "row_hash": "fbd136d78ae0ff363871732d674c63a50e39342ff46cba03a28e88e3c3b031d2",
+          "run_id": "run-evo-550",
+          "sequence": 15,
+          "signature_b64": "z1AwkToZ4z5BLIl7Fwf5llY0iHf2WMVIgPySgiXvCxEa6jB2I00eUU5AYU3DrZ1AZO20c8HykKl3ZozBTSJtBA==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 1,
+              "candidate_id": "cand-ea21ea51faec",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 6,
+              "dataset_snapshot_id": "snap-c9cc00ef916ca0be",
+              "diff": {
+                "base.candidate": "seq_prefix"
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting base.candidate to seq_prefix improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "seq_prefix",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1350,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-c9cc00ef916ca0be",
+            "dev_nll_micro": 714966,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "ee082a01e9601c205d8873f5871c0f4e5c45d2fbcefe7ee0cb74ed67fb556241",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "fbd136d78ae0ff363871732d674c63a50e39342ff46cba03a28e88e3c3b031d2",
+          "row_hash": "507b32e5eb2d8868adb4f3bb61ceac6dd43293164ed5ca6b86c875505b112f11",
+          "run_id": "run-evo-550",
+          "sequence": 16,
+          "signature_b64": "ssBHdQp8ADMBXspF9fN8UVyiSIA3Yd/azyt3Guzrj1zi8UDOtMPQE9wNysZoAk28pdCNqw6wAzbebR5xkPhKAw==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 2,
+              "candidate_id": "cand-6d79a4d19291",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 6,
+              "dataset_snapshot_id": "snap-c9cc00ef916ca0be",
+              "diff": {
+                "governor.widen_weak_milli": 1150
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting governor.widen_weak_milli to 1150 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1150,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-c9cc00ef916ca0be",
+            "dev_nll_micro": 690001,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "ee082a01e9601c205d8873f5871c0f4e5c45d2fbcefe7ee0cb74ed67fb556241",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "507b32e5eb2d8868adb4f3bb61ceac6dd43293164ed5ca6b86c875505b112f11",
+          "row_hash": "b3c706501064d4d36ea2f4a303b01c393a8ee87f1d0b48c1063be90475dfa07f",
+          "run_id": "run-evo-550",
+          "sequence": 17,
+          "signature_b64": "xPvKA1+8xdGx2tROjLZjno7SV/7qaKCjrrZVpL6zb/nLfObsevx1T2tK21mWrUQrCCxF0dX9XfT9IysRjojWDA==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "candidate": {
+              "candidate_budget_position": 3,
+              "candidate_id": "cand-347dde85577b",
+              "court_release_id": "eagle-eye-prediction-court/1.0",
+              "created_at_cycle": 6,
+              "dataset_snapshot_id": "snap-c9cc00ef916ca0be",
+              "diff": {
+                "governor.widen_weak_milli": 1600
+              },
+              "expected_benefit": "sharper or better-supported posterior",
+              "generation_seed": 20260713,
+              "hypothesis": "adjusting governor.widen_weak_milli to 1600 improves sealed paired log score without regression",
+              "known_risk": "calibration or OoD regression; support misuse",
+              "mutation_type": "typed_parameter",
+              "parent_champion_id": "champ-genesis-governed-set-mt"
+            },
+            "candidate_config": {
+              "base.candidate": "set_mt",
+              "governor.shift_suspect_milli": 800,
+              "governor.widen_shift_milli": 1500,
+              "governor.widen_weak_milli": 1600,
+              "selector.k_max": 10,
+              "selector.min_score_milli": 4000,
+              "seq.decay_milli": 800
+            },
+            "court_release_id": "eagle-eye-prediction-court/1.0",
+            "dataset_snapshot_id": "snap-c9cc00ef916ca0be",
+            "dev_nll_micro": 690001,
+            "evaluator_look_index": null,
+            "evaluator_response_hash": null,
+            "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+            "policy_release": "policy-v1@1a47ce736ef27e60",
+            "reasons": [
+              "development_no_improvement (no sealed look spent)"
+            ],
+            "registry_manifest_sha256": "ee082a01e9601c205d8873f5871c0f4e5c45d2fbcefe7ee0cb74ed67fb556241",
+            "run_context": {
+              "base_commit": "46f6e2f",
+              "code_revision": "27c4adb7ba0d9e87",
+              "dependency_lock_sha256": "NOT_AVAILABLE",
+              "evaluator_version": "sealed-evaluator/2.0",
+              "python": "3.11.15"
+            },
+            "spec": "eagle-eye-sealed-evolution/2.0",
+            "state": "REJECTED",
+            "statistics": null
+          },
+          "chain_id": "evolution-lineage",
+          "previous_hash": "b3c706501064d4d36ea2f4a303b01c393a8ee87f1d0b48c1063be90475dfa07f",
+          "row_hash": "52852a8cdeb834af5b6bea89555d4878fe21cae718cf331b1cd1c22954331a8f",
+          "run_id": "run-evo-550",
+          "sequence": 18,
+          "signature_b64": "dNgpblWivk8mdkEH1eIW7T62jxnmGsYTvx0Tkc1CyIoLZFD0qordg2JVM+UNsCcUS3iQQV6XaGLI4+y3yPCnDw==",
+          "signer_key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+          "tenant_id": "tenant-demo"
+        }
+      ]
+    },
+    "outcomes": {
+      "anchor": {
+        "anchor_signature_b64": "qCLRoNo4c6228C+GcM7rnayK6JWvTy+SMcuLpS2JL7/DIBs9nwTadw2vvizjS13YV17BedPqNEIRqKZvFgfrCQ==",
+        "chain_id": "outcome-resolutions",
+        "head": "4aa0cf92a270146c9637e0bfa14852c4b818a1f54cddfc4d5663de5559b0e844",
+        "length": 6,
+        "run_id": "run-evo-550",
+        "signer_key_id": "ed25519:1694a5e0ee5a4ae59eb77cea30f3b0c887fb7e6c97518b028c7659713fa9f671",
+        "tenant_id": "tenant-demo"
+      },
+      "rows": [
+        {
+          "body": {
+            "kind": "outcome_resolution",
+            "prediction_id": "pred-3aa6794cab97",
+            "resolution_hash": "bd2a92d6672f66f9a89a634296803519e8e2fff157a0d98d9e71142588cd1598"
+          },
+          "chain_id": "outcome-resolutions",
+          "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+          "row_hash": "454d85f69c2575aa1cf888ea0883ca5a87c938d889a3fcc5fe4c41a79d1c863a",
+          "run_id": "run-evo-550",
+          "sequence": 1,
+          "signature_b64": "lprT5zqkjaYaK+6qbx//scAvYSIwszhRFEBfAgB0S5+iJli5st/B7FatvbZtbiuRPnBT/IsK14UMXZ/EceS9AQ==",
+          "signer_key_id": "ed25519:1694a5e0ee5a4ae59eb77cea30f3b0c887fb7e6c97518b028c7659713fa9f671",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "kind": "outcome_resolution",
+            "prediction_id": "pred-c7171f516dc1",
+            "resolution_hash": "27b2a8b6a7e6c32c7a39f70da875f575be784fd0ee1242aa01b8a6c31cb99481"
+          },
+          "chain_id": "outcome-resolutions",
+          "previous_hash": "454d85f69c2575aa1cf888ea0883ca5a87c938d889a3fcc5fe4c41a79d1c863a",
+          "row_hash": "91c6a684b15bac4f484da2362b276a67838b3d02ae2bff690ad141c76d23e8b3",
+          "run_id": "run-evo-550",
+          "sequence": 2,
+          "signature_b64": "RdtKZV6rChoRo8C76kdl5yM0mJUT9rLnC1T48AX/5yT0I/gNbFLj/nol+gE44S36QeQq2OpUInIrJJ6RXx+LCw==",
+          "signer_key_id": "ed25519:1694a5e0ee5a4ae59eb77cea30f3b0c887fb7e6c97518b028c7659713fa9f671",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "kind": "outcome_resolution",
+            "prediction_id": "pred-638dc33a546b",
+            "resolution_hash": "3bde0c86580009c175d2acad8fcbda53b7dac4d1eefd6b25ef7b73a3590d37ae"
+          },
+          "chain_id": "outcome-resolutions",
+          "previous_hash": "91c6a684b15bac4f484da2362b276a67838b3d02ae2bff690ad141c76d23e8b3",
+          "row_hash": "640dffeb9c82dd3c0b40767af4a21ece6e1698797e50f6ddbe74cbccffc834fb",
+          "run_id": "run-evo-550",
+          "sequence": 3,
+          "signature_b64": "cqgTUIEPUP2lxNqkdPChcp96BQeuAC5maUprqBV7hZfB74KDXEMZz3fPGRzF5kKP9l8cSvIHS5uWcePuNVf9Dg==",
+          "signer_key_id": "ed25519:1694a5e0ee5a4ae59eb77cea30f3b0c887fb7e6c97518b028c7659713fa9f671",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "kind": "outcome_resolution",
+            "prediction_id": "pred-6c8518f584be",
+            "resolution_hash": "5c7e6d2f54238f28ce3991be779de8c23328937fdcc7605fedcd6c651da8933d"
+          },
+          "chain_id": "outcome-resolutions",
+          "previous_hash": "640dffeb9c82dd3c0b40767af4a21ece6e1698797e50f6ddbe74cbccffc834fb",
+          "row_hash": "08331f15fa7cdcbae146d3714dd3864040dc676cb2297e4e856a182e47c9f471",
+          "run_id": "run-evo-550",
+          "sequence": 4,
+          "signature_b64": "YKcSQuse5CQ/tpsh2e17LUf3eq8gAeiqSF1SELpwZPy7Ia6gitBI4VdnQ0m7QSJSn5RsZIJ9hP63sPLinOxWCg==",
+          "signer_key_id": "ed25519:1694a5e0ee5a4ae59eb77cea30f3b0c887fb7e6c97518b028c7659713fa9f671",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "kind": "outcome_resolution",
+            "prediction_id": "pred-c79601cde5fe",
+            "resolution_hash": "a39abf999bcd5ba74367fc78fdc78896a791f6f16465ea0ae095b8d258222ec1"
+          },
+          "chain_id": "outcome-resolutions",
+          "previous_hash": "08331f15fa7cdcbae146d3714dd3864040dc676cb2297e4e856a182e47c9f471",
+          "row_hash": "c76ae7be8db94cafc3d6d3bbe3cccd24fd72cd1240d5b731ca8d90f356a806b7",
+          "run_id": "run-evo-550",
+          "sequence": 5,
+          "signature_b64": "EhzjFShqLky3jLvJyU9u3btlzktoopZ9cwqvdSkMyDjfRYxwlcYU3LfWQ8wOK/qldErP0Yk2xPwnLj4bIFlSBQ==",
+          "signer_key_id": "ed25519:1694a5e0ee5a4ae59eb77cea30f3b0c887fb7e6c97518b028c7659713fa9f671",
+          "tenant_id": "tenant-demo"
+        },
+        {
+          "body": {
+            "kind": "outcome_resolution",
+            "prediction_id": "pred-092352aaf15a",
+            "resolution_hash": "6e898beff90ba47e3cb499fbe03ff4c1d65d49682b0fb015b564753a744593b1"
+          },
+          "chain_id": "outcome-resolutions",
+          "previous_hash": "c76ae7be8db94cafc3d6d3bbe3cccd24fd72cd1240d5b731ca8d90f356a806b7",
+          "row_hash": "4aa0cf92a270146c9637e0bfa14852c4b818a1f54cddfc4d5663de5559b0e844",
+          "run_id": "run-evo-550",
+          "sequence": 6,
+          "signature_b64": "JiwEt6p93FQvLX+ISRCfLaEdNSvoeZKnFYoDX//YAoO82tuijv2utCYunZ/aM1O+X+w2mCX2dLIRGyExhcumBw==",
+          "signer_key_id": "ed25519:1694a5e0ee5a4ae59eb77cea30f3b0c887fb7e6c97518b028c7659713fa9f671",
+          "tenant_id": "tenant-demo"
+        }
+      ]
+    }
+  },
+  "controller_run_seed": 20260713,
+  "cycle_cutoffs": [
+    "2025-05-01",
+    "2025-05-18",
+    "2025-06-04",
+    "2025-08-10",
+    "2025-09-01",
+    "2025-09-22"
+  ],
+  "evaluator_reveal": {
+    "evaluator_secret": "evaluator-secret-550-27c4adb7ba0d9e87",
+    "note": "verify sha256(canonical({'evaluator_secret': secret})) == seed_commitment, rebuild suites via stable_seed('promotion-holdout'|'final-audit-holdout', secret) % 2^31",
+    "seed_commitment": "bb4d925c224c635c63b3e270dda1f005f9d9c3856c7bceb7472c4969b93640f0"
+  },
+  "final_registry_manifest_sha256": "ee082a01e9601c205d8873f5871c0f4e5c45d2fbcefe7ee0cb74ed67fb556241",
+  "genesis_config": {
+    "base.candidate": "set_mt",
+    "governor.shift_suspect_milli": 800,
+    "governor.widen_shift_milli": 1500,
+    "governor.widen_weak_milli": 1350,
+    "selector.k_max": 10,
+    "selector.min_score_milli": 4000,
+    "seq.decay_milli": 800
+  },
+  "grown_tasks": [
+    {
+      "cycle": 5,
+      "release": "prior-registry/2+growth5",
+      "task": {
+        "as_of_end": "2025-09-23",
+        "as_of_start": "2025-09-01",
+        "censoring_state": "uncensored",
+        "disruption_class": "port_congestion",
+        "eligibility": {
+          "off_policy_state": "IDENTIFIABLE_UNDER_STATED_ASSUMPTIONS",
+          "quality": "resolved_outcome",
+          "status": "closed"
+        },
+        "entity_refs": {
+          "component_id": "cmp-live",
+          "exposure_rate_per_day_usd": 14976.32,
+          "lane": "asia-us-west",
+          "region": "APAC",
+          "supplier_id": "sup-live"
+        },
+        "intervention": {
+          "applied": true,
+          "id": "activate_alternate",
+          "logged_propensity_micro": 700000,
+          "recommended": "activate_alternate"
+        },
+        "missingness_state": "complete",
+        "observations": [],
+        "realized": {
+          "exposure_usd": 281368.95,
+          "final_delay_days": 18.788,
+          "intervention_success": null,
+          "log_final_delay": 2.933197,
+          "recovery_days": 30.451,
+          "stockout": false
+        },
+        "schema_version": "prior-task/1.0",
+        "sources": [
+          {
+            "acting_policy": "policy:follow-recommendation-70/1",
+            "authorization_receipt": "approval-shadow-fixture",
+            "confounder_schema_version": "confounders/1.0",
+            "id": "src-resolution-a39abf999bcd",
+            "kind": "resolved_outcome",
+            "outcome_source_hash": "7c8ea3abf63f6c31eda687fb6015f3b2cde8e54ea77ec7b1a13a0b654e3ef299",
+            "prediction_id": "pred-c79601cde5fe",
+            "prediction_receipt_hash": "c79601cde5fe760b4afb9e63cf3e159877f51f2caf33704bbdf9cba8be93f0fa",
+            "resolution_hash": "a39abf999bcd5ba74367fc78fdc78896a791f6f16465ea0ae095b8d258222ec1",
+            "selection_receipt_sha256": "1ede2f0f38f507510c439888d9127f0706bde976b9d86b38efafcd6a065fa41a"
+          }
+        ],
+        "task_id": "pt-resolved-a39abf999bcd",
+        "tenant_id": "tenant-demo"
+      }
+    },
+    {
+      "cycle": 6,
+      "release": "prior-registry/2+growth6",
+      "task": {
+        "as_of_end": "2025-10-05",
+        "as_of_start": "2025-09-22",
+        "censoring_state": "uncensored",
+        "disruption_class": "port_congestion",
+        "eligibility": {
+          "off_policy_state": "IDENTIFIABLE_UNDER_STATED_ASSUMPTIONS",
+          "quality": "resolved_outcome",
+          "status": "closed"
+        },
+        "entity_refs": {
+          "component_id": "cmp-live",
+          "exposure_rate_per_day_usd": 8147.62,
+          "lane": "asia-us-west",
+          "region": "APAC",
+          "supplier_id": "sup-live"
+        },
+        "intervention": {
+          "applied": true,
+          "id": "activate_alternate",
+          "logged_propensity_micro": 700000,
+          "recommended": "activate_alternate"
+        },
+        "missingness_state": "complete",
+        "observations": [],
+        "realized": {
+          "exposure_usd": 77876.2,
+          "final_delay_days": 9.558,
+          "intervention_success": null,
+          "log_final_delay": 2.257395,
+          "recovery_days": 15.022,
+          "stockout": true
+        },
+        "schema_version": "prior-task/1.0",
+        "sources": [
+          {
+            "acting_policy": "policy:follow-recommendation-70/1",
+            "authorization_receipt": "approval-shadow-fixture",
+            "confounder_schema_version": "confounders/1.0",
+            "id": "src-resolution-6e898beff90b",
+            "kind": "resolved_outcome",
+            "outcome_source_hash": "b3ed6fe96fcd8531e9203b10f35d0717338833b40359d03d30aa73984aad3c06",
+            "prediction_id": "pred-092352aaf15a",
+            "prediction_receipt_hash": "092352aaf15aeba640152e43ed315ed74a9f1081540a72d8f74c3a25746ca211",
+            "resolution_hash": "6e898beff90ba47e3cb499fbe03ff4c1d65d49682b0fb015b564753a744593b1",
+            "selection_receipt_sha256": "1028522f339a39e220fda983f37ace44ef435618bb3a53eeceb8c8f4b6800e20"
+          }
+        ],
+        "task_id": "pt-resolved-6e898beff90b",
+        "tenant_id": "tenant-demo"
+      }
+    }
+  ],
+  "live_world": {
+    "tasks_per_regime": 4,
+    "world_seed": 550
+  },
+  "policy_registry": {
+    "policy:follow-recommendation-70/1": {
+      "authenticated": true,
+      "follow_prob": 0.7,
+      "record_hash": "5052405b62cc6439f7108cbd64eb4372d815cd535e69cc3ee75c7be55d2ba5b2"
+    }
+  },
+  "registry_base": {
+    "tasks_per_regime": 16,
+    "world_seed": 20260712
+  },
+  "resolutions": [
+    {
+      "acting_policy": "policy:follow-recommendation-70/1",
+      "authorization_receipt": "approval-shadow-fixture",
+      "censoring_state": "uncensored",
+      "confounders": {
+        "schema_version": "confounders/1.0",
+        "vector": {
+          "disruption_class": "port_congestion",
+          "lane": "asia-us-west",
+          "n_target_obs": 2
+        }
+      },
+      "current_audit_hash": "bd2a92d6672f66f9a89a634296803519e8e2fff157a0d98d9e71142588cd1598",
+      "eligibility_for_registry": false,
+      "eligibility_reason": "visible_but_ineligible:intervention_affected_and_not_identifiable",
+      "entity_refs": {
+        "component_id": "cmp-live",
+        "exposure_rate_per_day_usd": 5790.74,
+        "lane": "asia-us-west",
+        "region": "APAC",
+        "supplier_id": "sup-live"
+      },
+      "intervention_recommended": "activate_alternate",
+      "intervention_status": "intervention_affected",
+      "intervention_taken": "activate_alternate",
+      "missingness_state": "complete",
+      "model_or_champion_id": "champ-genesis-governed-set-mt",
+      "observed": {
+        "exposure_usd": 94560.93,
+        "final_delay_days": 16.33,
+        "intervention_result": null,
+        "recovery_days": 25.406,
+        "stockout": false
+      },
+      "off_policy": {
+        "checks": {
+          "action_not_deterministic": true,
+          "caller_propensity_forged": false,
+          "confounder_vector_present": true,
+          "effective_sample_size": 1.0,
+          "effective_sample_size_sufficient": false,
+          "policy_record_logged": true,
+          "positivity_overlap": true,
+          "propensity_recomputed_matches_claim": true,
+          "support_violation": false,
+          "weight_concentration": 1.0
+        },
+        "recomputed_propensity_micro": 700000,
+        "sensitivity_to_unobserved_confounding": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+        "state": "CHECKED",
+        "usable_for": "predictive_monitoring_only"
+      },
+      "outcome_observed_at": "2025-05-21",
+      "outcome_source": "authorized_synthetic_truth_channel",
+      "outcome_source_hash": "ea620ece4a4f5a1c1da84e493d65ad26005a6cfc14cf37a37a26ba8f16ffff17",
+      "outcome_value_micro": 2792984,
+      "policy_release_hash": "1a47ce736ef27e60fa3aea3d2abcb96aa4e1eb8b22f492c335502d0dc9f75f1f",
+      "prediction_as_of": "2025-05-01",
+      "prediction_distribution_hash": "d3cfb8ce498fe23044d87420fbe6bc53948cb1fec7b630ddadef9a9174268ae8",
+      "prediction_id": "pred-3aa6794cab97",
+      "prediction_receipt_hash": "3aa6794cab9702d60bbd2f1465f1c03dc41dc3012c324b23ff42f122b7eb69c4",
+      "previous_audit_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "propensity_provenance": "absent",
+      "recommendation_propensity_micro": 700000,
+      "resolution_status": "RESOLVED",
+      "resource_scope": "scope:live-disruptions",
+      "revision_of": null,
+      "score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.363996,
+        "nll": 1.061155,
+        "pit": 0.741244,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "signed_row_hash": "454d85f69c2575aa1cf888ea0883ca5a87c938d889a3fcc5fe4c41a79d1c863a",
+      "spec": "eagle-eye-outcome-resolution/1.0",
+      "task_id": "case-9199542251",
+      "tenant_id": "tenant-demo"
+    },
+    {
+      "acting_policy": "policy:follow-recommendation-70/1",
+      "authorization_receipt": "approval-shadow-fixture",
+      "censoring_state": "uncensored",
+      "confounders": {
+        "schema_version": "confounders/1.0",
+        "vector": {
+          "disruption_class": "port_congestion",
+          "lane": "asia-us-west",
+          "n_target_obs": 2
+        }
+      },
+      "current_audit_hash": "27b2a8b6a7e6c32c7a39f70da875f575be784fd0ee1242aa01b8a6c31cb99481",
+      "eligibility_for_registry": false,
+      "eligibility_reason": "visible_but_ineligible:intervention_affected_and_not_identifiable",
+      "entity_refs": {
+        "component_id": "cmp-live",
+        "exposure_rate_per_day_usd": 14574.58,
+        "lane": "asia-us-west",
+        "region": "APAC",
+        "supplier_id": "sup-live"
+      },
+      "intervention_recommended": "activate_alternate",
+      "intervention_status": "intervention_affected",
+      "intervention_taken": "activate_alternate",
+      "missingness_state": "complete",
+      "model_or_champion_id": "champ-genesis-governed-set-mt",
+      "observed": {
+        "exposure_usd": 131419.11,
+        "final_delay_days": 9.017,
+        "intervention_result": null,
+        "recovery_days": 11.804,
+        "stockout": false
+      },
+      "off_policy": {
+        "checks": {
+          "action_not_deterministic": true,
+          "caller_propensity_forged": false,
+          "confounder_vector_present": true,
+          "effective_sample_size": 2.0,
+          "effective_sample_size_sufficient": false,
+          "policy_record_logged": true,
+          "positivity_overlap": true,
+          "propensity_recomputed_matches_claim": true,
+          "support_violation": false,
+          "weight_concentration": 0.5
+        },
+        "recomputed_propensity_micro": 700000,
+        "sensitivity_to_unobserved_confounding": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+        "state": "CHECKED",
+        "usable_for": "predictive_monitoring_only"
+      },
+      "outcome_observed_at": "2025-05-31",
+      "outcome_source": "authorized_synthetic_truth_channel",
+      "outcome_source_hash": "72445d779f08512ee524303632e315dde365bed7f3a7157d60ad427e2a22734f",
+      "outcome_value_micro": 2199113,
+      "policy_release_hash": "1a47ce736ef27e60fa3aea3d2abcb96aa4e1eb8b22f492c335502d0dc9f75f1f",
+      "prediction_as_of": "2025-05-18",
+      "prediction_distribution_hash": "ac9d691824b9fd77075d2d82d4063499a327931d52db0620d761a21547ead55a",
+      "prediction_id": "pred-c7171f516dc1",
+      "prediction_receipt_hash": "c7171f516dc1ba82d37cf2f5531f73910fa9a0e61a3b54f09e475fbf4dcd771b",
+      "previous_audit_hash": "bd2a92d6672f66f9a89a634296803519e8e2fff157a0d98d9e71142588cd1598",
+      "propensity_provenance": "absent",
+      "recommendation_propensity_micro": 700000,
+      "resolution_status": "RESOLVED",
+      "resource_scope": "scope:live-disruptions",
+      "revision_of": null,
+      "score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.222982,
+        "nll": 0.827083,
+        "pit": 0.556432,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "signed_row_hash": "91c6a684b15bac4f484da2362b276a67838b3d02ae2bff690ad141c76d23e8b3",
+      "spec": "eagle-eye-outcome-resolution/1.0",
+      "task_id": "case-6691327802",
+      "tenant_id": "tenant-demo"
+    },
+    {
+      "acting_policy": "policy:follow-recommendation-70/1",
+      "authorization_receipt": "approval-shadow-fixture",
+      "censoring_state": "uncensored",
+      "confounders": {
+        "schema_version": "confounders/1.0",
+        "vector": {
+          "disruption_class": "port_congestion",
+          "lane": "asia-us-west",
+          "n_target_obs": 2
+        }
+      },
+      "current_audit_hash": "3bde0c86580009c175d2acad8fcbda53b7dac4d1eefd6b25ef7b73a3590d37ae",
+      "eligibility_for_registry": false,
+      "eligibility_reason": "visible_but_ineligible:intervention_affected_and_not_identifiable",
+      "entity_refs": {
+        "component_id": "cmp-live",
+        "exposure_rate_per_day_usd": 7225.23,
+        "lane": "asia-us-west",
+        "region": "APAC",
+        "supplier_id": "sup-live"
+      },
+      "intervention_recommended": "activate_alternate",
+      "intervention_status": "intervention_affected",
+      "intervention_taken": "activate_alternate",
+      "missingness_state": "complete",
+      "model_or_champion_id": "champ-genesis-governed-set-mt",
+      "observed": {
+        "exposure_usd": 55653.17,
+        "final_delay_days": 7.703,
+        "intervention_result": null,
+        "recovery_days": 10.802,
+        "stockout": false
+      },
+      "off_policy": {
+        "checks": {
+          "action_not_deterministic": true,
+          "caller_propensity_forged": false,
+          "confounder_vector_present": true,
+          "effective_sample_size": 3.0,
+          "effective_sample_size_sufficient": false,
+          "policy_record_logged": true,
+          "positivity_overlap": true,
+          "propensity_recomputed_matches_claim": true,
+          "support_violation": false,
+          "weight_concentration": 0.333333
+        },
+        "recomputed_propensity_micro": 700000,
+        "sensitivity_to_unobserved_confounding": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+        "state": "CHECKED",
+        "usable_for": "predictive_monitoring_only"
+      },
+      "outcome_observed_at": "2025-06-15",
+      "outcome_source": "authorized_synthetic_truth_channel",
+      "outcome_source_hash": "56d811ba2c713eb2169db9a1628710908035afe76c861a675feb314480040d2e",
+      "outcome_value_micro": 2041560,
+      "policy_release_hash": "1a47ce736ef27e60fa3aea3d2abcb96aa4e1eb8b22f492c335502d0dc9f75f1f",
+      "prediction_as_of": "2025-06-04",
+      "prediction_distribution_hash": "2053c6a1251ea34796e869ca156c89b0f1ed29aa0ce75a649a866f10f6019df8",
+      "prediction_id": "pred-638dc33a546b",
+      "prediction_receipt_hash": "638dc33a546baa1618ebda4353679cb2f282a58a719ab54c3009ef5d1d377885",
+      "previous_audit_hash": "27b2a8b6a7e6c32c7a39f70da875f575be784fd0ee1242aa01b8a6c31cb99481",
+      "propensity_provenance": "absent",
+      "recommendation_propensity_micro": 700000,
+      "resolution_status": "RESOLVED",
+      "resource_scope": "scope:live-disruptions",
+      "revision_of": null,
+      "score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.216562,
+        "nll": 0.818706,
+        "pit": 0.507017,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "signed_row_hash": "640dffeb9c82dd3c0b40767af4a21ece6e1698797e50f6ddbe74cbccffc834fb",
+      "spec": "eagle-eye-outcome-resolution/1.0",
+      "task_id": "case-2996712355",
+      "tenant_id": "tenant-demo"
+    },
+    {
+      "acting_policy": "policy:follow-recommendation-70/1",
+      "authorization_receipt": "approval-shadow-fixture",
+      "censoring_state": "uncensored",
+      "confounders": {
+        "schema_version": "confounders/1.0",
+        "vector": {
+          "disruption_class": "port_congestion",
+          "lane": "asia-us-west",
+          "n_target_obs": 2
+        }
+      },
+      "current_audit_hash": "5c7e6d2f54238f28ce3991be779de8c23328937fdcc7605fedcd6c651da8933d",
+      "eligibility_for_registry": false,
+      "eligibility_reason": "visible_but_ineligible:intervention_affected_and_not_identifiable",
+      "entity_refs": {
+        "component_id": "cmp-live",
+        "exposure_rate_per_day_usd": 5379.03,
+        "lane": "asia-us-west",
+        "region": "APAC",
+        "supplier_id": "sup-live"
+      },
+      "intervention_recommended": "activate_alternate",
+      "intervention_status": "intervention_affected",
+      "intervention_taken": "activate_alternate",
+      "missingness_state": "complete",
+      "model_or_champion_id": "champ-genesis-governed-set-mt",
+      "observed": {
+        "exposure_usd": 123879.48,
+        "final_delay_days": 23.03,
+        "intervention_result": null,
+        "recovery_days": 34.513,
+        "stockout": false
+      },
+      "off_policy": {
+        "checks": {
+          "action_not_deterministic": true,
+          "caller_propensity_forged": false,
+          "confounder_vector_present": true,
+          "effective_sample_size": 4.0,
+          "effective_sample_size_sufficient": false,
+          "policy_record_logged": true,
+          "positivity_overlap": true,
+          "propensity_recomputed_matches_claim": true,
+          "support_violation": false,
+          "weight_concentration": 0.25
+        },
+        "recomputed_propensity_micro": 700000,
+        "sensitivity_to_unobserved_confounding": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+        "state": "CHECKED",
+        "usable_for": "predictive_monitoring_only"
+      },
+      "outcome_observed_at": "2025-09-06",
+      "outcome_source": "authorized_synthetic_truth_channel",
+      "outcome_source_hash": "596263ca4f518d9a6bc452dc52d494336eb84a1d34bd75d5882392103588d614",
+      "outcome_value_micro": 3136801,
+      "policy_release_hash": "1a47ce736ef27e60fa3aea3d2abcb96aa4e1eb8b22f492c335502d0dc9f75f1f",
+      "prediction_as_of": "2025-08-10",
+      "prediction_distribution_hash": "e64687bf0b67be9ed4dbbbb6e3600fb47eeee115e07ec662ec27ac383e66ded8",
+      "prediction_id": "pred-6c8518f584be",
+      "prediction_receipt_hash": "6c8518f584beb06b9a9b0787bcf6b3c2c313c089742e980f902056a01cc024b4",
+      "previous_audit_hash": "3bde0c86580009c175d2acad8fcbda53b7dac4d1eefd6b25ef7b73a3590d37ae",
+      "propensity_provenance": "absent",
+      "recommendation_propensity_micro": 700000,
+      "resolution_status": "RESOLVED",
+      "resource_scope": "scope:live-disruptions",
+      "revision_of": null,
+      "score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.510981,
+        "nll": 1.31261,
+        "pit": 0.820557,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "signed_row_hash": "08331f15fa7cdcbae146d3714dd3864040dc676cb2297e4e856a182e47c9f471",
+      "spec": "eagle-eye-outcome-resolution/1.0",
+      "task_id": "case-4955953883",
+      "tenant_id": "tenant-demo"
+    },
+    {
+      "acting_policy": "policy:follow-recommendation-70/1",
+      "authorization_receipt": "approval-shadow-fixture",
+      "censoring_state": "uncensored",
+      "confounders": {
+        "schema_version": "confounders/1.0",
+        "vector": {
+          "disruption_class": "port_congestion",
+          "lane": "asia-us-west",
+          "n_target_obs": 2
+        }
+      },
+      "current_audit_hash": "a39abf999bcd5ba74367fc78fdc78896a791f6f16465ea0ae095b8d258222ec1",
+      "eligibility_for_registry": true,
+      "eligibility_reason": "eligible:intervention_affected",
+      "entity_refs": {
+        "component_id": "cmp-live",
+        "exposure_rate_per_day_usd": 14976.32,
+        "lane": "asia-us-west",
+        "region": "APAC",
+        "supplier_id": "sup-live"
+      },
+      "intervention_recommended": "activate_alternate",
+      "intervention_status": "intervention_affected",
+      "intervention_taken": "activate_alternate",
+      "missingness_state": "complete",
+      "model_or_champion_id": "champ-genesis-governed-set-mt",
+      "observed": {
+        "exposure_usd": 281368.95,
+        "final_delay_days": 18.788,
+        "intervention_result": null,
+        "recovery_days": 30.451,
+        "stockout": false
+      },
+      "off_policy": {
+        "checks": {
+          "action_not_deterministic": true,
+          "caller_propensity_forged": false,
+          "confounder_vector_present": true,
+          "effective_sample_size": 5.0,
+          "effective_sample_size_sufficient": true,
+          "policy_record_logged": true,
+          "positivity_overlap": true,
+          "propensity_recomputed_matches_claim": true,
+          "support_violation": false,
+          "weight_concentration": 0.2
+        },
+        "recomputed_propensity_micro": 700000,
+        "sensitivity_to_unobserved_confounding": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+        "state": "IDENTIFIABLE_UNDER_STATED_ASSUMPTIONS",
+        "usable_for": "causal_effect_estimation_under_stated_assumptions"
+      },
+      "outcome_observed_at": "2025-09-23",
+      "outcome_source": "authorized_synthetic_truth_channel",
+      "outcome_source_hash": "7c8ea3abf63f6c31eda687fb6015f3b2cde8e54ea77ec7b1a13a0b654e3ef299",
+      "outcome_value_micro": 2933197,
+      "policy_release_hash": "1a47ce736ef27e60fa3aea3d2abcb96aa4e1eb8b22f492c335502d0dc9f75f1f",
+      "prediction_as_of": "2025-09-01",
+      "prediction_distribution_hash": "151e0061e12c3a5f89b5c12c85704b3f7c92475defe2e04b7b8438431f6a0a73",
+      "prediction_id": "pred-c79601cde5fe",
+      "prediction_receipt_hash": "c79601cde5fe760b4afb9e63cf3e159877f51f2caf33704bbdf9cba8be93f0fa",
+      "previous_audit_hash": "5c7e6d2f54238f28ce3991be779de8c23328937fdcc7605fedcd6c651da8933d",
+      "propensity_provenance": "absent",
+      "recommendation_propensity_micro": 700000,
+      "resolution_status": "RESOLVED",
+      "resource_scope": "scope:live-disruptions",
+      "revision_of": null,
+      "score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.31346,
+        "nll": 1.035216,
+        "pit": 0.663371,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "signed_row_hash": "c76ae7be8db94cafc3d6d3bbe3cccd24fd72cd1240d5b731ca8d90f356a806b7",
+      "spec": "eagle-eye-outcome-resolution/1.0",
+      "task_id": "case-6678116679",
+      "tenant_id": "tenant-demo"
+    },
+    {
+      "acting_policy": "policy:follow-recommendation-70/1",
+      "authorization_receipt": "approval-shadow-fixture",
+      "censoring_state": "uncensored",
+      "confounders": {
+        "schema_version": "confounders/1.0",
+        "vector": {
+          "disruption_class": "port_congestion",
+          "lane": "asia-us-west",
+          "n_target_obs": 2
+        }
+      },
+      "current_audit_hash": "6e898beff90ba47e3cb499fbe03ff4c1d65d49682b0fb015b564753a744593b1",
+      "eligibility_for_registry": true,
+      "eligibility_reason": "eligible:intervention_affected",
+      "entity_refs": {
+        "component_id": "cmp-live",
+        "exposure_rate_per_day_usd": 8147.62,
+        "lane": "asia-us-west",
+        "region": "APAC",
+        "supplier_id": "sup-live"
+      },
+      "intervention_recommended": "activate_alternate",
+      "intervention_status": "intervention_affected",
+      "intervention_taken": "activate_alternate",
+      "missingness_state": "complete",
+      "model_or_champion_id": "champ-genesis-governed-set-mt",
+      "observed": {
+        "exposure_usd": 77876.2,
+        "final_delay_days": 9.558,
+        "intervention_result": null,
+        "recovery_days": 15.022,
+        "stockout": true
+      },
+      "off_policy": {
+        "checks": {
+          "action_not_deterministic": true,
+          "caller_propensity_forged": false,
+          "confounder_vector_present": true,
+          "effective_sample_size": 6.0,
+          "effective_sample_size_sufficient": true,
+          "policy_record_logged": true,
+          "positivity_overlap": true,
+          "propensity_recomputed_matches_claim": true,
+          "support_violation": false,
+          "weight_concentration": 0.166667
+        },
+        "recomputed_propensity_micro": 700000,
+        "sensitivity_to_unobserved_confounding": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+        "state": "IDENTIFIABLE_UNDER_STATED_ASSUMPTIONS",
+        "usable_for": "causal_effect_estimation_under_stated_assumptions"
+      },
+      "outcome_observed_at": "2025-10-05",
+      "outcome_source": "authorized_synthetic_truth_channel",
+      "outcome_source_hash": "b3ed6fe96fcd8531e9203b10f35d0717338833b40359d03d30aa73984aad3c06",
+      "outcome_value_micro": 2257395,
+      "policy_release_hash": "1a47ce736ef27e60fa3aea3d2abcb96aa4e1eb8b22f492c335502d0dc9f75f1f",
+      "prediction_as_of": "2025-09-22",
+      "prediction_distribution_hash": "580a11d65e0d1e908eb4ab52bd3600714b64688c232fc5beceda26674f90c07e",
+      "prediction_id": "pred-092352aaf15a",
+      "prediction_receipt_hash": "092352aaf15aeba640152e43ed315ed74a9f1081540a72d8f74c3a25746ca211",
+      "previous_audit_hash": "a39abf999bcd5ba74367fc78fdc78896a791f6f16465ea0ae095b8d258222ec1",
+      "propensity_provenance": "absent",
+      "recommendation_propensity_micro": 700000,
+      "resolution_status": "RESOLVED",
+      "resource_scope": "scope:live-disruptions",
+      "revision_of": null,
+      "score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.245186,
+        "nll": 0.935195,
+        "pit": 0.465565,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "signed_row_hash": "4aa0cf92a270146c9637e0bfa14852c4b818a1f54cddfc4d5663de5559b0e844",
+      "spec": "eagle-eye-outcome-resolution/1.0",
+      "task_id": "case-7316567614",
+      "tenant_id": "tenant-demo"
+    }
+  ],
+  "run_context": {
+    "base_commit": "46f6e2f",
+    "code_revision": "27c4adb7ba0d9e87",
+    "dependency_lock_sha256": "NOT_AVAILABLE",
+    "evaluator_version": "sealed-evaluator/2.0",
+    "python": "3.11.15"
+  },
+  "signer_registry": {
+    "trusted_signers": [
+      {
+        "key_id": "ed25519:1694a5e0ee5a4ae59eb77cea30f3b0c887fb7e6c97518b028c7659713fa9f671",
+        "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAV0V7ggCd5GtZQtVn+1A1jmFTD2BogcgL6RiUw4VN3Zg=\n-----END PUBLIC KEY-----\n"
+      },
+      {
+        "key_id": "ed25519:83e5215ccc7148521298c471d6296a20d11ed8c2a84e856603d337ef2d2efc81",
+        "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAsV1GlbQYFiDEnSlmDQxU9+3mITRf465pLMYJQ5MLGo8=\n-----END PUBLIC KEY-----\n"
+      },
+      {
+        "key_id": "ed25519:35c6f1ae8fb19a11e35eb009aa82c1a7a9a1d25c933cd0e6d38ffd62fb739d1b",
+        "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAWGM5ETY9XSynrjXDALTdjUz/xojVxs02CiGQ8UWfNDg=\n-----END PUBLIC KEY-----\n"
+      }
+    ]
+  },
+  "spec": "sealed-evolution-replay-bundle/1.0",
+  "suite_scale": 3
+}

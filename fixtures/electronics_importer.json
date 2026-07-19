@@ -1,0 +1,25 @@
+{
+  "mode": "FIXTURE",
+  "suppliers": [
+    {"id": "sup-aster", "name": "Aster Components", "country": "TW", "lat": 25.03, "lon": 121.56},
+    {"id": "sup-northstar", "name": "Northstar Assembly", "country": "VN", "lat": 21.03, "lon": 105.85}
+  ],
+  "products": [
+    {"id": "prod-edge", "name": "Edge Controller", "revenue_at_risk": 420000},
+    {"id": "prod-sensor", "name": "Vision Sensor", "revenue_at_risk": 260000}
+  ],
+  "components": [
+    {"id": "cmp-mcu", "name": "Control MCU", "supplier_id": "sup-aster", "product_id": "prod-edge"},
+    {"id": "cmp-pcb", "name": "PCB Assembly", "supplier_id": "sup-northstar", "product_id": "prod-sensor"}
+  ],
+  "purchase_orders": [
+    {"id": "po-1042", "product_id": "prod-edge", "supplier_id": "sup-aster", "value": 180000},
+    {"id": "po-1049", "product_id": "prod-sensor", "supplier_id": "sup-northstar", "value": 120000}
+  ],
+  "events": [
+    {"id": "evt-facility", "supplier_id": "sup-aster", "severity": 0.82, "kind": "facility_disruption", "source_id": "src-advisory"}
+  ],
+  "sources": [
+    {"id": "src-advisory", "label": "Authorized fixture advisory", "captured_at": "2026-07-12T00:00:00Z", "authority": "synthetic_fixture"}
+  ]
+}

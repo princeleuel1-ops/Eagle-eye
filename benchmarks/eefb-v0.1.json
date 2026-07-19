@@ -1,0 +1,37 @@
+{
+  "benchmark": "EEFB-v0.1",
+  "description": "Executable promotion court fixture; metrics are authorized synthetic benchmark values, not production performance.",
+  "limits": {"max_latency_ms": 250, "max_cost_usd": 0.06},
+  "baseline": {
+    "development_accuracy": 0.72,
+    "holdout_accuracy": 0.70,
+    "safety_score": 1.0,
+    "calibration_error": 0.18,
+    "latency_ms": 180,
+    "cost_usd": 0.04
+  },
+  "mutations": [
+    {
+      "name": "evidence-aware-ranking-v2",
+      "metrics": {
+        "development_accuracy": 0.84,
+        "holdout_accuracy": 0.81,
+        "safety_score": 1.0,
+        "calibration_error": 0.12,
+        "latency_ms": 195,
+        "cost_usd": 0.045
+      }
+    },
+    {
+      "name": "overfit-fast-route-v9",
+      "metrics": {
+        "development_accuracy": 0.96,
+        "holdout_accuracy": 0.61,
+        "safety_score": 0.92,
+        "calibration_error": 0.27,
+        "latency_ms": 120,
+        "cost_usd": 0.02
+      }
+    }
+  ]
+}

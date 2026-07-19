@@ -1,0 +1,74 @@
+{
+  "alpha_total": 0.05,
+  "challenger_budget_per_cycle": 3,
+  "min_scored_cases": 30,
+  "rule": "typed single-parameter grid mutations of the sitting champion; anything else requires existing dual-control governance",
+  "spec": "mutation-whitelist/1.0",
+  "whitelist": {
+    "base.candidate": {
+      "default": "set_mt",
+      "grid": [
+        "set_mt",
+        "seq_prefix"
+      ],
+      "type": "enum"
+    },
+    "governor.shift_suspect_milli": {
+      "default": 800,
+      "grid": [
+        700,
+        800,
+        900,
+        990
+      ],
+      "type": "int"
+    },
+    "governor.widen_shift_milli": {
+      "default": 1500,
+      "grid": [
+        1250,
+        1500,
+        1800
+      ],
+      "type": "int"
+    },
+    "governor.widen_weak_milli": {
+      "default": 1350,
+      "grid": [
+        1150,
+        1350,
+        1600
+      ],
+      "type": "int"
+    },
+    "selector.k_max": {
+      "default": 10,
+      "grid": [
+        8,
+        10,
+        12
+      ],
+      "type": "int"
+    },
+    "selector.min_score_milli": {
+      "default": 4000,
+      "grid": [
+        3500,
+        4000,
+        4500,
+        5000,
+        6000
+      ],
+      "type": "int"
+    },
+    "seq.decay_milli": {
+      "default": 800,
+      "grid": [
+        600,
+        800,
+        950
+      ],
+      "type": "int"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "cases": 12,
+  "champion_coverage80": 0.916667,
+  "champion_crps": 0.159364,
+  "champion_nll": 0.286049,
+  "generator": "synthetic-regime-generator/VARIANT-1",
+  "no_prefix_crps": 0.255023,
+  "no_prefix_nll": 0.842479,
+  "prior_transfer_survives_generator_swap": true,
+  "spec": "cross-generator-eval/1.0"
+}

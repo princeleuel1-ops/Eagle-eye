@@ -1,0 +1,89 @@
+{
+  "candidate": "baseline",
+  "latency_ms": 180,
+  "cost_usd": 0.04,
+  "development": [
+    {
+      "id": "d01",
+      "probability": 0.7
+    },
+    {
+      "id": "d02",
+      "probability": 0.3
+    },
+    {
+      "id": "d03",
+      "probability": 0.6
+    },
+    {
+      "id": "d04",
+      "probability": 0.2
+    },
+    {
+      "id": "d05",
+      "probability": 0.4
+    },
+    {
+      "id": "d06",
+      "probability": 0.2
+    },
+    {
+      "id": "d07",
+      "probability": 0.8
+    },
+    {
+      "id": "d08",
+      "probability": 0.7
+    },
+    {
+      "id": "d09",
+      "probability": 0.6
+    },
+    {
+      "id": "d10",
+      "probability": 0.6
+    }
+  ],
+  "holdout": [
+    {
+      "id": "h01",
+      "probability": 0.7
+    },
+    {
+      "id": "h02",
+      "probability": 0.3
+    },
+    {
+      "id": "h03",
+      "probability": 0.6
+    },
+    {
+      "id": "h04",
+      "probability": 0.8
+    },
+    {
+      "id": "h05",
+      "probability": 0.7
+    },
+    {
+      "id": "h06",
+      "probability": 0.2
+    },
+    {
+      "id": "h07",
+      "probability": 0.4
+    },
+    {
+      "id": "h08",
+      "probability": 0.2
+    },
+    {
+      "id": "h09",
+      "probability": 0.7
+    },
+    {
+      "id": "h10",
+      "probability": 0.8
+    }
+  ]
+}

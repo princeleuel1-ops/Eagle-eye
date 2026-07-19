@@ -1,0 +1,384 @@
+46f6e2f (HEAD -> main) feat: pin governance decisions to immutable policy release
+ docs/SLICE_10_POLICY_RELEASE_RECEIPT.md | 157 ++++++++++++++++++++++++++++++++
+ docs/index.md                           |   1 +
+ policies/action-governance-v1.json      |   1 +
+ scripts/run_fixture.py                  |  10 ++
+ scripts/run_governance_fixture.py       |  10 +-
+ scripts/verify_evidence_room.py         |   1 +
+ src/eagle_eye/evidence.py               |  12 ++-
+ src/eagle_eye/governance.py             |  16 +++-
+ src/eagle_eye/policy.py                 | 113 +++++++++++++++++++----
+ src/eagle_eye/semantics.py              |   2 +-
+ tests/test_policy_bundle.py             |  86 +++++++++++++++++
+ verifier/verify.mjs                     |  13 ++-
+ web/app.js                              |   2 +-
+ 13 files changed, 397 insertions(+), 27 deletions(-)
+bf7d707 feat: enforce resource-scoped policy decision receipts
+ docs/SLICE_9_POLICY_RECEIPT.md    | 175 ++++++++++++++++++++++++++++++++++++++
+ docs/index.md                     |   1 +
+ scripts/run_fixture.py            |   8 +-
+ scripts/run_governance_fixture.py |   7 ++
+ scripts/verify_evidence_room.py   |   1 +
+ src/eagle_eye/evidence.py         |  50 ++++++++++-
+ src/eagle_eye/governance.py       |  35 ++++++++
+ src/eagle_eye/policy.py           |  89 +++++++++++++++++++
+ src/eagle_eye/semantics.py        |   1 +
+ tests/test_policy.py              | 116 +++++++++++++++++++++++++
+ verifier/verify.mjs               |  34 +++++++-
+ web/app.js                        |   2 +-
+ 12 files changed, 515 insertions(+), 4 deletions(-)
+f9645f8 feat: bind governance to trusted identity assertions
+ docs/SLICE_8_IDENTITY_RECEIPT.md  | 153 ++++++++++++++++++++++++++++++++++++++
+ docs/index.md                     |   1 +
+ scripts/run_fixture.py            |  67 ++++++++++++++++-
+ scripts/run_governance_fixture.py |  37 ++++-----
+ scripts/verify_evidence_room.py   |   1 +
+ src/eagle_eye/evidence.py         |  29 +++++++-
+ src/eagle_eye/identity.py         | 104 ++++++++++++++++++++++++++
+ src/eagle_eye/semantics.py        |   1 +
+ tests/test_identity.py            |  94 +++++++++++++++++++++++
+ verifier/verify.mjs               |  34 ++++++++-
+ web/app.js                        |   2 +-
+ 11 files changed, 499 insertions(+), 24 deletions(-)
+0df1f43 feat: bind governance to signed append-only audit chain
+ docs/SLICE_7_AUDIT_CHAIN_RECEIPT.md | 110 ++++++++++++++++++++++++++++++++++++
+ docs/index.md                       |   1 +
+ scripts/run_fixture.py              |  42 +++++++++++++-
+ scripts/verify_evidence_room.py     |   5 +-
+ src/eagle_eye/audit.py              |  91 +++++++++++++++++++++++++++++
+ src/eagle_eye/evidence.py           |  24 +++++++-
+ src/eagle_eye/semantics.py          |   1 +
+ tests/test_audit_ledger.py          |  78 +++++++++++++++++++++++++
+ verifier/verify.mjs                 |  23 +++++++-
+ web/app.js                          |   2 +-
+ web/styles.css                      |   2 +-
+ 11 files changed, 372 insertions(+), 7 deletions(-)
+0700ffc feat: add dual-control shadow approval governance
+ .gitignore                           |   1 +
+ Makefile                             |   7 ++-
+ docs/SLICE_6_DUAL_CONTROL_RECEIPT.md | 107 +++++++++++++++++++++++++++++++++++
+ docs/index.md                        |   1 +
+ scripts/run_governance_fixture.py    |  33 +++++++++++
+ src/eagle_eye/governance.py          |  68 ++++++++++++++++++++++
+ src/eagle_eye/semantics.py           |   1 +
+ src/eagle_eye/server.py              |   6 +-
+ tests/test_governance.py             |  67 ++++++++++++++++++++++
+ web/app.js                           |   3 +-
+ web/index.html                       |   2 +-
+ web/styles.css                       |   2 +-
+ 12 files changed, 291 insertions(+), 7 deletions(-)
+ff37a7e feat: enforce trusted signer and tenant evidence boundaries
+ Makefile                              |   4 +-
+ docs/SLICE_5_TRUST_TENANCY_RECEIPT.md | 116 ++++++++++++++++++++++++++++++++++
+ docs/THREAT_MODEL_SLICE_5.md          |  67 ++++++++++++++++++++
+ docs/index.md                         |   2 +
+ scripts/run_fixture.py                |  16 ++++-
+ scripts/verify_evidence_room.py       |  12 +++-
+ src/eagle_eye/evidence.py             |  43 ++++++++++++-
+ src/eagle_eye/server.py               |  22 +++++++
+ src/eagle_eye/signing.py              |  13 ++++
+ tests/test_trust_tenancy.py           |  86 +++++++++++++++++++++++++
+ verifier/verify.mjs                   |  50 +++++++++++++--
+ web/app.js                            |   7 +-
+ web/styles.css                        |   2 +-
+ 13 files changed, 424 insertions(+), 16 deletions(-)
+8f450df feat: bind EEFB promotion metrics to hashed case evaluation
+ benchmarks/cases/development.json                  | 66 ++++++++++++++++
+ benchmarks/cases/holdout.json                      | 66 ++++++++++++++++
+ benchmarks/predictions/baseline.json               | 89 ++++++++++++++++++++++
+ .../predictions/evidence-aware-ranking-v2.json     | 89 ++++++++++++++++++++++
+ benchmarks/predictions/overfit-fast-route-v9.json  | 89 ++++++++++++++++++++++
+ docs/SLICE_4_MEASURED_EEFB_RECEIPT.md              | 73 ++++++++++++++++++
+ docs/index.md                                      |  1 +
+ scripts/run_benchmark_court.py                     | 55 ++++++++++++-
+ src/eagle_eye/evaluator.py                         | 77 +++++++++++++++++++
+ tests/test_evaluator.py                            | 39 ++++++++++
+ 10 files changed, 641 insertions(+), 3 deletions(-)
+c46e9f1 feat: add evidence-gated recursive benchmark court
+ .gitignore                              |  1 +
+ Makefile                                |  7 ++-
+ benchmarks/eefb-v0.1.json               | 37 +++++++++++++
+ docs/SLICE_3_RECURSIVE_COURT_RECEIPT.md | 98 +++++++++++++++++++++++++++++++++
+ docs/index.md                           |  1 +
+ scripts/run_benchmark_court.py          | 14 +++++
+ src/eagle_eye/benchmark.py              | 80 +++++++++++++++++++++++++++
+ src/eagle_eye/semantics.py              |  1 +
+ src/eagle_eye/server.py                 | 10 ++--
+ tests/test_benchmark_court.py           | 65 ++++++++++++++++++++++
+ web/app.js                              |  3 +-
+ web/index.html                          |  1 +
+ web/styles.css                          |  2 +-
+ 13 files changed, 312 insertions(+), 8 deletions(-)
+a02fc69 feat: add signed PO-17 preflight and verifier parity
+ Makefile                            |   7 ++-
+ docs/SLICE_2_SIGNED_PO17_RECEIPT.md | 114 ++++++++++++++++++++++++++++++++++++
+ docs/index.md                       |   1 +
+ fixtures/po17/components.csv        |   2 +
+ fixtures/po17/events.json           |   3 +
+ fixtures/po17/products.csv          |   2 +
+ fixtures/po17/purchase_orders.csv   |   2 +
+ fixtures/po17/sources.json          |   3 +
+ fixtures/po17/suppliers.csv         |   2 +
+ pyproject.toml                      |   2 +-
+ scripts/run_fixture.py              |  21 ++++++-
+ src/eagle_eye/evidence.py           |  55 +++++++++++++----
+ src/eagle_eye/ingestion.py          |  54 +++++++++++++++++
+ src/eagle_eye/kernel.py             |  24 ++++++++
+ src/eagle_eye/semantics.py          |   1 +
+ src/eagle_eye/signing.py            |  38 ++++++++++++
+ tests/test_ingestion_scenarios.py   |  27 +++++++++
+ tests/test_signature_parity.py      |  56 ++++++++++++++++++
+ verifier/verify.mjs                 |  31 ++++++++++
+ web/app.js                          |   6 +-
+ web/index.html                      |   4 +-
+ web/styles.css                      |   2 +-
+ 22 files changed, 435 insertions(+), 22 deletions(-)
+caf1294 fix: preserve node asset identity and replacement provenance
+ tests/test_assets.py          |   29 +-
+ web/assets/node-registry.json | 1382 ++++++++++++++++++++++++++++-------------
+ web/assets/nodes/012.png      |  Bin 964514 -> 958397 bytes
+ web/assets/nodes/013.png      |  Bin 1365304 -> 964514 bytes
+ web/assets/nodes/014.png      |  Bin 1069708 -> 1365304 bytes
+ web/assets/nodes/015.png      |  Bin 883632 -> 1069708 bytes
+ web/assets/nodes/016.png      |  Bin 1194082 -> 883632 bytes
+ web/assets/nodes/017.png      |  Bin 625161 -> 1194082 bytes
+ web/assets/nodes/018.png      |  Bin 697116 -> 0 bytes
+ web/assets/nodes/019.png      |  Bin 800982 -> 625161 bytes
+ web/assets/nodes/020.png      |  Bin 1503450 -> 697116 bytes
+ web/assets/nodes/021.png      |  Bin 1517171 -> 800982 bytes
+ web/assets/nodes/022.png      |  Bin 1422103 -> 1503450 bytes
+ web/assets/nodes/023.png      |  Bin 1408145 -> 1517171 bytes
+ web/assets/nodes/024.png      |  Bin 1068054 -> 1422103 bytes
+ web/assets/nodes/025.png      |  Bin 1479278 -> 1408145 bytes
+ web/assets/nodes/026.png      |  Bin 1233348 -> 1068054 bytes
+ web/assets/nodes/027.png      |  Bin 1307116 -> 1479278 bytes
+ web/assets/nodes/028.png      |  Bin 1224021 -> 1233348 bytes
+ web/assets/nodes/029.png      |  Bin 1077868 -> 1307116 bytes
+ web/assets/nodes/030.png      |  Bin 1169828 -> 1224021 bytes
+ web/assets/nodes/031.png      |  Bin 1290984 -> 1077868 bytes
+ web/assets/nodes/032.png      |  Bin 630912 -> 1169828 bytes
+ web/assets/nodes/033.png      |  Bin 1048872 -> 1039202 bytes
+ web/assets/nodes/034.png      |  Bin 1361430 -> 1290984 bytes
+ web/assets/nodes/035.png      |  Bin 1358022 -> 630912 bytes
+ web/assets/nodes/036.png      |  Bin 903712 -> 1048872 bytes
+ web/assets/nodes/037.png      |  Bin 1293137 -> 1361430 bytes
+ web/assets/nodes/038.png      |  Bin 1443753 -> 1358022 bytes
+ web/assets/nodes/039.png      |  Bin 1217952 -> 903712 bytes
+ web/assets/nodes/040.png      |  Bin 1122725 -> 1293137 bytes
+ web/assets/nodes/041.png      |  Bin 1419848 -> 1443753 bytes
+ web/assets/nodes/042.png      |  Bin 1242212 -> 1217952 bytes
+ web/assets/nodes/043.png      |  Bin 1125134 -> 1122725 bytes
+ web/assets/nodes/044.png      |  Bin 1510956 -> 1419848 bytes
+ web/assets/nodes/045.png      |  Bin 1170928 -> 1242212 bytes
+ web/assets/nodes/046.png      |  Bin 1301219 -> 1125134 bytes
+ web/assets/nodes/047.png      |  Bin 1005494 -> 1510956 bytes
+ web/assets/nodes/048.png      |  Bin 1118930 -> 1170928 bytes
+ web/assets/nodes/049.png      |  Bin 1117506 -> 1301219 bytes
+ web/assets/nodes/050.png      |  Bin 1273649 -> 1005494 bytes
+ web/assets/nodes/051.png      |  Bin 1354325 -> 1118930 bytes
+ web/assets/nodes/052.png      |  Bin 1268865 -> 1117506 bytes
+ web/assets/nodes/053.png      |  Bin 1055752 -> 1273649 bytes
+ web/assets/nodes/054.png      |  Bin 893752 -> 1354325 bytes
+ web/assets/nodes/055.png      |  Bin 928199 -> 1268865 bytes
+ web/assets/nodes/056.png      |  Bin 1254274 -> 1055752 bytes
+ web/assets/nodes/057.png      |  Bin 919528 -> 893752 bytes
+ web/assets/nodes/058.png      |  Bin 632550 -> 928199 bytes
+ web/assets/nodes/059.png      |  Bin 925590 -> 1254274 bytes
+ web/assets/nodes/060.png      |  Bin 1042975 -> 919528 bytes
+ web/assets/nodes/061.png      |  Bin 1029584 -> 632550 bytes
+ web/assets/nodes/062.png      |  Bin 640910 -> 925590 bytes
+ web/assets/nodes/063.png      |  Bin 868941 -> 1042975 bytes
+ web/assets/nodes/064.png      |  Bin 945759 -> 1029584 bytes
+ web/assets/nodes/065.png      |  Bin 1041177 -> 640910 bytes
+ web/assets/nodes/066.png      |  Bin 882969 -> 868941 bytes
+ web/assets/nodes/067.png      |  Bin 1115639 -> 945759 bytes
+ web/assets/nodes/068.png      |  Bin 1083750 -> 1041177 bytes
+ web/assets/nodes/069.png      |  Bin 1003527 -> 882969 bytes
+ web/assets/nodes/070.png      |  Bin 525677 -> 1115639 bytes
+ web/assets/nodes/071.png      |  Bin 952983 -> 1083750 bytes
+ web/assets/nodes/072.png      |  Bin 1052356 -> 1003527 bytes
+ web/assets/nodes/073.png      |  Bin 945323 -> 525677 bytes
+ web/assets/nodes/074.png      |  Bin 1079417 -> 952983 bytes
+ web/assets/nodes/075.png      |  Bin 1136672 -> 1052356 bytes
+ web/assets/nodes/076.png      |  Bin 590097 -> 945323 bytes
+ web/assets/nodes/077.png      |  Bin 1129374 -> 1079417 bytes
+ web/assets/nodes/078.png      |  Bin 1074205 -> 1136672 bytes
+ web/assets/nodes/079.png      |  Bin 630155 -> 590097 bytes
+ web/assets/nodes/080.png      |  Bin 904322 -> 1129374 bytes
+ web/assets/nodes/081.png      |  Bin 864246 -> 1074205 bytes
+ web/assets/nodes/082.png      |  Bin 770071 -> 630155 bytes
+ web/assets/nodes/083.png      |  Bin 1049636 -> 904322 bytes
+ web/assets/nodes/084.png      |  Bin 795772 -> 864246 bytes
+ web/assets/nodes/085.png      |  Bin 930810 -> 0 bytes
+ web/assets/nodes/086.png      |  Bin 1205029 -> 770071 bytes
+ web/assets/nodes/087.png      |  Bin 687249 -> 1049636 bytes
+ web/assets/nodes/088.png      |  Bin 1242963 -> 795772 bytes
+ web/assets/nodes/089.png      |  Bin 1275502 -> 930810 bytes
+ web/assets/nodes/090.png      |  Bin 702848 -> 1205029 bytes
+ web/assets/nodes/091.png      |  Bin 1236203 -> 687249 bytes
+ web/assets/nodes/092.png      |  Bin 1137720 -> 0 bytes
+ web/assets/nodes/093.png      |  Bin 954270 -> 1242963 bytes
+ web/assets/nodes/094.png      |  Bin 1202617 -> 1275502 bytes
+ web/assets/nodes/095.png      |  Bin 1140789 -> 702848 bytes
+ web/assets/nodes/096.png      |  Bin 1560346 -> 1236203 bytes
+ web/assets/nodes/097.png      |  Bin 1266715 -> 1137720 bytes
+ web/assets/nodes/098.png      |  Bin 939426 -> 954270 bytes
+ web/assets/nodes/099.png      |  Bin 1349143 -> 1202617 bytes
+ web/assets/nodes/100.png      |  Bin 1110364 -> 1293852 bytes
+ web/assets/nodes/101.png      |  Bin 1319462 -> 1181348 bytes
+ web/assets/nodes/102.png      |  Bin 1083212 -> 1140789 bytes
+ web/assets/nodes/103.png      |  Bin 1252196 -> 1560346 bytes
+ web/assets/nodes/104.png      |  Bin 1134587 -> 1266715 bytes
+ web/assets/nodes/105.png      |  Bin 930184 -> 939426 bytes
+ web/assets/nodes/106.png      |  Bin 1109461 -> 1349143 bytes
+ web/assets/nodes/107.png      |  Bin 909692 -> 1110364 bytes
+ web/assets/nodes/108.png      |  Bin 1313926 -> 1319462 bytes
+ web/assets/nodes/109.png      |  Bin 1445920 -> 1083212 bytes
+ web/assets/nodes/110.png      |  Bin 0 -> 1252196 bytes
+ web/assets/nodes/111.png      |  Bin 0 -> 1134587 bytes
+ web/assets/nodes/112.png      |  Bin 0 -> 930184 bytes
+ web/assets/nodes/113.png      |  Bin 0 -> 1109461 bytes
+ web/assets/nodes/114.png      |  Bin 0 -> 909692 bytes
+ web/assets/nodes/115.png      |  Bin 0 -> 1313926 bytes
+ web/assets/nodes/116.png      |  Bin 0 -> 1445920 bytes
+ 107 files changed, 973 insertions(+), 438 deletions(-)
+bcc3505 feat: establish verified Eagle Eye Zenith vertical slice
+ .gitignore                           |  10 +
+ Makefile                             |  28 ++
+ README.md                            |  17 +
+ artifacts/runs/.gitkeep              |   0
+ docs/ARCHITECTURE.md                 |  10 +
+ docs/DONOR_PROVENANCE.md             |  15 +
+ docs/GAP_REGISTER.md                 |  14 +
+ docs/PRODUCT_SPEC.md                 |  20 +
+ docs/SLICE_1_VERIFICATION_RECEIPT.md | 118 +++++
+ docs/index.md                        |  13 +
+ docs/log.md                          |   9 +
+ fixtures/electronics_importer.json   |  25 +
+ pyproject.toml                       |  14 +
+ scripts/run_fixture.py               |  18 +
+ scripts/semantic_check.py            |   8 +
+ scripts/verify_evidence_room.py      |  11 +
+ src/eagle_eye/__init__.py            |   1 +
+ src/eagle_eye/evidence.py            |  55 +++
+ src/eagle_eye/kernel.py              | 104 ++++
+ src/eagle_eye/semantics.py           |  17 +
+ src/eagle_eye/server.py              |  41 ++
+ tests/test_assets.py                 |  22 +
+ tests/test_evidence.py               |  11 +
+ tests/test_kernel.py                 |  32 ++
+ tests/test_semantics.py              |  12 +
+ web/app.js                           |  11 +
+ web/assets/node-registry.json        | 885 +++++++++++++++++++++++++++++++++++
+ web/assets/nodes/001.png             | Bin 0 -> 1544066 bytes
+ web/assets/nodes/002.png             | Bin 0 -> 1333062 bytes
+ web/assets/nodes/003.png             | Bin 0 -> 1453575 bytes
+ web/assets/nodes/004.png             | Bin 0 -> 744243 bytes
+ web/assets/nodes/005.png             | Bin 0 -> 1369610 bytes
+ web/assets/nodes/006.png             | Bin 0 -> 1089041 bytes
+ web/assets/nodes/007.png             | Bin 0 -> 706768 bytes
+ web/assets/nodes/008.png             | Bin 0 -> 770187 bytes
+ web/assets/nodes/009.png             | Bin 0 -> 1189258 bytes
+ web/assets/nodes/010.png             | Bin 0 -> 813523 bytes
+ web/assets/nodes/011.png             | Bin 0 -> 1065029 bytes
+ web/assets/nodes/012.png             | Bin 0 -> 964514 bytes
+ web/assets/nodes/013.png             | Bin 0 -> 1365304 bytes
+ web/assets/nodes/014.png             | Bin 0 -> 1069708 bytes
+ web/assets/nodes/015.png             | Bin 0 -> 883632 bytes
+ web/assets/nodes/016.png             | Bin 0 -> 1194082 bytes
+ web/assets/nodes/017.png             | Bin 0 -> 625161 bytes
+ web/assets/nodes/018.png             | Bin 0 -> 697116 bytes
+ web/assets/nodes/019.png             | Bin 0 -> 800982 bytes
+ web/assets/nodes/020.png             | Bin 0 -> 1503450 bytes
+ web/assets/nodes/021.png             | Bin 0 -> 1517171 bytes
+ web/assets/nodes/022.png             | Bin 0 -> 1422103 bytes
+ web/assets/nodes/023.png             | Bin 0 -> 1408145 bytes
+ web/assets/nodes/024.png             | Bin 0 -> 1068054 bytes
+ web/assets/nodes/025.png             | Bin 0 -> 1479278 bytes
+ web/assets/nodes/026.png             | Bin 0 -> 1233348 bytes
+ web/assets/nodes/027.png             | Bin 0 -> 1307116 bytes
+ web/assets/nodes/028.png             | Bin 0 -> 1224021 bytes
+ web/assets/nodes/029.png             | Bin 0 -> 1077868 bytes
+ web/assets/nodes/030.png             | Bin 0 -> 1169828 bytes
+ web/assets/nodes/031.png             | Bin 0 -> 1290984 bytes
+ web/assets/nodes/032.png             | Bin 0 -> 630912 bytes
+ web/assets/nodes/033.png             | Bin 0 -> 1048872 bytes
+ web/assets/nodes/034.png             | Bin 0 -> 1361430 bytes
+ web/assets/nodes/035.png             | Bin 0 -> 1358022 bytes
+ web/assets/nodes/036.png             | Bin 0 -> 903712 bytes
+ web/assets/nodes/037.png             | Bin 0 -> 1293137 bytes
+ web/assets/nodes/038.png             | Bin 0 -> 1443753 bytes
+ web/assets/nodes/039.png             | Bin 0 -> 1217952 bytes
+ web/assets/nodes/040.png             | Bin 0 -> 1122725 bytes
+ web/assets/nodes/041.png             | Bin 0 -> 1419848 bytes
+ web/assets/nodes/042.png             | Bin 0 -> 1242212 bytes
+ web/assets/nodes/043.png             | Bin 0 -> 1125134 bytes
+ web/assets/nodes/044.png             | Bin 0 -> 1510956 bytes
+ web/assets/nodes/045.png             | Bin 0 -> 1170928 bytes
+ web/assets/nodes/046.png             | Bin 0 -> 1301219 bytes
+ web/assets/nodes/047.png             | Bin 0 -> 1005494 bytes
+ web/assets/nodes/048.png             | Bin 0 -> 1118930 bytes
+ web/assets/nodes/049.png             | Bin 0 -> 1117506 bytes
+ web/assets/nodes/050.png             | Bin 0 -> 1273649 bytes
+ web/assets/nodes/051.png             | Bin 0 -> 1354325 bytes
+ web/assets/nodes/052.png             | Bin 0 -> 1268865 bytes
+ web/assets/nodes/053.png             | Bin 0 -> 1055752 bytes
+ web/assets/nodes/054.png             | Bin 0 -> 893752 bytes
+ web/assets/nodes/055.png             | Bin 0 -> 928199 bytes
+ web/assets/nodes/056.png             | Bin 0 -> 1254274 bytes
+ web/assets/nodes/057.png             | Bin 0 -> 919528 bytes
+ web/assets/nodes/058.png             | Bin 0 -> 632550 bytes
+ web/assets/nodes/059.png             | Bin 0 -> 925590 bytes
+ web/assets/nodes/060.png             | Bin 0 -> 1042975 bytes
+ web/assets/nodes/061.png             | Bin 0 -> 1029584 bytes
+ web/assets/nodes/062.png             | Bin 0 -> 640910 bytes
+ web/assets/nodes/063.png             | Bin 0 -> 868941 bytes
+ web/assets/nodes/064.png             | Bin 0 -> 945759 bytes
+ web/assets/nodes/065.png             | Bin 0 -> 1041177 bytes
+ web/assets/nodes/066.png             | Bin 0 -> 882969 bytes
+ web/assets/nodes/067.png             | Bin 0 -> 1115639 bytes
+ web/assets/nodes/068.png             | Bin 0 -> 1083750 bytes
+ web/assets/nodes/069.png             | Bin 0 -> 1003527 bytes
+ web/assets/nodes/070.png             | Bin 0 -> 525677 bytes
+ web/assets/nodes/071.png             | Bin 0 -> 952983 bytes
+ web/assets/nodes/072.png             | Bin 0 -> 1052356 bytes
+ web/assets/nodes/073.png             | Bin 0 -> 945323 bytes
+ web/assets/nodes/074.png             | Bin 0 -> 1079417 bytes
+ web/assets/nodes/075.png             | Bin 0 -> 1136672 bytes
+ web/assets/nodes/076.png             | Bin 0 -> 590097 bytes
+ web/assets/nodes/077.png             | Bin 0 -> 1129374 bytes
+ web/assets/nodes/078.png             | Bin 0 -> 1074205 bytes
+ web/assets/nodes/079.png             | Bin 0 -> 630155 bytes
+ web/assets/nodes/080.png             | Bin 0 -> 904322 bytes
+ web/assets/nodes/081.png             | Bin 0 -> 864246 bytes
+ web/assets/nodes/082.png             | Bin 0 -> 770071 bytes
+ web/assets/nodes/083.png             | Bin 0 -> 1049636 bytes
+ web/assets/nodes/084.png             | Bin 0 -> 795772 bytes
+ web/assets/nodes/085.png             | Bin 0 -> 930810 bytes
+ web/assets/nodes/086.png             | Bin 0 -> 1205029 bytes
+ web/assets/nodes/087.png             | Bin 0 -> 687249 bytes
+ web/assets/nodes/088.png             | Bin 0 -> 1242963 bytes
+ web/assets/nodes/089.png             | Bin 0 -> 1275502 bytes
+ web/assets/nodes/090.png             | Bin 0 -> 702848 bytes
+ web/assets/nodes/091.png             | Bin 0 -> 1236203 bytes
+ web/assets/nodes/092.png             | Bin 0 -> 1137720 bytes
+ web/assets/nodes/093.png             | Bin 0 -> 954270 bytes
+ web/assets/nodes/094.png             | Bin 0 -> 1202617 bytes
+ web/assets/nodes/095.png             | Bin 0 -> 1140789 bytes
+ web/assets/nodes/096.png             | Bin 0 -> 1560346 bytes
+ web/assets/nodes/097.png             | Bin 0 -> 1266715 bytes
+ web/assets/nodes/098.png             | Bin 0 -> 939426 bytes
+ web/assets/nodes/099.png             | Bin 0 -> 1349143 bytes
+ web/assets/nodes/100.png             | Bin 0 -> 1110364 bytes
+ web/assets/nodes/101.png             | Bin 0 -> 1319462 bytes
+ web/assets/nodes/102.png             | Bin 0 -> 1083212 bytes
+ web/assets/nodes/103.png             | Bin 0 -> 1252196 bytes
+ web/assets/nodes/104.png             | Bin 0 -> 1134587 bytes
+ web/assets/nodes/105.png             | Bin 0 -> 930184 bytes
+ web/assets/nodes/106.png             | Bin 0 -> 1109461 bytes
+ web/assets/nodes/107.png             | Bin 0 -> 909692 bytes
+ web/assets/nodes/108.png             | Bin 0 -> 1313926 bytes
+ web/assets/nodes/109.png             | Bin 0 -> 1445920 bytes
+ web/index.html                       |  14 +
+ web/styles.css                       |   1 +
+ 138 files changed, 1536 insertions(+)

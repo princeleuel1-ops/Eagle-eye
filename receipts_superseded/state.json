@@ -1,0 +1,103 @@
+{
+  "budget": {
+    "alpha_procedure": "Bonferroni allocation alpha_total/max_looks per charged look; champion charged inside each compare",
+    "alpha_remaining_micro": 47500,
+    "alpha_spent_micro": 2500,
+    "alpha_total_micro": 50000,
+    "candidates_evaluated": 18,
+    "candidates_proposed": 18,
+    "candidates_rejected_before_holdout": 17,
+    "effective_hypothesis_family": "single-parameter whitelist mutations of the sitting champion",
+    "final_audit_holdout_looks": 1,
+    "holdout_looks": 1
+  },
+  "champion": "champ-genesis-governed-set-mt",
+  "champion_config": {
+    "base.candidate": "set_mt",
+    "governor.shift_suspect_milli": 800,
+    "governor.widen_shift_milli": 1500,
+    "governor.widen_weak_milli": 1350,
+    "selector.k_max": 10,
+    "selector.min_score_milli": 4000,
+    "seq.decay_milli": 800
+  },
+  "claim_supported": false,
+  "conformal_state_latest": "GUARANTEE_SUSPENDED_LOW_EFFECTIVE_SAMPLE",
+  "drift_state": "stable",
+  "events": {
+    "abstentions": 0,
+    "calibration_blocks": 0,
+    "contamination_blocks": 0,
+    "coverage_failures": 0,
+    "off_policy_not_identifiable": 0,
+    "promotions": 0,
+    "receipt_verification_failures": 0,
+    "registry_growth": 2,
+    "rejections": 18,
+    "shift_blocks": 0,
+    "shift_suspensions": 0,
+    "trust_blocks": 0
+  },
+  "external_action": false,
+  "last_promotion": null,
+  "last_rejection": {
+    "candidate": {
+      "candidate_budget_position": 3,
+      "candidate_id": "cand-347dde85577b",
+      "court_release_id": "eagle-eye-prediction-court/1.0",
+      "created_at_cycle": 6,
+      "dataset_snapshot_id": "snap-c9cc00ef916ca0be",
+      "diff": {
+        "governor.widen_weak_milli": 1600
+      },
+      "expected_benefit": "sharper or better-supported posterior",
+      "generation_seed": 20260713,
+      "hypothesis": "adjusting governor.widen_weak_milli to 1600 improves sealed paired log score without regression",
+      "known_risk": "calibration or OoD regression; support misuse",
+      "mutation_type": "typed_parameter",
+      "parent_champion_id": "champ-genesis-governed-set-mt"
+    },
+    "candidate_config": {
+      "base.candidate": "set_mt",
+      "governor.shift_suspect_milli": 800,
+      "governor.widen_shift_milli": 1500,
+      "governor.widen_weak_milli": 1600,
+      "selector.k_max": 10,
+      "selector.min_score_milli": 4000,
+      "seq.decay_milli": 800
+    },
+    "court_release_id": "eagle-eye-prediction-court/1.0",
+    "dataset_snapshot_id": "snap-c9cc00ef916ca0be",
+    "dev_nll_micro": 690001,
+    "evaluator_look_index": null,
+    "evaluator_response_hash": null,
+    "parent_champion_receipt": "0000000000000000000000000000000000000000000000000000000000000000",
+    "policy_release": "policy-v1@1a47ce736ef27e60",
+    "reasons": [
+      "development_no_improvement (no sealed look spent)"
+    ],
+    "registry_manifest_sha256": "ee082a01e9601c205d8873f5871c0f4e5c45d2fbcefe7ee0cb74ed67fb556241",
+    "run_context": {
+      "base_commit": "46f6e2f",
+      "code_revision": "27c4adb7ba0d9e87",
+      "dependency_lock_sha256": "NOT_AVAILABLE",
+      "evaluator_version": "sealed-evaluator/2.0",
+      "python": "3.11.15"
+    },
+    "spec": "eagle-eye-sealed-evolution/2.0",
+    "state": "REJECTED",
+    "statistics": null
+  },
+  "lineage_head": "52852a8cdeb834af5b6bea89555d4878fe21cae718cf331b1cd1c22954331a8f",
+  "lineage_length": 18,
+  "n_cycles": 6,
+  "off_policy_latest": "IDENTIFIABLE_UNDER_STATED_ASSUMPTIONS",
+  "registry_growth_count": 2,
+  "resolution_backlog": 0,
+  "voi_latest": {
+    "evoi_usd": 487.39,
+    "label": "MODEL_CONDITIONAL_ESTIMATE",
+    "receipt_hash": "050eeaf4668faece342b3e655ae120f49ebf6b8ae260384e44029ef1f1a3d373",
+    "recommended_wait_or_act": "act_now"
+  }
+}

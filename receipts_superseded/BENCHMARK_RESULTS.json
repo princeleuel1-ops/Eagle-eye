@@ -1,0 +1,308 @@
+{
+  "contamination": {
+    "contamination_detected": false,
+    "content_overlap_count": 0,
+    "id_overlap": [],
+    "world_seeds_distinct": true
+  },
+  "court_receipt_id": "pcourt-4d7582de3391",
+  "decisions": [
+    {
+      "candidate": "climatology",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": false,
+        "permutation_within_tolerance": true,
+        "proper_scoring_improved": false,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [
+        "proper_scoring_improved",
+        "out_of_support_refused"
+      ],
+      "status": "reject"
+    },
+    {
+      "candidate": "naive_pooling",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": false,
+        "permutation_within_tolerance": true,
+        "proper_scoring_improved": false,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [
+        "proper_scoring_improved",
+        "out_of_support_refused"
+      ],
+      "status": "reject"
+    },
+    {
+      "candidate": "seq_prefix",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": false,
+        "permutation_within_tolerance": false,
+        "proper_scoring_improved": true,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [
+        "permutation_within_tolerance",
+        "out_of_support_refused"
+      ],
+      "status": "reject"
+    },
+    {
+      "candidate": "set_mt",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": false,
+        "permutation_within_tolerance": true,
+        "proper_scoring_improved": true,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [
+        "out_of_support_refused"
+      ],
+      "status": "reject"
+    },
+    {
+      "candidate": "governed_set_mt",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": true,
+        "permutation_within_tolerance": true,
+        "proper_scoring_improved": true,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [],
+      "status": "promote"
+    },
+    {
+      "candidate": "seq_prefix_overfit",
+      "gates": {
+        "calibration_acceptable": true,
+        "external_execution_false": true,
+        "latency_within_budget": true,
+        "leakage_defended": true,
+        "no_contamination": true,
+        "no_standard_abstention": true,
+        "out_of_support_refused": false,
+        "permutation_within_tolerance": false,
+        "proper_scoring_improved": true,
+        "temporal_ood_non_worse": true
+      },
+      "reasons": [
+        "permutation_within_tolerance",
+        "out_of_support_refused"
+      ],
+      "status": "reject"
+    }
+  ],
+  "development_metrics": {
+    "climatology": {
+      "coverage80": 0.964286,
+      "crps": 0.283993,
+      "nll": 0.817636
+    },
+    "governed_set_mt": {
+      "coverage80": 0.892857,
+      "crps": 0.26865,
+      "nll": 0.690001
+    },
+    "naive_pooling": {
+      "coverage80": 0.964286,
+      "crps": 0.274935,
+      "nll": 0.768878
+    },
+    "no_prefix": {
+      "coverage80": 1.0,
+      "crps": 0.2759,
+      "nll": 0.871831
+    },
+    "seq_prefix": {
+      "coverage80": 0.928571,
+      "crps": 0.268516,
+      "nll": 0.701746
+    },
+    "seq_prefix_overfit": {
+      "coverage80": 0.785714,
+      "crps": 0.262806,
+      "nll": 0.687295
+    },
+    "set_mt": {
+      "coverage80": 0.892857,
+      "crps": 0.270084,
+      "nll": 0.704956
+    }
+  },
+  "development_sha256": "a86ca118557ac86e169a5f210f749bff97c4c6b0e6098d8512bdaf2392156570",
+  "holdout_metrics": {
+    "climatology": {
+      "brier_delay_gt14": 0.287255,
+      "brier_stockout": 0.200981,
+      "coverage80": 0.826087,
+      "crps": 0.40892,
+      "crps_scarcity": 0.184843,
+      "crps_temporal_ood": 0.312643,
+      "intervention_regret_days": 4.377338,
+      "kl_to_oracle": 0.6852,
+      "nll": 1.048528,
+      "nll_heavy_tail": 2.029731,
+      "nll_scarcity": 0.435019,
+      "nll_temporal_ood": 0.873817,
+      "nll_unrelated_priors": 1.280303,
+      "permutation_spread_max": 0.0,
+      "width80_log": 1.828567
+    },
+    "governed_set_mt": {
+      "brier_delay_gt14": 0.227195,
+      "brier_stockout": 0.209487,
+      "coverage80": 0.909091,
+      "crps": 0.336175,
+      "crps_scarcity": 0.158656,
+      "crps_temporal_ood": 0.198447,
+      "intervention_regret_days": 0.467418,
+      "kl_to_oracle": 0.441352,
+      "nll": 0.797548,
+      "nll_heavy_tail": 1.891573,
+      "nll_scarcity": 0.32957,
+      "nll_temporal_ood": 0.441657,
+      "nll_unrelated_priors": 1.3607,
+      "permutation_spread_max": 0.0,
+      "width80_log": 2.161989
+    },
+    "naive_pooling": {
+      "brier_delay_gt14": 0.259232,
+      "brier_stockout": 0.200981,
+      "coverage80": 0.847826,
+      "crps": 0.370468,
+      "crps_scarcity": 0.175701,
+      "crps_temporal_ood": 0.218038,
+      "intervention_regret_days": 0.545183,
+      "kl_to_oracle": 0.298905,
+      "nll": 0.903108,
+      "nll_heavy_tail": 1.882093,
+      "nll_scarcity": 0.370569,
+      "nll_temporal_ood": 0.538197,
+      "nll_unrelated_priors": 1.172958,
+      "permutation_spread_max": 0.0,
+      "width80_log": 2.023697
+    },
+    "no_prefix": {
+      "brier_delay_gt14": 0.2009,
+      "brier_stockout": 0.25,
+      "coverage80": 0.956522,
+      "crps": 0.3575,
+      "crps_scarcity": 0.331955,
+      "crps_temporal_ood": 0.288941,
+      "intervention_regret_days": 4.377338,
+      "kl_to_oracle": 2.785185,
+      "nll": 1.059278,
+      "nll_heavy_tail": 1.609972,
+      "nll_scarcity": 1.132242,
+      "nll_temporal_ood": 0.957588,
+      "nll_unrelated_priors": 0.802496,
+      "permutation_spread_max": 0.0,
+      "width80_log": 2.692347
+    },
+    "seq_prefix": {
+      "brier_delay_gt14": 0.243966,
+      "brier_stockout": 0.200981,
+      "coverage80": 0.847826,
+      "crps": 0.335895,
+      "crps_scarcity": 0.151934,
+      "crps_temporal_ood": 0.187958,
+      "intervention_regret_days": 0.545183,
+      "kl_to_oracle": 0.448195,
+      "nll": 0.79845,
+      "nll_heavy_tail": 1.891072,
+      "nll_scarcity": 0.2601,
+      "nll_temporal_ood": 0.409886,
+      "nll_unrelated_priors": 1.353267,
+      "permutation_spread_max": 0.158485,
+      "width80_log": 2.113703
+    },
+    "seq_prefix_overfit": {
+      "brier_delay_gt14": 0.262059,
+      "brier_stockout": 0.200981,
+      "coverage80": 0.73913,
+      "crps": 0.339418,
+      "crps_scarcity": 0.16803,
+      "crps_temporal_ood": 0.130466,
+      "intervention_regret_days": 0.545183,
+      "kl_to_oracle": 0.234406,
+      "nll": 0.827989,
+      "nll_heavy_tail": 1.85677,
+      "nll_scarcity": 0.259885,
+      "nll_temporal_ood": 0.006688,
+      "nll_unrelated_priors": 0.954077,
+      "permutation_spread_max": 0.37127,
+      "width80_log": 1.670723
+    },
+    "set_mt": {
+      "brier_delay_gt14": 0.239668,
+      "brier_stockout": 0.200981,
+      "coverage80": 0.869565,
+      "crps": 0.333408,
+      "crps_scarcity": 0.14934,
+      "crps_temporal_ood": 0.198447,
+      "intervention_regret_days": 0.545183,
+      "kl_to_oracle": 0.379625,
+      "nll": 0.776881,
+      "nll_heavy_tail": 1.891573,
+      "nll_scarcity": 0.253583,
+      "nll_temporal_ood": 0.441657,
+      "nll_unrelated_priors": 1.3607,
+      "permutation_spread_max": 0.0,
+      "width80_log": 2.064126
+    }
+  },
+  "holdout_sha256": "99c70947543889cb655777deebdadd2cbf74f37d5336c2f5bf08b3fccb7c2419",
+  "latency_ms_mean": {
+    "climatology": 7.611,
+    "governed_set_mt": 9.167,
+    "naive_pooling": 7.001,
+    "no_prefix": 10.629,
+    "seq_prefix": 6.804,
+    "seq_prefix_overfit": 6.766,
+    "set_mt": 7.733
+  },
+  "leakage": {
+    "all_defended": true,
+    "foreign_tenant_refused": true,
+    "future_task_refused": true,
+    "selector_no_foreign_tenants": true,
+    "selector_no_future_tasks": true
+  },
+  "proofs": {
+    "attractive_regression_rejected": true,
+    "beneficial_candidate_promoted": true
+  },
+  "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a"
+}

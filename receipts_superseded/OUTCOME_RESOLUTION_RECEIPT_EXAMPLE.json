@@ -1,0 +1,80 @@
+{
+  "acting_policy": "policy:follow-recommendation-70/1",
+  "authorization_receipt": "approval-shadow-fixture",
+  "censoring_state": "uncensored",
+  "confounders": {
+    "schema_version": "confounders/1.0",
+    "vector": {
+      "disruption_class": "port_congestion",
+      "lane": "asia-us-west",
+      "n_target_obs": 2
+    }
+  },
+  "current_audit_hash": "bd2a92d6672f66f9a89a634296803519e8e2fff157a0d98d9e71142588cd1598",
+  "eligibility_for_registry": false,
+  "eligibility_reason": "visible_but_ineligible:intervention_affected_and_not_identifiable",
+  "entity_refs": {
+    "component_id": "cmp-live",
+    "exposure_rate_per_day_usd": 5790.74,
+    "lane": "asia-us-west",
+    "region": "APAC",
+    "supplier_id": "sup-live"
+  },
+  "intervention_recommended": "activate_alternate",
+  "intervention_status": "intervention_affected",
+  "intervention_taken": "activate_alternate",
+  "missingness_state": "complete",
+  "model_or_champion_id": "champ-genesis-governed-set-mt",
+  "observed": {
+    "exposure_usd": 94560.93,
+    "final_delay_days": 16.33,
+    "intervention_result": null,
+    "recovery_days": 25.406,
+    "stockout": false
+  },
+  "off_policy": {
+    "checks": {
+      "action_not_deterministic": true,
+      "caller_propensity_forged": false,
+      "confounder_vector_present": true,
+      "effective_sample_size": 1.0,
+      "effective_sample_size_sufficient": false,
+      "policy_record_logged": true,
+      "positivity_overlap": true,
+      "propensity_recomputed_matches_claim": true,
+      "support_violation": false,
+      "weight_concentration": 1.0
+    },
+    "recomputed_propensity_micro": 700000,
+    "sensitivity_to_unobserved_confounding": "NOT_ESTABLISHED (no sensitivity model implemented; do not treat effects as robust to unobserved confounders)",
+    "state": "CHECKED",
+    "usable_for": "predictive_monitoring_only"
+  },
+  "outcome_observed_at": "2025-05-21",
+  "outcome_source": "authorized_synthetic_truth_channel",
+  "outcome_source_hash": "ea620ece4a4f5a1c1da84e493d65ad26005a6cfc14cf37a37a26ba8f16ffff17",
+  "outcome_value_micro": 2792984,
+  "policy_release_hash": "1a47ce736ef27e60fa3aea3d2abcb96aa4e1eb8b22f492c335502d0dc9f75f1f",
+  "prediction_as_of": "2025-05-01",
+  "prediction_distribution_hash": "d3cfb8ce498fe23044d87420fbe6bc53948cb1fec7b630ddadef9a9174268ae8",
+  "prediction_id": "pred-3aa6794cab97",
+  "prediction_receipt_hash": "3aa6794cab9702d60bbd2f1465f1c03dc41dc3012c324b23ff42f122b7eb69c4",
+  "previous_audit_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "propensity_provenance": "absent",
+  "recommendation_propensity_micro": 700000,
+  "resolution_status": "RESOLVED",
+  "resource_scope": "scope:live-disruptions",
+  "revision_of": null,
+  "score": {
+    "channel": "activate_alternate",
+    "covered80": true,
+    "crps": 0.363996,
+    "nll": 1.061155,
+    "pit": 0.741244,
+    "scoring_rule": "log_score+crps+cover80(log-delay)"
+  },
+  "signed_row_hash": "454d85f69c2575aa1cf888ea0883ca5a87c938d889a3fcc5fe4c41a79d1c863a",
+  "spec": "eagle-eye-outcome-resolution/1.0",
+  "task_id": "case-9199542251",
+  "tenant_id": "tenant-demo"
+}

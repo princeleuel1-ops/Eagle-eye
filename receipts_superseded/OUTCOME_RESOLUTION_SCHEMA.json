@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Eagle Eye Outcome Resolution Row (eagle-eye-outcome-resolution/1.0)",
+  "type": "object",
+  "required": [
+    "spec",
+    "prediction_id",
+    "prediction_receipt_hash",
+    "prediction_distribution_hash",
+    "policy_release_hash",
+    "model_or_champion_id",
+    "task_id",
+    "tenant_id",
+    "resource_scope",
+    "prediction_as_of",
+    "outcome_observed_at",
+    "outcome_value_micro",
+    "outcome_source",
+    "outcome_source_hash",
+    "intervention_recommended",
+    "intervention_taken",
+    "intervention_status",
+    "acting_policy",
+    "recommendation_propensity_micro",
+    "propensity_provenance",
+    "resolution_status",
+    "score",
+    "off_policy",
+    "eligibility_for_registry",
+    "eligibility_reason",
+    "previous_audit_hash",
+    "current_audit_hash"
+  ],
+  "properties": {
+    "resolution_status": {
+      "enum": [
+        "RESOLVED",
+        "REVISED",
+        "LATE",
+        "DISPUTED",
+        "MISSING"
+      ]
+    },
+    "intervention_status": {
+      "enum": [
+        "intervention_free",
+        "intervention_affected",
+        "unknown_intervention"
+      ]
+    },
+    "off_policy": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "IDENTIFIABLE",
+            "OFF_POLICY_EFFECT_NOT_IDENTIFIABLE"
+          ]
+        }
+      }
+    },
+    "outcome_value_micro": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "log_final_delay in micro-nats (cross-runtime int discipline)"
+    },
+    "current_audit_hash": {
+      "type": "string",
+      "description": "sha256(canonical(row sans current_audit_hash)); rows chain via previous_audit_hash"
+    }
+  },
+  "notes": "append-only; scoring always against the distribution committed at prediction time; eligibility separate from resolution; ineligible cases stay visible"
+}

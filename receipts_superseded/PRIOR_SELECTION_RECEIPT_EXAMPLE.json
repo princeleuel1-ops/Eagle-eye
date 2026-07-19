@@ -1,0 +1,1081 @@
+{
+  "as_of_cutoff": "2025-04-22",
+  "decisions": [
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-0211925317"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-0466866072"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-0475239937"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-0568451176"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-0633572972"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_match",
+        "has_observations",
+        "k_max_reached"
+      ],
+      "score_milli": 4250,
+      "task_id": "pt-0654752256"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-0841985885"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-1020310990"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-1074416768"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_match",
+        "has_observations",
+        "k_max_reached"
+      ],
+      "score_milli": 4250,
+      "task_id": "pt-1216700168"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-1225687561"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-1258950389"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-1397839070"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 2750,
+      "task_id": "pt-1422376585"
+    },
+    {
+      "decision": "included",
+      "reasons": [
+        "class_match",
+        "has_observations"
+      ],
+      "score_milli": 4750,
+      "task_id": "pt-1544772821"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-1575837709"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-1577092993"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-1620706539"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-1683272310"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 250,
+      "task_id": "pt-1713983970"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 250,
+      "task_id": "pt-1826153220"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-1977170722"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 250,
+      "task_id": "pt-2178725736"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-2188047305"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-2224824346"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-2238018232"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-2256320520"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-2308421208"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 250,
+      "task_id": "pt-2352461762"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-2485788780"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 250,
+      "task_id": "pt-2511215520"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-2586502276"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 2750,
+      "task_id": "pt-2618537090"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 250,
+      "task_id": "pt-2836254281"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 750,
+      "task_id": "pt-3142789305"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3155318805"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3209920223"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3248703297"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3250539176"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3288896086"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3300353973"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3428502530"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 250,
+      "task_id": "pt-3581491094"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 3250,
+      "task_id": "pt-3789764975"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3882234091"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3903033596"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3938028584"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-3989745063"
+    },
+    {
+      "decision": "included",
+      "reasons": [
+        "class_match",
+        "has_observations"
+      ],
+      "score_milli": 4750,
+      "task_id": "pt-4024989091"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 2750,
+      "task_id": "pt-4071515690"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-4131756373"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-4159016527"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-4776451265"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-4779883708"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-4811819087"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_match",
+        "has_observations",
+        "k_max_reached"
+      ],
+      "score_milli": 4250,
+      "task_id": "pt-4839662981"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-4841868000"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-4945497548"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-4964293311"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-4972733986"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5006797828"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5119555848"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_mismatch"
+      ],
+      "score_milli": 250,
+      "task_id": "pt-5194587805"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5311986516"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5313790996"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5400867143"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5418109220"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5446007447"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5472175121"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5518810409"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5559399277"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5608031641"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-5681226737"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-6202625892"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-6260804487"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-6356311784"
+    },
+    {
+      "decision": "included",
+      "reasons": [
+        "class_match",
+        "lane_match",
+        "region_match",
+        "has_observations"
+      ],
+      "score_milli": 7250,
+      "task_id": "pt-6441084923"
+    },
+    {
+      "decision": "included",
+      "reasons": [
+        "class_match",
+        "lane_match",
+        "region_match",
+        "has_observations"
+      ],
+      "score_milli": 6750,
+      "task_id": "pt-6477253962"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_match",
+        "has_observations",
+        "k_max_reached"
+      ],
+      "score_milli": 4250,
+      "task_id": "pt-6511657240"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "class_match",
+        "has_observations",
+        "k_max_reached"
+      ],
+      "score_milli": 4250,
+      "task_id": "pt-6518028110"
+    },
+    {
+      "decision": "included",
+      "reasons": [
+        "class_match",
+        "lane_match",
+        "region_match",
+        "has_observations"
+      ],
+      "score_milli": 6750,
+      "task_id": "pt-6572198328"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-6639432774"
+    },
+    {
+      "decision": "included",
+      "reasons": [
+        "class_match",
+        "lane_match",
+        "region_match",
+        "has_observations"
+      ],
+      "score_milli": 6750,
+      "task_id": "pt-6680788493"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-6728093299"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-6784054607"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-6788092869"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-6832881683"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-6974444242"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-7035558256"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-7069505739"
+    },
+    {
+      "decision": "included",
+      "reasons": [
+        "class_match",
+        "lane_match",
+        "region_match",
+        "has_observations"
+      ],
+      "score_milli": 6750,
+      "task_id": "pt-7133805001"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-7394622242"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-7399138301"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-7406341767"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-7506305486"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-7602832027"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-7787447528"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-7817246462"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-7913279577"
+    },
+    {
+      "decision": "included",
+      "reasons": [
+        "class_match",
+        "has_observations"
+      ],
+      "score_milli": 4250,
+      "task_id": "pt-8018542128"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8055039325"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8237866730"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8317750105"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8388975964"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8554128390"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8587652550"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8626981518"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8698721265"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8808899758"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8831304150"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8841384760"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8850484130"
+    },
+    {
+      "decision": "included",
+      "reasons": [
+        "class_match",
+        "has_observations"
+      ],
+      "score_milli": 4750,
+      "task_id": "pt-8855942547"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8917620880"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-8942264397"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9005143115"
+    },
+    {
+      "decision": "included",
+      "reasons": [
+        "class_match",
+        "lane_match",
+        "region_match",
+        "has_observations"
+      ],
+      "score_milli": 6750,
+      "task_id": "pt-9090751159"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9136392595"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9204683175"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9210868988"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9218192813"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9224956423"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9288307520"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9295159273"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9352768457"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9417707393"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "tenant_boundary"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9613436782"
+    },
+    {
+      "decision": "excluded",
+      "reasons": [
+        "not_closed_before_cutoff"
+      ],
+      "score_milli": null,
+      "task_id": "pt-9784365766"
+    }
+  ],
+  "included_prior_task_ids": [
+    "pt-6441084923",
+    "pt-6680788493",
+    "pt-9090751159",
+    "pt-7133805001",
+    "pt-6572198328",
+    "pt-6477253962",
+    "pt-8855942547",
+    "pt-1544772821",
+    "pt-4024989091",
+    "pt-8018542128"
+  ],
+  "k_max": 10,
+  "min_score_milli": 4000,
+  "receipt_sha256": "0d1ea6c6f95c5db4e9f059ebb7b749f700654a9bc3d05c14a1457198f35a0482",
+  "registry_manifest_sha256": "61a1d69ade0707ac18cdb459ccd42813a476dd6c582c5dd938f14cef90b28b1a",
+  "registry_release_id": "prreg-2e2b8c5d34da",
+  "require_class_match": true,
+  "selector_release": "prior-selector/1.0",
+  "tenant_id": "tenant-demo"
+}

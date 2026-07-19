@@ -1,0 +1,255 @@
+{
+  "run_id": "zenith-2026-07-12-cmrio3uqv",
+  "mission": "Eagle Eye Bayesian Disruption Intelligence Engine",
+  "thread": "https://hyperagent.com/thread/cmrio3uqv21i907ad2gpf7m09",
+  "source": {
+    "drive_folder": "1NFbu7wNrWdZOaP3x44q85OSkRVkMn4xn",
+    "reconstruction_note": "Outer 2-part wrapper zips were NOT present in Drive; the 7 inner payload archives + 4 instruction files were directly present. Downloaded all 11 via native Drive integration. This matches the prompt's sanctioned fallback (individual file access).",
+    "manifest_hash_check": "PASS - all 10 SHA256 hashes match MANIFEST_SHA256.txt",
+    "package_hashes": {
+      "01_CORE_CONTEXT_AND_SOURCE.zip": "24dbebb210da42b1781038968dcf4132d9e79fe95e47110241414e27433f35a6",
+      "02_NODE_ASSETS_001_021.zip": "348bbc917c55a4441edfeae3aeed6036b6a6da19dc278c09bc1eef4b83d5050e",
+      "03_NODE_ASSETS_022_041.zip": "17e3adef451a4b8aaafbcf299289e6705dfcd3ee3fd7906e166bb2b10debe8c4",
+      "04_NODE_ASSETS_042_061.zip": "bad185c8a56d4e18eb2038c3be648b359fe681f5d75fbdae336dc9bd1d327303",
+      "05_NODE_ASSETS_062_081.zip": "b755cb3a8fce2a7d539f0a6b38f09645eeef073aec4c8883b53b52cb51492a42",
+      "06_NODE_ASSETS_082_103.zip": "84b5e0b56384cd99428f4b71f4f9a7fe3ad82361872146e4f9c8d4cfa767999c",
+      "07_NODE_ASSETS_104_116.zip": "0c64c306aaa7f32c812b0b2165a8033ab115788df50973a0e93a349137d0ce12"
+    }
+  },
+  "inventory": {
+    "physical_node_pngs": 113,
+    "registry_identities": 116,
+    "project_files": 187,
+    "status": "MATCHES_EXPECTED"
+  },
+  "environment": {
+    "os": "Amazon Linux 2023",
+    "python": "3.11.15 (installed via dnf from official AL2023 repo; sandbox default was 3.9 but project requires >=3.11)",
+    "node": "v24.14.1",
+    "installed_dependencies": [
+      {
+        "pkg": "python3.11 + python3.11-pip",
+        "source": "AL2023 dnf repo",
+        "reason": "project requires-python >=3.11"
+      },
+      {
+        "pkg": "cryptography 46.0.7",
+        "source": "PyPI",
+        "reason": "declared project dependency, exact pin range"
+      },
+      {
+        "pkg": "pytest 9.1.1",
+        "source": "PyPI",
+        "reason": "declared dev dependency"
+      }
+    ]
+  },
+  "baseline_verification": {
+    "pytest": "54 passed in 0.48s - MATCHES packaged claim",
+    "fixture_run": "PASS (evidence-room.zip generated, run-fd0b0cfab41b)",
+    "python_verifier": "EVIDENCE_ROOM_VERIFIED=true",
+    "node_verifier": "verified:true all checks true",
+    "governance_fixture": "ACTION_STATUS=approved_shadow",
+    "benchmark_court": "BENEFICIAL_MUTATION_PROMOTED=true HARMFUL_MUTATION_REJECTED=true CONTAMINATION_DETECTED=false",
+    "semantic_check": "DIGITAL_TWIN_SEMANTIC_PASS"
+  },
+  "commands_run": [
+    {
+      "cmd": "sha256sum <11 downloaded files>",
+      "exit": 0,
+      "result": "all match MANIFEST_SHA256.txt"
+    },
+    {
+      "cmd": "unzip 7 payload archives",
+      "exit": 0,
+      "result": "113 PNGs, 116 registry identities, 187 project files"
+    },
+    {
+      "cmd": "dnf install python3.11 python3.11-pip",
+      "exit": 0
+    },
+    {
+      "cmd": "pip install cryptography>=46.0.7,<47 pytest>=8.0",
+      "exit": 0
+    },
+    {
+      "cmd": "pytest (baseline @46f6e2f)",
+      "exit": 0,
+      "result": "54 passed"
+    },
+    {
+      "cmd": "fixture+verify+verify-node+governance+benchmark+semantic (baseline)",
+      "exit": 0
+    },
+    {
+      "cmd": "pytest tests/test_stats.py",
+      "exit": 0,
+      "result": "17 passed after F1 repair"
+    },
+    {
+      "cmd": "pytest tests/test_prior_registry.py",
+      "exit": 0,
+      "result": "15 passed (incl. RED leakage tests)"
+    },
+    {
+      "cmd": "pytest tests/test_predictors.py",
+      "exit": 0,
+      "result": "12 passed after F2 repair"
+    },
+    {
+      "cmd": "scripts/run_prediction_court.py (x4 iterations incl. repairs F3-F5)",
+      "exit": 0
+    },
+    {
+      "cmd": "pytest tests/test_prediction_court.py",
+      "exit": 0,
+      "result": "12 passed incl. determinism across runs"
+    },
+    {
+      "cmd": "pytest tests/test_posterior_evidence.py",
+      "exit": 0,
+      "result": "10 passed after F6 attacker-model repair"
+    },
+    {
+      "cmd": "FINAL: pytest",
+      "exit": 0,
+      "result": "128 passed in 27.58s"
+    },
+    {
+      "cmd": "FINAL: full gate chain (court,fixture,py-verify,node-verify,governance,benchmark,semantic)",
+      "exit": 0,
+      "result": "POSTERIOR_VERIFIED=true both runtimes; all proofs true"
+    },
+    {
+      "cmd": "pytest (post-evolution)",
+      "exit": 0,
+      "result": "167 passed"
+    },
+    {
+      "cmd": "scripts/run_sealed_evolution.py (x2: falsified F9/F10, repaired, re-run)",
+      "exit": 0,
+      "result": "6/6 cycles, 1 promotion, 17 rejections, 2 shift suspensions, 0 verification failures"
+    },
+    {
+      "cmd": "full gate chain incl. sealed-evolution",
+      "exit": 0,
+      "result": "8/8 green"
+    }
+  ],
+  "files_changed": {
+    "new_src": [
+      "stats.py",
+      "regimes.py",
+      "prior_registry.py",
+      "prior_selector.py",
+      "predictors.py",
+      "governor.py",
+      "prediction_court.py",
+      "posterior_engine.py",
+      "outcome_resolution.py",
+      "evolution.py",
+      "conformal.py",
+      "voi.py"
+    ],
+    "new_tests": [
+      "test_stats.py",
+      "test_prior_registry.py",
+      "test_predictors.py",
+      "test_prediction_court.py",
+      "test_posterior_engine.py",
+      "test_posterior_evidence.py",
+      "test_outcome_resolution.py",
+      "test_evolution.py",
+      "test_conformal.py",
+      "test_voi.py"
+    ],
+    "new_other": [
+      "scripts/run_prediction_court.py",
+      "web/posterior.js",
+      "docs/SLICE_11_POSTERIOR_INTELLIGENCE_RECEIPT.md",
+      "scripts/run_sealed_evolution.py",
+      "web/evolution.js"
+    ],
+    "modified": [
+      "src/eagle_eye/evidence.py",
+      "src/eagle_eye/semantics.py",
+      "verifier/verify.mjs",
+      "scripts/run_fixture.py",
+      "scripts/verify_evidence_room.py",
+      "web/index.html",
+      "web/styles.css",
+      "Makefile",
+      "tests/test_semantics.py",
+      "docs/GAP_REGISTER.md",
+      "docs/log.md",
+      "src/eagle_eye/governor.py (threshold overrides)",
+      "src/eagle_eye/prediction_court.py (fn/override hooks)",
+      "src/eagle_eye/server.py (/api/evolution)",
+      "web/index.html (evolution panel)",
+      "web/styles.css",
+      "src/eagle_eye/semantics.py",
+      "tests/test_semantics.py",
+      "Makefile (sealed-evolution in check)"
+    ]
+  },
+  "assumptions": [
+    "A1 class+lane/region correlate with hidden regime (falsification subsets measured the penalty)",
+    "A2 within-task exchangeability of log-delay signals (generator-true)",
+    "A3 fixed recovery multiplier estimate (documented, wall W5)",
+    "A4 synthetic calibration transfers only as far as generator fidelity (wall W2)"
+  ],
+  "brittle_points": [
+    "B1 tau floor collapse - guarded MIN_TAU + coverage gate",
+    "B2 compiler leakage - CompilerError, tests green",
+    "B3 seq order sensitivity - permutation gate rejects; set_mt invariant",
+    "B4 pooling drowns target - mechanism test green",
+    "B5 K beyond support - governor abstains, court requires refusal",
+    "B6 py/node float drift - closed by int-only receipts + quantize-micro (dual-runtime tests)",
+    "B7 dev-tuned Goodhart - overfit candidate rejected with attractiveness proof",
+    "B8 heavy-tail misspecification - scored honestly, no oracle claim (wall)",
+    "B9 stale champion caches under registry growth - fixed update_registry (F9)",
+    "B10 no-op mutation budget waste - no-op guard (F10)"
+  ],
+  "candidate_mutations": [
+    "governed_set_mt",
+    "set_mt",
+    "seq_prefix",
+    "naive_pooling",
+    "climatology",
+    "seq_prefix_overfit"
+  ],
+  "promoted_candidates": [
+    "governed_set_mt (pcourt: all gates pass)",
+    "cand-607411a7dc5f shift_suspect 0.8->0.9 (sealed evolution cycle 5)"
+  ],
+  "rejected_candidates": [
+    "seq_prefix_overfit (permutation 0.37 log-units; no out-of-support refusal; dev-attractive proven)",
+    "set_mt (out_of_support_refused)",
+    "seq_prefix (permutation; out_of_support)",
+    "naive_pooling (proper scoring; out_of_support)",
+    "climatology (proper scoring; out_of_support)",
+    "17 evolution challengers (dev pre-screen / sealed gates); 2 BLOCKED_SHIFT in pre-repair run"
+  ],
+  "artifacts": [
+    "receipts/ZENITH_RUN_MANIFEST.json",
+    "receipts/SOTA_GAP_AND_BRITTLE_POINT_MAP.md",
+    "receipts/SOURCE_AND_CLAIM_LEDGER.md",
+    "receipts/ARCHITECTURE_AND_IMPLEMENTATION_MAP.md",
+    "receipts/PRIOR_TASK_SCHEMA.json",
+    "receipts/PRIOR_SELECTION_RECEIPT_EXAMPLE.json",
+    "receipts/BENCHMARK_COURT_SPEC.md",
+    "receipts/BENCHMARK_RESULTS.json",
+    "receipts/RECURSIVE_PROMOTION_REJECTION_RECEIPT.json",
+    "receipts/ADVERSARIAL_FINDINGS_AND_REPAIRS.md",
+    "receipts/FINAL_VERIFICATION_RECEIPT.md",
+    "receipts/HONEST_REMAINING_WALLS.md",
+    "UPDATED_EAGLE_EYE_SOURCE.zip",
+    "analysis/PAPER_DIGEST.md",
+    "analysis/STRATEGY_DIGEST.md",
+    "project artifacts: runs/latest (signed room), prediction-court/latest (receipts + sealed suites)"
+  ],
+  "known_blockers": [
+    "visual browser gate (W3): sandbox browser cannot reach container localhost; run `make run` locally"
+  ],
+  "external_actions_taken": false
+}

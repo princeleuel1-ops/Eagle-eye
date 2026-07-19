@@ -1,0 +1,531 @@
+{
+  "benchmark_receipt_id": "sevo2-874b6f64c650",
+  "budget": {
+    "alpha_procedure": "Bonferroni allocation alpha_total/max_looks per charged look; champion charged inside each compare",
+    "alpha_remaining_micro": 47500,
+    "alpha_spent_micro": 2500,
+    "alpha_total_micro": 50000,
+    "candidates_evaluated": 18,
+    "candidates_proposed": 18,
+    "candidates_rejected_before_holdout": 17,
+    "effective_hypothesis_family": "single-parameter whitelist mutations of the sitting champion",
+    "final_audit_holdout_looks": 1,
+    "holdout_looks": 1
+  },
+  "cycles": [
+    {
+      "challenger_decisions": [
+        {
+          "candidate_id": "cand-665dc8e2d096",
+          "diff": {
+            "governor.widen_weak_milli": 1600
+          },
+          "lineage_hash": "9c9092dfb2672e1463a6412c95b98dba96a3f5e683cc5c82e0be98fc4150afee",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-9f9506ec94a6",
+          "diff": {
+            "selector.min_score_milli": 5000
+          },
+          "lineage_hash": "4b1a1e49817cbb5cad880db97f90931f927bda180dc98dae27c669418b151e06",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-c1179529d06b",
+          "diff": {
+            "base.candidate": "seq_prefix"
+          },
+          "lineage_hash": "44d6fce195e7cf7a3b50df42423ad2644ab0352e3d2f519a9fd4c662daa715d7",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        }
+      ],
+      "champion": "champ-genesis-governed-set-mt",
+      "conformal_calibration": {
+        "empirical_coverage_micro_heldout": null,
+        "n_calibration": 14,
+        "n_evaluation_disjoint": 0,
+        "receipt_sha256": "3da5d979caf2fe0b7be2620f8757fc381fa2b4e994d41e4b6f1a9d7d65c2a257"
+      },
+      "conformal_recalibrated": true,
+      "conformal_state": "GUARANTEE_SUSPENDED_LOW_EFFECTIVE_SAMPLE",
+      "cutoff": "2025-05-01",
+      "cycle": 1,
+      "distribution_commitment": "d3cfb8ce498fe23044d87420fbe6bc53948cb1fec7b630ddadef9a9174268ae8",
+      "intervention_recommended": "activate_alternate",
+      "intervention_taken": "activate_alternate",
+      "off_policy_state": "CHECKED",
+      "prediction_id": "pred-3aa6794cab97",
+      "registry_eligible": false,
+      "registry_release": "prreg-2e2b8c5d34da",
+      "resolution_hash": "bd2a92d6672f66f9a89a634296803519e8e2fff157a0d98d9e71142588cd1598",
+      "resolution_score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.363996,
+        "nll": 1.061155,
+        "pit": 0.741244,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "snapshot_id": "snap-97d1f9229ef17bca",
+      "verification_replay": {
+        "evaluator_ledger_chain": true,
+        "ledger_hash_chain": true,
+        "lineage_signed_chain": true,
+        "outcome_signed_chain": true,
+        "prediction_commitment": true,
+        "registry_intact": true
+      },
+      "voi": {
+        "evoi_usd": 1597.22,
+        "label": "MODEL_CONDITIONAL_ESTIMATE",
+        "receipt_hash": "3bf69828836177dd8a2f867169cd90c2159a40c5ae73b9167e513434b313fcbd",
+        "recommended_wait_or_act": "act_now"
+      }
+    },
+    {
+      "challenger_decisions": [
+        {
+          "candidate_id": "cand-4f8ff0a8c80e",
+          "diff": {
+            "governor.shift_suspect_milli": 700
+          },
+          "lineage_hash": "9205767ecf94ad4e168f32f563d152d56aecb8e618b0aff22c5acf9e45ebcd08",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-a9bcc119984f",
+          "diff": {
+            "selector.min_score_milli": 4500
+          },
+          "lineage_hash": "cac9ad879f85239448c79d4aace938ced5be619f8954f8d8ee89aa1b9942dcac",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-7be8f093c46f",
+          "diff": {
+            "selector.k_max": 12
+          },
+          "lineage_hash": "57049030fa69d0821681c8a8c67691866d7242d56e0d4ca3775353ea4f4a78a7",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        }
+      ],
+      "champion": "champ-genesis-governed-set-mt",
+      "conformal_state": "GUARANTEE_SUSPENDED_LOW_EFFECTIVE_SAMPLE",
+      "cutoff": "2025-05-18",
+      "cycle": 2,
+      "distribution_commitment": "ac9d691824b9fd77075d2d82d4063499a327931d52db0620d761a21547ead55a",
+      "intervention_recommended": "activate_alternate",
+      "intervention_taken": "activate_alternate",
+      "off_policy_state": "CHECKED",
+      "prediction_id": "pred-c7171f516dc1",
+      "registry_eligible": false,
+      "registry_release": "prreg-2e2b8c5d34da",
+      "resolution_hash": "27b2a8b6a7e6c32c7a39f70da875f575be784fd0ee1242aa01b8a6c31cb99481",
+      "resolution_score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.222982,
+        "nll": 0.827083,
+        "pit": 0.556432,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "snapshot_id": "snap-97d1f9229ef17bca",
+      "verification_replay": {
+        "evaluator_ledger_chain": true,
+        "ledger_hash_chain": true,
+        "lineage_signed_chain": true,
+        "outcome_signed_chain": true,
+        "prediction_commitment": true,
+        "registry_intact": true
+      },
+      "voi": {
+        "evoi_usd": 442.53,
+        "label": "MODEL_CONDITIONAL_ESTIMATE",
+        "receipt_hash": "4fb37ac55df994ff2c03fe6ab9326ce573617e5fbc4746fb4d76482b433ae5d9",
+        "recommended_wait_or_act": "act_now"
+      }
+    },
+    {
+      "challenger_decisions": [
+        {
+          "candidate_id": "cand-3753b054a994",
+          "diff": {
+            "governor.shift_suspect_milli": 900
+          },
+          "lineage_hash": "5c5c88aaa251f76038f352d86271691036d1a37cf72762798507b4dd6442fc90",
+          "reasons": [
+            "sealed_paired_test_not_significant",
+            "ci_upper_micro=4218"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-a34ffec0fedd",
+          "diff": {
+            "governor.widen_shift_milli": 1250
+          },
+          "lineage_hash": "a30356529abfc1bb40d71a639c49dcc26672ea135721622650f52f85ae4a3bd3",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-9e1cb53025dd",
+          "diff": {
+            "selector.k_max": 12
+          },
+          "lineage_hash": "ca91ae126d7f3f7ed152f7e0e476971522a6d5a31732c4bddc7a0646f2a2afad",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        }
+      ],
+      "champion": "champ-genesis-governed-set-mt",
+      "conformal_state": "GUARANTEE_SUSPENDED_LOW_EFFECTIVE_SAMPLE",
+      "cutoff": "2025-06-04",
+      "cycle": 3,
+      "distribution_commitment": "2053c6a1251ea34796e869ca156c89b0f1ed29aa0ce75a649a866f10f6019df8",
+      "intervention_recommended": "activate_alternate",
+      "intervention_taken": "activate_alternate",
+      "off_policy_state": "CHECKED",
+      "prediction_id": "pred-638dc33a546b",
+      "registry_eligible": false,
+      "registry_release": "prreg-2e2b8c5d34da",
+      "resolution_hash": "3bde0c86580009c175d2acad8fcbda53b7dac4d1eefd6b25ef7b73a3590d37ae",
+      "resolution_score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.216562,
+        "nll": 0.818706,
+        "pit": 0.507017,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "snapshot_id": "snap-97d1f9229ef17bca",
+      "verification_replay": {
+        "evaluator_ledger_chain": true,
+        "ledger_hash_chain": true,
+        "lineage_signed_chain": true,
+        "outcome_signed_chain": true,
+        "prediction_commitment": true,
+        "registry_intact": true
+      },
+      "voi": {
+        "evoi_usd": 190.31,
+        "label": "MODEL_CONDITIONAL_ESTIMATE",
+        "receipt_hash": "222bdf2b39b815b37539a67c8856737fbea1cf8476bda8228ec4c3113f24f40c",
+        "recommended_wait_or_act": "act_now"
+      }
+    },
+    {
+      "challenger_decisions": [
+        {
+          "candidate_id": "cand-fadda4246bf8",
+          "diff": {
+            "selector.k_max": 12
+          },
+          "lineage_hash": "df5d105fdd8d45a63ee0ce0e919fdace8ebbf4b6f077622a8a7728157c5ae111",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-d0dd5f3a4f27",
+          "diff": {
+            "selector.k_max": 8
+          },
+          "lineage_hash": "dd229f7a4138c6769d7eb613135cc4c670574d9affd5098ad832b09c3b35a644",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-5d36b8914b63",
+          "diff": {
+            "selector.min_score_milli": 4500
+          },
+          "lineage_hash": "d1378be3b01101a8be1c7f531328b4eeb5e66cc0bde34b88bb9b97d16d0cd27f",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        }
+      ],
+      "champion": "champ-genesis-governed-set-mt",
+      "conformal_state": "GUARANTEE_SUSPENDED_LOW_EFFECTIVE_SAMPLE",
+      "cutoff": "2025-08-10",
+      "cycle": 4,
+      "distribution_commitment": "e64687bf0b67be9ed4dbbbb6e3600fb47eeee115e07ec662ec27ac383e66ded8",
+      "intervention_recommended": "activate_alternate",
+      "intervention_taken": "activate_alternate",
+      "off_policy_state": "CHECKED",
+      "prediction_id": "pred-6c8518f584be",
+      "registry_eligible": false,
+      "registry_release": "prreg-2e2b8c5d34da",
+      "resolution_hash": "5c7e6d2f54238f28ce3991be779de8c23328937fdcc7605fedcd6c651da8933d",
+      "resolution_score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.510981,
+        "nll": 1.31261,
+        "pit": 0.820557,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "snapshot_id": "snap-97d1f9229ef17bca",
+      "verification_replay": {
+        "evaluator_ledger_chain": true,
+        "ledger_hash_chain": true,
+        "lineage_signed_chain": true,
+        "outcome_signed_chain": true,
+        "prediction_commitment": true,
+        "registry_intact": true
+      },
+      "voi": {
+        "evoi_usd": 2.11,
+        "label": "MODEL_CONDITIONAL_ESTIMATE",
+        "receipt_hash": "4991da65ebd9188e4cd7fadc44b57ee977e07ab591415d25f1e494c0c2c80ca7",
+        "recommended_wait_or_act": "act_now"
+      }
+    },
+    {
+      "challenger_decisions": [
+        {
+          "candidate_id": "cand-fa32c33bd146",
+          "diff": {
+            "selector.min_score_milli": 3500
+          },
+          "lineage_hash": "aa73454e89ce32b07c7025f4618f020cd648b37a1218fd312f4b27a2804d9dbd",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-1e624f79c232",
+          "diff": {
+            "governor.widen_shift_milli": 1800
+          },
+          "lineage_hash": "25d459e09ec661018f989af131059903ff001ea81cf580713fae20252df688a5",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-31e878cccb4f",
+          "diff": {
+            "governor.widen_weak_milli": 1600
+          },
+          "lineage_hash": "fbd136d78ae0ff363871732d674c63a50e39342ff46cba03a28e88e3c3b031d2",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        }
+      ],
+      "champion": "champ-genesis-governed-set-mt",
+      "conformal_state": "GUARANTEE_SUSPENDED_LOW_EFFECTIVE_SAMPLE",
+      "cutoff": "2025-09-01",
+      "cycle": 5,
+      "distribution_commitment": "151e0061e12c3a5f89b5c12c85704b3f7c92475defe2e04b7b8438431f6a0a73",
+      "intervention_recommended": "activate_alternate",
+      "intervention_taken": "activate_alternate",
+      "off_policy_state": "IDENTIFIABLE_UNDER_STATED_ASSUMPTIONS",
+      "prediction_id": "pred-c79601cde5fe",
+      "registry_eligible": true,
+      "registry_release": "prreg-ea891b28fe8f",
+      "resolution_hash": "a39abf999bcd5ba74367fc78fdc78896a791f6f16465ea0ae095b8d258222ec1",
+      "resolution_score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.31346,
+        "nll": 1.035216,
+        "pit": 0.663371,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "snapshot_id": "snap-17d610d8ba474533",
+      "verification_replay": {
+        "evaluator_ledger_chain": true,
+        "ledger_hash_chain": true,
+        "lineage_signed_chain": true,
+        "outcome_signed_chain": true,
+        "prediction_commitment": true,
+        "registry_intact": true
+      },
+      "voi": {
+        "evoi_usd": 211.33,
+        "label": "MODEL_CONDITIONAL_ESTIMATE",
+        "receipt_hash": "6cc0f277c2d7a0f42c6961c36225256a6951fd06244b72dfe3c18577b8c5b487",
+        "recommended_wait_or_act": "act_now"
+      }
+    },
+    {
+      "challenger_decisions": [
+        {
+          "candidate_id": "cand-ea21ea51faec",
+          "diff": {
+            "base.candidate": "seq_prefix"
+          },
+          "lineage_hash": "507b32e5eb2d8868adb4f3bb61ceac6dd43293164ed5ca6b86c875505b112f11",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-6d79a4d19291",
+          "diff": {
+            "governor.widen_weak_milli": 1150
+          },
+          "lineage_hash": "b3c706501064d4d36ea2f4a303b01c393a8ee87f1d0b48c1063be90475dfa07f",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        },
+        {
+          "candidate_id": "cand-347dde85577b",
+          "diff": {
+            "governor.widen_weak_milli": 1600
+          },
+          "lineage_hash": "52852a8cdeb834af5b6bea89555d4878fe21cae718cf331b1cd1c22954331a8f",
+          "reasons": [
+            "development_no_improvement (no sealed look spent)"
+          ],
+          "state": "REJECTED"
+        }
+      ],
+      "champion": "champ-genesis-governed-set-mt",
+      "conformal_calibration": {
+        "empirical_coverage_micro_heldout": null,
+        "n_calibration": 14,
+        "n_evaluation_disjoint": 0,
+        "receipt_sha256": "3da5d979caf2fe0b7be2620f8757fc381fa2b4e994d41e4b6f1a9d7d65c2a257"
+      },
+      "conformal_recalibrated": true,
+      "conformal_state": "GUARANTEE_SUSPENDED_LOW_EFFECTIVE_SAMPLE",
+      "cutoff": "2025-09-22",
+      "cycle": 6,
+      "distribution_commitment": "580a11d65e0d1e908eb4ab52bd3600714b64688c232fc5beceda26674f90c07e",
+      "intervention_recommended": "activate_alternate",
+      "intervention_taken": "activate_alternate",
+      "off_policy_state": "IDENTIFIABLE_UNDER_STATED_ASSUMPTIONS",
+      "prediction_id": "pred-092352aaf15a",
+      "registry_eligible": true,
+      "registry_release": "prreg-e589a4ad8493",
+      "resolution_hash": "6e898beff90ba47e3cb499fbe03ff4c1d65d49682b0fb015b564753a744593b1",
+      "resolution_score": {
+        "channel": "activate_alternate",
+        "covered80": true,
+        "crps": 0.245186,
+        "nll": 0.935195,
+        "pit": 0.465565,
+        "scoring_rule": "log_score+crps+cover80(log-delay)"
+      },
+      "snapshot_id": "snap-c9cc00ef916ca0be",
+      "verification_replay": {
+        "evaluator_ledger_chain": true,
+        "ledger_hash_chain": true,
+        "lineage_signed_chain": true,
+        "outcome_signed_chain": true,
+        "prediction_commitment": true,
+        "registry_intact": true
+      },
+      "voi": {
+        "evoi_usd": 487.39,
+        "label": "MODEL_CONDITIONAL_ESTIMATE",
+        "receipt_hash": "050eeaf4668faece342b3e655ae120f49ebf6b8ae260384e44029ef1f1a3d373",
+        "recommended_wait_or_act": "act_now"
+      }
+    }
+  ],
+  "evaluator_seed_commitment": "bb4d925c224c635c63b3e270dda1f005f9d9c3856c7bceb7472c4969b93640f0",
+  "events": {
+    "abstentions": 0,
+    "calibration_blocks": 0,
+    "contamination_blocks": 0,
+    "coverage_failures": 0,
+    "off_policy_not_identifiable": 0,
+    "promotions": 0,
+    "receipt_verification_failures": 0,
+    "registry_growth": 2,
+    "rejections": 18,
+    "shift_blocks": 0,
+    "shift_suspensions": 0,
+    "trust_blocks": 0
+  },
+  "evidence_class": "SYNTHETICALLY VERIFIED (chains/signatures/replay: MECHANICALLY VERIFIED)",
+  "external_action": false,
+  "final_audit_holdout": {
+    "abstentions_standard": 0,
+    "metrics": {
+      "brier_delay_gt14": 184813,
+      "brier_stockout": 278225,
+      "coverage80": 893939,
+      "crps": 301082,
+      "crps_scarcity": 245777,
+      "crps_temporal_ood": 251238,
+      "intervention_regret_days": 445284,
+      "kl_to_oracle": 514818,
+      "nll": 808826,
+      "nll_heavy_tail": 1680731,
+      "nll_scarcity": 601258,
+      "nll_temporal_ood": 663620,
+      "nll_unrelated_priors": 1329003,
+      "permutation_spread_max": 0,
+      "width80_log": 2204598
+    },
+    "probes_refused": true,
+    "scored_count": 132
+  },
+  "final_champion": "champ-genesis-governed-set-mt",
+  "final_champion_config": {
+    "base.candidate": "set_mt",
+    "governor.shift_suspect_milli": 800,
+    "governor.widen_shift_milli": 1500,
+    "governor.widen_weak_milli": 1350,
+    "selector.k_max": 10,
+    "selector.min_score_milli": 4000,
+    "seq.decay_milli": 800
+  },
+  "leakage": {
+    "all_defended": true,
+    "foreign_tenant_refused": true,
+    "future_task_refused": true,
+    "selector_no_foreign_tenants": true,
+    "selector_no_future_tasks": true
+  },
+  "live_world_seed": 550,
+  "n_attempted": 6,
+  "n_completed": 6,
+  "run_context": {
+    "base_commit": "46f6e2f",
+    "code_revision": "27c4adb7ba0d9e87",
+    "dependency_lock_sha256": "NOT_AVAILABLE",
+    "evaluator_version": "sealed-evaluator/2.0",
+    "python": "3.11.15"
+  },
+  "spec": "sealed-evolution-benchmark/2.0"
+}

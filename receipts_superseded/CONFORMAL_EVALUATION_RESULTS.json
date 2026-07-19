@@ -1,0 +1,21 @@
+{
+  "calibration_receipt": {
+    "calibration_sample_size": 14,
+    "nonconformity_score": "abs(y - loc)/scale on log-delay",
+    "q_hat_micro": null,
+    "quantile_rule": "order statistic ceil((n+1)*coverage) of calibration scores",
+    "receipt_sha256": "3da5d979caf2fe0b7be2620f8757fc381fa2b4e994d41e4b6f1a9d7d65c2a257",
+    "spec": "eagle-eye-conformal/1.0",
+    "state_if_used": "GUARANTEE_SUSPENDED_LOW_EFFECTIVE_SAMPLE",
+    "target_coverage_micro": 800000
+  },
+  "heldout_coverage_disjoint": {
+    "by_group": {},
+    "empirical_coverage_micro": null,
+    "n": 0
+  },
+  "note": "coverage evaluated ONLY on pairs disjoint from calibration (audit blocker 8)",
+  "states_observed": [
+    "GUARANTEE_SUSPENDED_LOW_EFFECTIVE_SAMPLE"
+  ]
+}
