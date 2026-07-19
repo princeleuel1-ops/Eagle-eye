@@ -1,17 +1,11 @@
-# Eagle Eye Zenith
+# EAGLE EYE — Verified Decision Operations (sealed V12 tree)
 
-Canonical, proof-backed vertical slice for Eagle Eye Docklight.
-
-## First executable claim
-
-A customer fixture can be ingested into a typed supply-chain graph, evaluated for a bounded disruption, converted into a human-gated action contract, rendered through a connected digital-twin UI, and exported as a verifiable evidence room.
-
-## Commands
-
-```bash
-make setup
-make check
-make run
-```
-
-All current data is `FIXTURE` until an authorized customer pilot is connected.
+Canonical sealed tree `2f6091b38f4e7a106f457349032d010f35c48859` — 33 canonical
+gates, 423 tests, EAGLE_EYE_ZENITH_CHECK_PASS (2026-07-19, second-machine build).
+Rungs: V7 recursive flywheel · V8 W-transfer court · V9 stranger's verifier ·
+V10 live-shadow spine · V11 custody & identity · V12 licensed execution —
+every capability that touches the real world is fail-closed behind operator
+key ceremonies (see receipts_v10/11/12 runbooks). Verify: `make setup && make check`.
+Binary PNG assets (113) travel in the release archives, not this git transport;
+`verifier_standalone/` is the zero-trust stranger's verifier.
+EXTERNALLY VALIDATED: nothing — until a stranger runs it.
