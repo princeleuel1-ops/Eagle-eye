@@ -1,0 +1,21 @@
+{
+  "source_id": "rfc6962",
+  "title": "RFC 6962 — Certificate Transparency",
+  "author": "B. Laurie, A. Langley, E. Kasper",
+  "organization": "IETF",
+  "country": "international (IETF)",
+  "jurisdiction": "open standard",
+  "source_category": "standards_organization / intelligence-adjacent security",
+  "canonical_location": "https://datatracker.ietf.org/doc/html/rfc6962",
+  "publication_date": "2013-06",
+  "retrieval_date": "2026-07-20",
+  "license": "IETF Trust / algorithm not copyright-restricted; no code reused",
+  "spdx_expression": "N/A (clean-room from published algorithm)",
+  "attribution_obligations": "cite RFC 6962 as conceptual source",
+  "patent_indicators": "none known for the base Merkle-audit-tree algorithm (Merkle 1979, expired)",
+  "export_indicators": "none (public standard)",
+  "sanctions_indicators": "none",
+  "permitted_integration_mode": "conceptually informative -> clean-room reconstruction",
+  "confidence_in_provenance": "high",
+  "notes": "No source code copied. Implemented from the published algorithm in stdlib-only Python. Verified exhaustively (inclusion sizes 1-129, consistency 1-89, 300 fuzz trees)."
+}
